@@ -1,22 +1,39 @@
-.. Quamotion WebDriver documentation master file, created by
-   sphinx-quickstart on Thu Sep  8 12:02:21 2016.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+Introducing Quamotion
+=====================
 
-Welcome to Quamotion WebDriver's documentation!
-===============================================
+Quamotion is a test automation framework for use with native, hybrid and mobile web apps. It automates iOS and Android apps using the WebDriver protocol
+
+How it works
+------------
+
+Quamotion makes automated testing easy. We let you focus on testing your app, while we take care of the heavy lifting required to automate it.
+We don't require you to include a SDK or recompile your app; nor do you have to jailbreak your device.
+You know best how to do your job, so we let you use your favourite test practices, frameworks and tools.
+
+Use the tools you're familiar with
+----------------------------------
+
+Quamotion allows you to use any language and any test framework to automate your mobile app. You can write tests using your favourite testing tools,
+and we expose the WebDriver API which allows you to use interact with your app from any programming language.
+
+Requirements
+------------
+
+Quamotion works on:
+
+* Windows 7 (64-bit) and above
+* Ubuntu 16.04 (64-bit) and above
+* OS X 16.04 (64-bit) and above
+
+and allows you to test:
+
+* iOS 8 and above (`97+% of all iOS devices <https://developer.apple.com/support/app-store/>`_)
+* Android 4.1 and above (`96+% of all Android devices <https://developer.android.com/about/dashboards/index.html>`_)
+
+You don't need to install any platform-specific tools such as Xcode or the Android SDK. You can test iOS devices using a Windows or Linux 
+PC, even if you don't have a Mac.
 
 Contents:
 
 .. toctree::
    :maxdepth: 2
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
