@@ -38,3 +38,7 @@ p, ul, ol {
   line-height: 26px;
   font-weight: 400;
 }
+
+a.headerlink {
+  color: #e06e50;
+}
