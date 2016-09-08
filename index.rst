@@ -1,7 +1,8 @@
 Introducing Quamotion
 =====================
 
-Quamotion is a test automation framework for use with native, hybrid and mobile web apps. It automates iOS and Android apps using the WebDriver protocol
+Quamotion is a test automation framework for use with native, hybrid and mobile web apps. It automates iOS and Android apps on real devices (iOS, Android),
+simulators (iOS) and emulators (Android), using the WebDriver protocol.
 
 How it works
 """"""""""""
@@ -38,3 +39,5 @@ Contents
 
 .. toctree::
    :maxdepth: 2
+
+   getting-started

@@ -33,7 +33,7 @@ h2 {
   line-height: 26px;
 }
 
-p {
+p, ul, ol {
   font-size: 10pt;
   line-height: 26px;
   font-weight: 400;
