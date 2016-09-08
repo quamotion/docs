@@ -1,0 +1,28 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+body {
+  font-family: Open Sans;
+}
+
+.navbar-default {
+  background-color: #e06e50;
+  background-image: none;
+}
+
+.navbar-default .navbar-brand {
+  color: white;
+}
+
+.navbar-default .navbar-text {
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+h1 {
+    color: #838383;
+    font-size: 22pt;
+    font-weight: 400;
+}
