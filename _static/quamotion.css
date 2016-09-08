@@ -23,6 +23,18 @@ body {
 
 h1 {
     color: #838383;
-    font-size: 22pt;
+    font-size: 20pt;
     font-weight: 400;
+}
+
+h2 {
+  color: #fb784d;
+  font-size: 14pt;
+  line-height: 26px;
+}
+
+p {
+  font-size: 10pt;
+  line-height: 26px;
+  font-weight: 400;
 }
