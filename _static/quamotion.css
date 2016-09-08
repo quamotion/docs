@@ -9,15 +9,15 @@ body {
   background-image: none;
 }
 
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
   color: white;
 }
 
-.navbar-default .navbar-text {
+.navbar-default .navbar-text, .navbar-default .navbar-text:hover {
   color: white;
 }
 
-.navbar-default .navbar-nav>li>a {
+.navbar-default .navbar-nav>li>a, .navbar-default .navbar-nav>li>a:hover {
   color: white;
 }
 
