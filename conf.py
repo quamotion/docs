@@ -38,6 +38,7 @@ extensions = ['fulltoc', 'sphinxcontrib.googleanalytics']
 
 googleanalytics_id = 'UA-57159734-2'
 googleanalytics_enabled = True
+html_favicon = 'favicon.png'
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
