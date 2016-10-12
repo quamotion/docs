@@ -16,6 +16,7 @@
 # License for the specific language governing permissions and limitations
 # under the License.
 
+# Source: https://github.com/dreamhost/sphinxcontrib-fulltoc/
 
 from sphinx import addnodes
 
@@ -36,6 +37,11 @@ def html_page_context(app, pagename, templatename, context, doctree):
     rendered_toc = get_rendered_toctree(app.builder, pagename)
     context['toc'] = rendered_toc
     context['display_toc'] = True  # force toctree to display
+
+    # See https://github.com/dreamhost/sphinxcontrib-fulltoc/pull/11/files
+    if "toctree" not in context:
+        # json builder doesn't use toctree func, so nothing to replace
+        return
 
     def make_toctree(collapse=True, includehidden=True, maxdepth=1):
         return get_rendered_toctree(app.builder,
