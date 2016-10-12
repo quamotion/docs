@@ -41,3 +41,4 @@ Contents
    :maxdepth: 2
 
    getting-started
+   imobiledevice/about
