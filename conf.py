@@ -134,7 +134,17 @@ html_theme = 'bootstrap'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+    # Render the next and previous page links in navbar. (Default: true)
+    'navbar_sidebarrel': False,
+
+    # Render the current pages TOC in the navbar. (Default: true)
+    'navbar_pagenav': False,
+
+    # Location of link to source.
+    # Options are "nav" (default), "footer" or anything else to exclude.
+    'source_link_position': "none",
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
