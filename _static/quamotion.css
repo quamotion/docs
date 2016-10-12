@@ -61,3 +61,8 @@ li.current, a.current {
   padding-bottom: 0px;
   line-height: 20px;
 }
+
+#qm-social {
+  padding-top: 31px;
+  text-align: right;
+}
