@@ -42,11 +42,12 @@ def html_page_context(app, pagename, templatename, context, doctree):
                                     pagename,
                                     prune=False,
                                     collapse=collapse,
+                                    includehidden=includehidden
                                     )
     context['toctree'] = make_toctree
 
 
-def get_rendered_toctree(builder, docname, prune=False, collapse=True):
+def get_rendered_toctree(builder, docname, prune=False, collapse=True, includehidden=True):
     """Build the toctree relative to the named document,
     with the given parameters, and then return the rendered
     HTML fragment.
@@ -55,12 +56,13 @@ def get_rendered_toctree(builder, docname, prune=False, collapse=True):
                                  docname,
                                  prune=prune,
                                  collapse=collapse,
+                                 includehidden=includehidden
                                  )
     rendered_toc = builder.render_partial(fulltoc)['fragment']
     return rendered_toc
 
 
-def build_full_toctree(builder, docname, prune, collapse):
+def build_full_toctree(builder, docname, prune, collapse, includehidden):
     """Return a single toctree starting from docname containing all
     sub-document doctrees.
     """
@@ -71,6 +73,7 @@ def build_full_toctree(builder, docname, prune, collapse):
         toctree = env.resolve_toctree(docname, builder, toctreenode,
                                       collapse=collapse,
                                       prune=prune,
+                                      includehidden=includehidden
                                       )
         toctrees.append(toctree)
     if not toctrees:

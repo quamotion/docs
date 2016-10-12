@@ -33,6 +33,11 @@ h2 {
   line-height: 26px;
 }
 
+h3 {
+  color: #fb784d;
+  font-size: 12pt;
+}
+
 p, ul, ol {
   font-size: 10pt;
   line-height: 26px;
@@ -41,4 +46,18 @@ p, ul, ol {
 
 a.headerlink {
   color: #e06e50;
+}
+
+li.current, a.current {
+  font-weight: bold;
+}
+
+.bs-sidenav .nav > li > a,
+.bs-sidenav .nav .nav > li > a,
+.bs-sidenav .nav .nav .nav > li > a,
+.bs-sidenav .nav .nav .nav .nav > li > a {
+  font-size: 100%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  line-height: 20px;
 }

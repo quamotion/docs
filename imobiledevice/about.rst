@@ -13,7 +13,7 @@ Quamotion is dedicated to providing a simple installation of libimobiledevice fo
 for Windows. 
 
 Quamotion iMobileDevice for Windows provides you with tools to interact with iOS devices on Windows. You can 
-::doc:`install` using a simple installer or as a zip file. There's no need for you to compile 
+:doc:`install` using a simple installer or as a zip file. There's no need for you to compile 
 anything; just click a few times and it's installed. 
 
 .. CAUTION::
@@ -23,14 +23,11 @@ anything; just click a few times and it's installed.
 Quamotion iMobileDevice for Windows is built on top of open source software. See the [Version Information](version) page for more
 information about the open source software that was used.
 
-Contents
-""""""""
-
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
-   download
-   install
+   Download <download>
+   Installation <install>
    howto
    tools
-   compiling
+   Compiling <compiling>

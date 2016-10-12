@@ -24,7 +24,7 @@ Short Name	 Long Name			 Value
 -u           --udid              target specific device by its 40-digit device UDID.
 -h           --help              prints usage information
 ===========  ==================  =======================================================
-
+ 
 Authors
 """""""
 

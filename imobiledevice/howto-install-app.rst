@@ -8,7 +8,7 @@ Prerequisites
 
 Before you can install an application on your iOS device, make sure the following requirements are met: 
 
-* You have a .ipa file that contains the application binary. 
+* You have a ``.ipa`` file that contains the application binary. 
 * The application is signed with valid code signing certificate, and the iOS device on which you want to install is includeded in the embedded provisioning profile included in the .ipa file. 
 
 Install an app on your iOS device

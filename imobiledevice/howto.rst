@@ -3,9 +3,6 @@
 
 The topics in this section guide you through common tasks. 
 
-How To... 
-""""""""""
-
 Select one of the tasks below to view the How To for that task.
 
 .. toctree::
