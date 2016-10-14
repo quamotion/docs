@@ -16,10 +16,10 @@ This page contains an overview of the latest Quamotion releases, and what's comi
    Sprint 24 - October 9, 2015 <2015-10-9>
    Sprint 23 - September 25, 2015 <2015-09-25>
    Sprint 22 - September 11, 2015 <2015-09-11>
-   Sprint 21 - August 27, 2015 <2015-08-20>
+   Sprint 21 - August 27, 2015 <2015-08-27>
    Sprint 20 - August 13, 2015 <2015-08-13>
    Sprint 19 - August 3, 2015 <2015-08-03>
-   Sprint 18 - July 22, 2015 <2015-7-22>
+   Sprint 18 - July 22, 2015 <2015-07-22>
    Sprint 17 - July 3, 2015 <2015-07-3>
    Sprint 16 - June 19, 2015 <2015-06-19>
    Sprint 15 - June 5, 2015 <2015-06-05>
