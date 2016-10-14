@@ -7,7 +7,7 @@ This page contains an overview of the latest Quamotion releases, and what's comi
 .. toctree::
    :maxdepth: 1
 
-   Sprint 31 - January 15, 2015 <2015-01-15>
+   Sprint 31 - January 15, 2015 <2016-01-15>
    Sprint 29 - December 18, 2015 <2015-12-18>
    Sprint 28 - December 4, 2015 <2015-12-04>
    Sprint 27 - November 23, 2015 <2015-11-23>
