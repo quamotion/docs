@@ -1,0 +1,82 @@
+﻿Quamotion Sprint 21 Updates – August 27, 2015
+=============================================
+
+We’re happy to announce the release of the Sprint 21 edition of Quamotion for Visual Studio. 
+The version number is 0.1.1837.
+
+This release adds support for:
+
+* Running tests in parallel on multiple devices
+* Detailed test reports using the Coded UI Test Log
+* Specifying on which a device a test runs using a rich query syntax
+* Media controls in Web-based tests
+* Changing the orientation of the application on the device
+* A Fluent API for defining controls using descriptive testing
+* Detailed error messages when deployment to an iOS device fails
+
+Running tests in parallel on multiple devices
+---------------------------------------------
+
+You can now run tests in parallel on multiple devices. If you use devices from a shared cloud
+environment, the test run will detect which devices are currently not available and attempt to
+run the tests on these devices at a later point in time.
+
+For more information on running tests in parallel, see `Run tests in a Test Lab <../vs/testlab-run-tests>`_.
+
+Detailed test reports using the Coded UI Test Log
+-------------------------------------------------
+
+The mobile Coded UI Test Log contains information about a test run, such as the gestures that
+were performed and screenshots of your application during the test execution.
+
+For more information on the Coded UI Test Log, see `How To: Use the Coded UI Test Log <../vs/how-to-use-the-coded-ui-test-log>`_.
+
+Specifying on which a device a test runs using a rich query syntax
+------------------------------------------------------------------
+
+You can now specify on which device a test runs using a rich query syntax. For example,
+you can specify that the test should run on 'an Android 5.0 device' or 'a device with a screen 
+width of at least 800 pixels'.
+
+For more information on how to use the rich query syntax, see `How To: Specify Mobile Test Settings <../vs/how-to-mobile-test-settings>`_.
+
+Media controls in Web-based tests
+---------------------------------
+
+Mobile Coded UI Tests now support media controsl in web-based tests. You can start, stop and seek
+video and audio controls.
+
+Changing the orientation of the application on the device
+---------------------------------------------------------
+
+You can now change the orientation of the application on the device. 
+
+To set your device to landscape orientation, use the following code:
+
+.. code-block:: csharp
+
+    MobileDevice.SetOrientation(ScreenOrientation.Landscape);
+
+To set your device to portrait orientation, use the following code:
+
+.. code-block:: csharp
+
+    MobileDevice.SetOrientation(ScreenOrientation.Portrait);
+
+
+A Fluent API for defining controls using descriptive testing
+------------------------------------------------------------
+
+You can now use the Fluent API to define controls using descriptive testing.
+
+For example, to execute a Tap on a control with the text `Home`, you can use the following
+line of code:
+
+.. code-block:: csharp
+
+    Gesture.Tap(w => w.Marked("Home"));
+
+Detailed error messages when deployment to an iOS device fails
+--------------------------------------------------------------
+
+The relevant syslog entries are now included in the error message when deployment to an iOS device fails.

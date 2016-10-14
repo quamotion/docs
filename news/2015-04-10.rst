@@ -1,0 +1,56 @@
+﻿Quamotion Sprint 11 Updates – April 10, 2015
+============================================
+
+We’re happy to announce the release of the Sprint 11 edition of Quamotion for Visual Studio. 
+The version number is 0.1.1148.
+
+This release contains a lot of usability enhancements, various major performance gains 
+additional support for custom controls and updated documentation.
+
+With this release, we've further enhanced our support for native Android apps. 
+We've worked together with various customers to automate their native Android apps using
+Visual Studio 2013 and Quamotion for Visual Studio.
+
+Usability Enhancements
+----------------------
+
+This release contains various enhancements that increase the usability of Quamotion for 
+Visual Studio. 
+
+We've fixed bugs in the Quamotion for Visual Studio user interface, and streamlined the 
+installation process.
+
+The Coded UI Test Builder now features better support for overlapping controls.
+
+Performance Improvement
+-----------------------
+
+We've drastically improved the performance of Quamotion for Visual Studio in several areas:
+
+- When you start the Coded UI Test Builder or a test, we no longer re-install the app when
+  it is already installed, nor do we re-start the app if it is already running.
+- When you highlight a control in the Coded UI Test Builder, the operation now completes in
+  a few seconds.
+
+These two improvements combined have drastically reduced the time it takes to add a mobile
+object to the Coded UI Map.
+
+Support for custom Android UI frameworks
+----------------------------------------
+
+In the previous release, we've introduced Extension Packs which add support for custom frameworks.
+
+In this release, we add support for custom frameworks, even if no Extension Pack for that framework
+is installed. 
+
+When we detect a custom control that is not supported by Quamotion for Visual Studio and for which
+no Extension Pack is installed, we will now detect the standard control it derives from.
+
+For example, if your app includes a customized Text Box, we will handle this customized Text Box
+as a standard Text Box. That way, you can still script all of the standard actions - such as typing
+text in the Text Box - using out of the box Quamotion for Visual Studio.
+
+Updated documentation
+---------------------
+
+We've updated our on-line documentation.

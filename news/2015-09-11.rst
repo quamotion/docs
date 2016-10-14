@@ -1,0 +1,38 @@
+﻿Quamotion Sprint 22 Updates – September 11, 2015
+================================================
+
+We’re happy to announce the release of the Sprint 22 edition of Quamotion for Visual Studio. 
+The version number is 0.1.1972.
+
+This release is a quality release, and contains numerous improvements and bug fixes, including:
+
+* Visual Studio plug in enhancements
+* Better support for cancelling tasks
+* Improved iOS Support
+* Improved logging
+
+Visual Studio Plug In enhancements
+==================================
+
+* We've fixed an issue in the Mobile Test Settings editor, where the editor would always
+  ask you to save the file, even if no changes were made.
+* We've improved our support for cancelling long running tasks. 
+
+Improved iOS Support
+====================
+
+We've improved our support for iOS applications. This includes:
+
+* Support for typing text using the keyboard.
+* We now detect a locked iOS device, and wait for you to unlock the device.
+* We now support connecting more than one iOS device at a time.
+* Better support for code signing iOS applications that implement specific FileRules in the signature.
+* Better support for iOS applications targetting multiple architectures.
+* Better support for iOS applications targetting ARM64 processors.
+* Better support for applications that have multiple top-level windows.
+
+Improved Logging
+================
+
+We've improved the logging that takes place when Quamotion for Visual Studio is running.
+All commands sent to the device, and the responses received from the device, are now logged.

@@ -1,0 +1,31 @@
+﻿Quamotion Sprint 24 Updates – October 9, 2015
+=============================================
+
+We’re happy to announce the release of the Sprint 24 edition of Quamotion for Visual Studio. 
+The version number is 0.1.2278.
+
+This release introduces support for additional gestures and mouse and keyboard interactions, as well
+as reliability enhancements.
+
+Additional Gestures
+-------------------
+
+This release adds support for the ``DoubleTap`` and ``LongTap`` gestures.
+
+Mouse and Keyboard Interactions
+-------------------------------
+
+With this release, you can now type text using the keyboard (without having to specify a control), and
+simulate tapping on a specific location by specifying the coordinates (without having to specify a control).
+
+Reliability Enhancements
+------------------------
+
+We've fixed the following issues:
+
+* We've improved the way we detect running applications and test servers when a new test start, and stop
+  any test server that was left behind from a previous test.
+* We've improved our support for mobile browsers
+* When we deploy an application to the device, the application package files (``.apk``) the application was deployed
+  from, is now removed from the device once the deployment has completed.
+* We've fixed an issue where connecting to an iOS device would fail under high memory pressure.

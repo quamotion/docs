@@ -38,5 +38,6 @@ PC, even if you don't have a Mac.
    :hidden:
 
    getting-started
+   News <news/index>
    iMobileDevice for Windows <imobiledevice/about>
    Quamotion for Visual Studio <vs/install-quamotion>

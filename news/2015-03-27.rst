@@ -1,0 +1,41 @@
+﻿Quamotion Sprint 10 Updates – March 27, 2015
+============================================
+
+We’re happy to announce the release of the Sprint 10 edition of Quamotion for Visual Studio. The version number is 0.1.1032.
+This release contains a lot of usability enhancements, support for Odin Axe and Custom Android UI Frameworks, additional properties for working with objects and increased support for devices.
+With this release, we’re feature complete for Android. You can add objects to the Visual Studio UI Map using the Coded UI Test Builder, execute Tap gestures and get and set the properties of objects, and replay your scripts.
+
+Usability Enhancements
+----------------------
+
+This release contains various enhancements that increase the usability of Quamotion for Visual Studio. You can now:
+
+-	When you create a new Mobile Coded UI Test Project, you can download your app from a device that is connected to your PC. You no longer need to get the app from your developers.
+-	Cancel long running operations, such as starting the Coded UI Test Builder.
+-	Execute most of the actions from the command line.
+
+Odin Axe Support
+----------------
+
+Coded UI provides a stable test automation platform in Visual Studio. Yet, Coded UI requires you to write code to automate your UI tests. Not everybody feels comfortable with writing code.
+With this release, we provide support for Odin Axe. Odin Axe uses a simple spreadsheet interface allowing non-technical testers to build effective test scenarios faster. Axe dramatically increases productivity and speeds implementation time. 
+
+Support for custom Android UI frameworks
+----------------------------------------
+
+With this release, we’re introducing Extension Packs. Extension Packs add support for new frameworks to Quamotion for Visual Studio.
+If your app uses third party UI frameworks that Quamotion for Visual Studio does not support natively, you can now create your own extension pack that adds support for this UI framework.
+
+Support for additional properties when working with objects
+-----------------------------------------------------------
+
+We’ve worked to support additional properties when working with objects in the UI Map. We now provide better support for the Index property and grouping of multiple layers of elements into one single layer.
+You can now customize the search properties for the individual objects.
+We also support using XPath expressions for identifying objects.
+
+Better Support for Devices
+--------------------------
+
+With this release, we’ve improved our support for devices. We now support working with Genymotion devices, even in complex scenarios where Visual Studio is running with Administrator privileges and Genymotion is not. 
+When working with a device, we also detect when an Android device is booting and wait for the boot process to complete first.
+If multiple programs on your computer use adb (the communication gateway between the device and your PC), it can occur that the adb process is killed by one of those programs. If that happens, we detect that, restart adb and reconnect all devices.

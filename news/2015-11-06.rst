@@ -1,0 +1,28 @@
+﻿Quamotion Sprint 26 Updates – November 6, 2015
+==============================================
+
+We’re happy to announce the release of the Sprint 26 edition of Quamotion for Visual Studio. 
+The version number is 0.1.2577.
+
+This release includes support for the Back key on Android and iOS, and stability and usability
+enhancements accross the board.
+
+Back key
+--------
+
+You can now navigate to the previous activity by calling the ``Device.Back()`` method in your Mobile
+Coded UI or NUnit test scripts.
+
+Stability and usability enhancements
+------------------------------------
+
+We've made various improvements in the stability and usability of our product:
+
+* We've reviewed and improved many of the time outs that are present in the product. As a general
+  rule of thumb, we've improved the time outs to so the code fails fast - if the code detects an
+  incorrect configuration (for example, the device is not responding to certain messages), 
+  it will attempt to either fix the configuration or fail, but it will not wait for a long period
+  of time for the situation to correct itself.
+* We've reviewed and improved certain log messages that are generated when tests are running.
+* We've fixed an issue where opening the Coded UI Test Builder two times in a row would fail
+  for iOS devices

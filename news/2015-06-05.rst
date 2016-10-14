@@ -1,0 +1,34 @@
+﻿Quamotion Sprint 15 Updates – June 5, 2015
+==========================================
+
+We’re happy to announce the release of the Sprint 15 edition of Quamotion for Visual Studio. 
+The version number is 0.1.1448.
+
+This release brings support for recording of scripts on native Android applications, 
+and supports testing applications with different layouts on different devices.
+Additionally, this release brings a lot of usability and stability enhancements.
+
+Recording of scripts on native Android applications
+---------------------------------------------------
+
+This release brings support for recording of scripts on native Android apps. 
+You can now start the Coded UI Test Builder and hit the Record button. Once you've done this,
+all actions you run on the mobile device - be it a physical device or an emulator - will be recorded
+and a script that allows you to replay these actions will be automatically generated.
+
+Support for applications with different layouts on different devices
+--------------------------------------------------------------------
+
+Certain applications have different launch activities on devices with different form factors -
+such as phones and tables.
+
+With this release, when starting your app on the device, we detect the form factor of the device
+and launch the correct activity.
+
+Usability Enhancements
+----------------------
+* We now properly detect devices that are connected to your PC, but for which the ADB connection
+  has not yet been authorized.
+
+* We've fixed a bug where you could not launch an app on a real, physical Android device connected
+  to your PC over USB.

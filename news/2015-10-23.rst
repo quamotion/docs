@@ -1,0 +1,61 @@
+﻿Quamotion Sprint 25 Updates – October 23, 2015
+==============================================
+
+We’re happy to announce the release of the Sprint 25 edition of Quamotion for Visual Studio. 
+The version number is 0.1.2528.
+
+This release introduces the Mobile Test dasbhoard in Visual Studio Online (currently in preview),
+support for running mobile tests using NUnit 3, and saving test action logs as XML files.
+
+Mobile Test Dashboard
+---------------------
+
+With this release, we're launching a preview of our Mobile Test dashboard in Visual Studio online.
+
+The Mobile Test dasbhoard, provides you with an on line cockpit that allows you to keep track of
+your mobile tests from a single, central place.
+
+You can run tests as part of a hosted Visual Studio build, or run them locally.
+
+Running tests with NUnit 3
+--------------------------
+
+With thise release, we've added support for beta 4 of NUnit 3.
+
+To launch a test on a mobile device, you can add the ``[StartApp]`` attribute to your test case.
+If you're running an Android test, all you need to specify is the Device ID and the path to the
+Android application you want to test:
+
+.. code-block:: csharp
+
+	[Test, StartApp("ZX1G425RW5", "MyApp.apk")]
+	public void Test()
+	{
+		// When you run this test, the MyApp application will launch on the device
+		// with ID ZX1G425RW5
+	}
+
+To interact with controls, you can use our Fluent API. For example, to tap on a button marked `Sign In`,
+you can use the `Gesture.Tap` method:
+
+.. code-block:: csharp
+
+	Gesture.Tap(w => w.Marked("Sign In"));
+
+To type text, you can use the ``Keyboard.Type`` method:
+
+.. code-block:: csharp
+
+	Keyboard.Type(w => w.Id("login_email"), username);
+
+To interact with the device, you can use the `Device` class. For example, to set the device orientation,
+use:
+
+.. code-block:: csharp
+
+	Device.SetOrientation(ScreenOrientation.Portrait);
+
+Test Action Logs as XML
+-----------------------
+
+By default, test action logs are now generated as XML files instead of HTML files.

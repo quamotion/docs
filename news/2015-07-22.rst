@@ -1,0 +1,15 @@
+﻿Quamotion Sprint 18 Updates – July 22, 2015
+===========================================
+
+We’re happy to announce the release of the Sprint 18 edition of Quamotion for Visual Studio. 
+The version number is 0.1.1532.
+
+This release brings usability and stability enhancements.
+
+Usability Enhancements
+----------------------
+
+* Correct identification whether iTunes is installed.
+* Improved diagnostic information gathering.
+* We've fixed a scenario in which an application with multiple "Launcher Activities" would not launch.
+* We've fixed a scenario in which the application would not launch correctly after installing it multiple times.

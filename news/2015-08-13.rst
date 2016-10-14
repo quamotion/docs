@@ -1,0 +1,33 @@
+﻿Quamotion Sprint 20 Updates – August 13, 2015
+=============================================
+
+We’re happy to announce the release of the Sprint 20 edition of Quamotion for Visual Studio. 
+The version number is 0.1.1702.
+
+This release adds support for iOS 9, Visual Studio 2015 and the Visual Studio Emulator
+for Android, as well as usability and stability enhancements.
+
+Support for iOS 9 Beta 5
+------------------------
+
+You can now test iOS applications on devices running Beta 5 of iOS 9 using Visual Studio
+Coded UI.
+
+Visual Studio 2015
+------------------
+
+Quamotion is proud to be a Sim Ship partner of Visual Studio 2015. Starting with our Sprint 20
+release, we now support both Visual Studio 2013 as well as Visual Studio 2015.
+
+Start testing your iOS and Android apps using Visual Studio today!
+
+Visual Studio Emulator for Android
+----------------------------------
+
+You can now test your Android applications using the Visual Studio Emulator for Android.
+
+Usability and Stability Enhancements
+------------------------------------
+
+With this release, you can now test iOS and Android applications on Visual Studio 2013
+versions prior to Update 2.

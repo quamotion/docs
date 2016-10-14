@@ -1,0 +1,35 @@
+﻿Quamotion Sprint 16 Updates – June 19, 2015
+===========================================
+
+We’re happy to announce the release of the Sprint 16 edition of Quamotion for Visual Studio. 
+The version number is 0.1.1458.
+
+This release brings support for recording of scripts on native iOS applications, 
+and supports testing applications on devices with multiple screens.
+Additionally, this release brings usability and stability enhancements.
+
+Recording of scripts on native iOS applications
+-----------------------------------------------
+
+This release brings support for recording of scripts on native iOS apps. 
+You can now start the Coded UI Test Builder and hit the Record button. Once you've done this,
+all actions you run on the mobile device will be recorded and a script that allows you to replay 
+these actions will be automatically generated.
+
+Support for applications with multiple screens
+----------------------------------------------
+
+In certain scenarios, you may want to run your tests on devices with multiple screens - for example,
+consider a Nexus 5 table with a television screen connected to the HDMI output.
+
+With this release, we have added support for these scenarios.
+
+Stability Enhancements
+----------------------
+
+* We've improved the stability of our communication with iOS devices. The communication now takes
+  place in an external process. With this change, when you pause your test, the communication 
+  channel with the device is not interrupted.
+
+* We've fixed a scenario in which certain Quamotion installation files are not removed when you
+  uninstall Quamotion.

@@ -1,0 +1,32 @@
+﻿Quamotion Sprint 14 Updates – May 22, 2015
+==========================================
+
+We’re happy to announce the release of the Sprint 14 edition of Quamotion for Visual Studio. 
+The version number is 0.1.1385.
+
+This release brings support for CrossWalk apps and integration with AppVeyor for running
+tests on a hosted build server. Additionally, this release brings a lot of usability and stability 
+enhancements.
+
+Integration with AppVeyor
+-------------------------
+
+With this release, we support running Quamotion tests on AppVeyor build servers. We provide configuration
+scripts that take care of installing the Quamotion and Remote TestKit software on the AppVeyor build server.
+
+With our AppVeyor integration, you can now run tests fully unattended in the cloud.
+
+Support CrossWalk apps
+----------------------
+With this release, we've added support for CrossWalk applications and other Cromium-based frameworks.
+We fully support automating the objects inside CrossWalk applications.
+
+Usability Enhancements
+----------------------
+
+* We have added support for Android applications that have different startup activities
+  for different types of devices
+* When clicking the 'Use this application' button in the Mobile Test Settings editor, you now
+  receive a visual indicating that the application transfer operation is in progress.
+  This button is now disabled when no application is selected.
+* We have added various stability fixes in the device providers and orchestrator code.

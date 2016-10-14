@@ -1,0 +1,26 @@
+﻿Quamotion Sprint 23 Updates – September 25, 2015
+================================================
+
+We’re happy to announce the release of the Sprint 23 edition of Quamotion for Visual Studio. 
+The version number is 0.1.2171.
+
+This feature introduces support for the final version of iOS 9, as well as various enhancements and bug fixes.
+
+iOS 9 Support
+-------------
+
+In addition to the previous releases that supported the beta versions of iOS 9, the Sprint 23 release supports
+the final build of iOS 9.
+
+Enhancements and bug fixes
+--------------------------
+
+Quamotion for Visual Studio now supports:
+
+* Rebooting iOS and Android devices from the command line
+* Running Mobile Coded UI Tests on build servers and release management servers
+
+We've fixed:
+
+* The detection of iTunes during the installation of Quamotion for Visual Studio
+* An issue where the Logging service would not always start after installation.

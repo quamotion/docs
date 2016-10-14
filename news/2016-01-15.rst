@@ -1,0 +1,29 @@
+﻿# Quamotion Sprint 31 Updates – January 15, 2015
+
+We’re happy to announce the release of the Sprint 31 edition of Quamotion for Visual Studio. 
+The version number is 0.1.3038.
+
+This release includes better support for testing web sites on mobile devices using Visual Studio
+Coded UI, enhanced support for iOS applications, and stability and usability enhancements accross the board.
+
+## Testing web sites on mobile devices using Visual Studio Coded UI
+We have improved our support for testing web sites on mobile (iOS and Android) devices 
+using Visual Studio Coded UI.
+
+Amongst others, these improvements include:
+
+* Support for Filter Properties
+
+## Enhanced support for iOS applications
+
+We have improved our support for testing iOS applications. Amongst others, these improvements
+inlude:
+
+* Support for updating the embedded entitlements of applications as needed
+* Support for iOS applications with embedded, private frameworks
+
+## Stability and usability enhancements
+We've made various improvements in the stability and usability of our product:
+
+* We have simplified deployment of Quamotion for Visual Studio and reduced the number of files
+    that need to be copied to run your tests.

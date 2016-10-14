@@ -1,0 +1,49 @@
+﻿Quamotion Sprint 12 Updates – April 24, 2015
+============================================
+
+We’re happy to announce the release of the Sprint 12 edition of Quamotion for Visual Studio. The version number is 0.1.1228.
+
+This release introduces support for native iOS Applications, more control over when we restart or reinstall an application, and,
+as usual, various usability and reliability enhancements.
+
+With this release, we’re feature complete for native Android and iOS applications. 
+You can add objects to the Visual Studio UI Map using the Coded UI Test Builder, execute Tap gestures and get and set the properties of objects, and replay your scripts.
+
+Support for native iOS Applications
+-----------------------------------
+
+Starting with this release, you can use Quamotion for Visual Studio to test native iOS Applications using Visual Studio Coded UI.
+You can test iOS applications from Windows, without the need for you to have a Mac.
+
+More control over when we restart or reinstall an application
+-------------------------------------------------------------
+
+In this release, we've added additional settings that allow you to control when we restart or reinstall the application on the device.
+
+For example, you may not want to reinstall or restart the application when spying on the application through the Coded UI Test Builder,
+but you may want to reinstall the application every time you start a new test run.
+
+With the new settings, we now allow you to take control over this process.
+
+Usability Enhancements
+----------------------
+
+Every release, we continue to bring various enhancements that increase the usability of Quamotion for 
+Visual Studio. 
+
+In this release, we've added:
+
+- Validation to the Mobile Coded UI Test Setting, guiding you in the process of configuring your Mobile Coded UI Test Project.
+- Added additional guidance after installing Quamotion for Visual Studio and creating a new Mobile Coded UI Test Project, helping you get started faster.
+- Updated the icons we use in the Quamotion for Visual Studio projects
+
+Reliability Enhancements
+------------------------
+
+Every release, we continue to bring various enhancements that increase the reliability of Quamotion
+for Visual Studio.
+
+In this release, we've added:
+
+- Additional health checks that detect potential issues in Genymotion and VirtualBox that prevent integration.
+- Additional checks and exception handling in Visual Studio.

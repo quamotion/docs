@@ -1,0 +1,33 @@
+﻿Quamotion Sprint 28 Updates – December 4, 2015
+==============================================
+
+We’re happy to announce the release of the Sprint 28 edition of Quamotion for Visual Studio. 
+The version number is 0.1.2769.
+
+This release includes support for working with iOS developer profiles and the Apple Developer
+Center, and stability and usability enhancements accross the board.
+
+iOS Developer Profiles
+----------------------
+
+You can now create and update iOS Developer Profiles using the Quamotion Command Line.
+You can create a new developer profile, and add devices to existing developer profiles,
+using your Windows PC.
+
+Stability and usability enhancements
+------------------------------------
+
+We've made various improvements in the stability and usability of our product:
+
+* If a device is rotated, the device rotation is detected correctly.
+* We've added keyboard shortcuts to the menu items in our Visual Studio integration
+* We've fixed an issue in our Coded UI plug in where our extension package would not
+  load correctly.
+* We now support Android applications that use resource IDs that overlap with the range
+  used by the Android system IDs.
+* We've updated our Remote TestKit integration, to make sure the username and password
+  are stored correctly.
+* We've added an implicit wait to the ``Back`` gesture, so that the code waits for the
+  phone to navigate from one screen to another.
+* We've fixed an issue in our iOS code signing library. You can now sign ``.ipa`` files, even
+  if they contain multiple, custom, ``.dylib`` files.

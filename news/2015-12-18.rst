@@ -1,0 +1,39 @@
+﻿Quamotion Sprint 29 Updates – December 18, 2015
+===============================================
+
+We’re happy to announce the release of the Sprint 29 edition of Quamotion for Visual Studio. 
+The version number is 0.1.3038.
+
+This release includes better support for testing web sites on mobile devices using Visual Studio
+Coded UI, support for automatically installing the drivers for most Android devices,
+and stability and usability enhancements accross the board.
+
+Testing web sites on mobile devices using Visual Studio Coded UI
+----------------------------------------------------------------
+
+We have improved our support for testing web sites on mobile (iOS and Android) devices 
+using Visual Studio Coded UI.
+
+Amongst others, these improvements include:
+
+* Better support for complex UI Maps (object hierarchies)
+* Better support for getting and setting properties (or attributes) of HTML objects
+* We've fixed an issue where running a test would fail when running tests on physical or cloud devices.
+
+Automatically installing drivers for Android devices
+----------------------------------------------------
+
+Quamotion for Visual Studio can now detect Android devices connected to your PC over USB, even if their
+drivers are not installed, and automatically install the correct drivers for these devices.
+
+Stability and usability enhancements
+------------------------------------
+
+We've made various improvements in the stability and usability of our product:
+
+* We have simplified deployment of Quamotion for Visual Studio and reduced the number of files
+  that need to be copied to run your tests.
+* We now support retrieving the orientation (portrait, landscape) of a device in your scripts
+* We've made the ``Quamotion.CommandLine`` command line module extensible and accessible using
+  C APIs, and have moved all UI-related libraries to a dedicated assembly.
+* We've improved our support for running Quamotion software on Linux and Mac devices using Mono.

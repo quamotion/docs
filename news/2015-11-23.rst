@@ -1,0 +1,24 @@
+﻿Quamotion Sprint 27 Updates – November 23, 2015
+===============================================
+
+We’re happy to announce the release of the Sprint 27 edition of Quamotion for Visual Studio. 
+The version number is 0.1.2660.
+
+This release includes support for additional gestures, and stability and usability enhancements accross the board.
+
+Additional Gestures
+-------------------
+
+This release adds support for the Swipe gesture. You can swipe left, right, up
+and down.
+
+Stability and usability enhancements
+------------------------------------
+
+We've made various improvements in the stability and usability of our product:
+
+* Test servers no longer show up in the list of installed applications.
+* Spying on the toolbar of Genymotion emulators no longer causes the Coded UI plug in to crash.
+* You can now add Assert statements on class names.
+* We've drastically improved the performance and memory usage consumption of Quamotion 
+  when signing iOS applications.

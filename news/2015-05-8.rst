@@ -1,0 +1,41 @@
+﻿Quamotion Sprint 13 Updates – May 8, 2015
+=========================================
+
+We’re happy to announce the release of the Sprint 13 edition of Quamotion for Visual Studio. 
+The version number is 0.1.1358.
+
+This release brings support for hybrid apps and integration with Remote TestKit for running
+tests on cloud devices. Additionally, this release brings a lot of usability and stability 
+enhancements.
+
+Support for hybrid apps
+-----------------------
+
+This release brings support for hybrid Android apps. Quamotion for Visual Studio now detects
+web views and web elements that are embedded in native apps, and you can automate them like
+any other app.
+
+Support for Remote TestKit
+--------------------------
+
+With this release, you can now run your tests on Remote TestKit devices, even in unattended mode.
+This allows you to run tests in batch during the night or during continuous integration.
+
+Updated Mobile Test Settings Editor
+-----------------------------------
+
+In this release, we've updated the Mobile Test Settings editor. The editor now:
+
+* Checks whether you've installed all the required software - such as iTunes for testing 
+  on iOS devices.
+* Presents a more streamlined user interface, making it easier to specify the test settings.
+* Responds much faster in certain scenarios.
+
+Usability Enhancements
+----------------------
+
+* When installing an app on a device, we now make sure the application and the device are 
+  compatibly, by checking the operating system version and the processor architecture.
+* We've fixed a bug where we failed to launch certain Android applications.
+* The Mobile Test Settings editor. The editor presents a warning.
+* The Installer now checks whether you have Visual Studio 2013 and iTunes installed.
