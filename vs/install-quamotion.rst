@@ -51,6 +51,7 @@ That's it! You've successfully installated Quamotion on your computer.
    How To: Use the Coded UI Test Log <how-to-use-the-coded-ui-test-log>
    How To: Manage iOS Developer Profiles on Windows <manage-developer-profile>
    How To: Run tests with NUnit 3 <nunit-run-test>
+   How To: Run tests the cloud <cloud-based-testing>
    Command Line Utility Reference <reference-commandline>
    Capturing Crash Reports <testlab-capture-crash-report>
    Preparing a Test Server in a Test Lab <testlab-installation>
