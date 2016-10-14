@@ -34,11 +34,9 @@ and allows you to test:
 You don't need to install any platform-specific tools such as Xcode or the Android SDK. You can test iOS devices using a Windows or Linux 
 PC, even if you don't have a Mac.
 
-Contents
-""""""""
-
 .. toctree::
-   :maxdepth: 2
+   :hidden:
 
    getting-started
-   imobiledevice/about
+   iMobileDevice for Windows <imobiledevice/about>
+   Quamotion for Visual Studio <vs/install-quamotion>
