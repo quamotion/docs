@@ -12,14 +12,14 @@ This release is a quality release, and contains numerous improvements and bug fi
 * Improved logging
 
 Visual Studio Plug In enhancements
-==================================
+----------------------------------
 
 * We've fixed an issue in the Mobile Test Settings editor, where the editor would always
   ask you to save the file, even if no changes were made.
 * We've improved our support for cancelling long running tasks. 
 
 Improved iOS Support
-====================
+--------------------
 
 We've improved our support for iOS applications. This includes:
 
@@ -32,7 +32,7 @@ We've improved our support for iOS applications. This includes:
 * Better support for applications that have multiple top-level windows.
 
 Improved Logging
-================
+----------------
 
 We've improved the logging that takes place when Quamotion for Visual Studio is running.
 All commands sent to the device, and the responses received from the device, are now logged.
