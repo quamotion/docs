@@ -13,6 +13,7 @@ Stability and usability enhancements
 ------------------------------------
 
 This release:
-- Adds support for accepting alerts on iOS devices, even if the buttons on the alert are not only _OK_ or _Cancel_ .
+
+- Adds support for accepting alerts on iOS devices, even if the buttons on the alert are not only `OK` or `Cancel`.
 - Adds a better error message when an Android device could not be found (possibly because it disconnected from adb).
 - Adds a more descriptive error message when an element could not be found

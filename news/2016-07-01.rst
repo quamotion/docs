@@ -12,6 +12,6 @@ Stability and usability enhancements
 This release:
 
 * Addresses an issue where, in some cases, the various alert-button methods do not return any result.
-* Adds a feature where, for Android apps, the permissions the apps request in their Manifest.xml file are explicitely granted using pm grant when the application is installed. Resolves #38 in a manner which also works on older versions of Android.
+* Adds a feature where, for Android apps, the permissions the apps request in their ``Manifest.xml`` file are explicitely granted using ``pm grant`` when the application is installed.
 * Adds support for .NET Core RTM
 * Improves support for retrieving properties on iOS devices

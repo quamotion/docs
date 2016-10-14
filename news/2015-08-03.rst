@@ -6,7 +6,7 @@ The version number is 0.1.1575.
 
 With this release we’ve:
 
-* Added support for running tests on [Manymo](http://manymo.com) cloud-based emulators
+* Added support for running tests on `Manymo <http://manymo.com>`_ cloud-based emulators
 * Added support for running Coded UI tests using the Xamarin.UITest Framework
 * Improved the usability and stability of Quamotion for Visual Studio.
 
