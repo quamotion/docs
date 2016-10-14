@@ -1,0 +1,17 @@
+Quamotion Sprint 43 Updates – July 1, 2016
+==========================================
+
+We’re happy to announce the release of the Sprint 43 edition of Quamotion for Visual Studio. 
+The version number is 0.1.4939.
+
+This release includes stability and usability enhancements accross the board.
+
+Stability and usability enhancements
+------------------------------------
+
+This release:
+
+* Addresses an issue where, in some cases, the various alert-button methods do not return any result.
+* Adds a feature where, for Android apps, the permissions the apps request in their Manifest.xml file are explicitely granted using pm grant when the application is installed. Resolves #38 in a manner which also works on older versions of Android.
+* Adds support for .NET Core RTM
+* Improves support for retrieving properties on iOS devices

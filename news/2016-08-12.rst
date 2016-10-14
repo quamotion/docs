@@ -1,0 +1,16 @@
+Quamotion Sprint 46 Updates – August 12, 2016
+=============================================
+
+We’re happy to announce the release of the Sprint 46 edition of Quamotion for Visual Studio. 
+The version number is 0.1.5277.
+
+This release includes stability and usability enhancements accross the board.
+
+Stability and usability enhancements
+------------------------------------
+
+This release:
+
+- Adds default icons for iOS and Android apps
+- Adds better support for hybrid applications on Android devices
+- Adds support for the ``Exists`` property for web elements in web-based Coded UI tests.

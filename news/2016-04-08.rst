@@ -1,0 +1,24 @@
+Quamotion Sprint 37 Updates – April 8, 2016
+===========================================
+
+We’re happy to announce the release of the Sprint 37 edition of Quamotion for Visual Studio. 
+The version number is 0.1.4017.
+
+This release adds support for hybrid applications on iOS, and contains stability and usability enhancements
+accross the board.
+
+Support for hybrid applications on iOS
+--------------------------------------
+
+This release adds support for hybrid applications on iOS devices. Hybrid applications are native applications
+(usually written in Objective C or Swift) which include web views.
+
+Stability and usuability enhancements
+-------------------------------------
+
+We've made various improvements in the stability and usability of our product. This release:
+
+* Adds a check for revoked certificates before installing an application on an iOS device, will fail the test with a more precise error message when a revoked certificate is used.
+* Adds support for spying on iPhone 6 devices
+* Adds support for iOS applications which do not have an application identifier in their embedded entitlements.
+* Adds support for the latest version fo the Apple Developer Center

@@ -1,0 +1,24 @@
+Quamotion Sprint 44 Updates – July 15, 2016
+==========================================
+
+We’re happy to announce the release of the Sprint 44 edition of Quamotion for Visual Studio. 
+The version number is 0.1.4980.
+
+This release includes a web-based front-end for Quamotion and stability and
+usability enhancements accross the board.
+
+Web-based front-end for Quamotion
+---------------------------------
+
+This release adds a web-based front-end for Quamotion which allows you to start applications on mobile
+devices and inspect the UI of those mobile applications.
+
+Stability and usability enhancements
+------------------------------------
+
+This release:
+
+* Adds the ability to clear cookies on mobile browsers
+* Adds a better error message when UI Automation is not enabled on iOS devices
+* Fixes an issue where an Android device would still be listed as unauthorized, even if you trust your
+  PC on your Android device. 

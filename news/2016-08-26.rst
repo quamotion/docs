@@ -1,0 +1,10 @@
+Quamotion Sprint 47 Updates – August 26, 2016
+=============================================
+
+We’re happy to announce the release of the Sprint 47 edition of Quamotion for Visual Studio. 
+The version number is 0.1.5478.
+
+This release adds improved documentation and stability and usability enhancements.
+
+In this release, we've worked to update the Quamotion documentation and improved stability and memory
+consumption of Quamotion on Windows, OS X and Linux.

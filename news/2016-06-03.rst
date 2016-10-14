@@ -1,0 +1,16 @@
+Quamotion Sprint 41 Updates – June 3, 2016
+==========================================
+
+We’re happy to announce the release of the Sprint 41 edition of Quamotion for Visual Studio. 
+The version number is 0.1.4492.
+
+This release includes stability and usability enhancements accross the board.
+
+Stability and usability enhancements
+------------------------------------
+
+This release:
+
+* Adds support for PNG decrushed icons for iOS applications
+* Adds support for tapping by coordinate
+* Adds preliminary support for .NET Core

@@ -1,0 +1,25 @@
+Quamotion Sprint 39 Updates – May 6, 2016
+=========================================
+
+We’re happy to announce the release of the Sprint 39 edition of Quamotion for Visual Studio. 
+The version number is 0.1.4276.
+
+This release includes better support for code signing on iOS, and stability and usability enhancements
+accross the board.
+
+Better support for code signing on iOS
+--------------------------------------
+
+This release improves the support for code signing of iOS applications. Specifically, this release:
+
+* Adds support for applications which include an application-specific hash in the code directory, or
+  include Frameworks which include .dylib files in their frameworks directory
+* Adds SHA-2 hashes of files in an .ipa package to the CoreResources property list
+
+Stability and usability enhancements
+------------------------------------
+
+We've made various improvements in the stability and usability of our product. This release:
+
+* Improves the performance of the Device Display for Android devices, if multiple clients are connected
+  to the same device.

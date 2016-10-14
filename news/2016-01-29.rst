@@ -1,0 +1,35 @@
+Quamotion Sprint 32 Updates – January 29, 2016
+==============================================
+
+We’re happy to announce the release of the Sprint 32 edition of Quamotion for Visual Studio. 
+The version number is 0.1.3335.
+
+This release includes better support for testing web sites on mobile devices using Visual Studio
+Coded UI, high performance screen capturing for Android devices, and stability and usability enhancements accross the board.
+
+Testing web sites on mobile devices using Visual Studio Coded UI
+----------------------------------------------------------------
+
+We have improved our support for testing web sites on mobile (iOS and Android) devices 
+using Visual Studio Coded UI.
+
+Amongst others, these improvements include:
+
+* Better support for mobile web queries
+
+High-performance screen capturing for Android devices
+-----------------------------------------------------
+
+We've significantly improved the performance of our Device Display. You can now mirror the screen of mobile
+Android devices up to about 20 frames per second (fps).
+
+Stability and usuability enhancements
+-------------------------------------
+
+We've made various improvements in the stability and usability of our product:
+
+* You can now retrieve the application icon for iOS & Android applications
+* You can now interact with special keys (such as the back key) on iOS & Android devices
+* You can now change the orientation (portrait or landscape) on iOS devices
+* We've fixed an issue here creating a new developer profile would fail 
+* Improves support for automating web sites using Mobile Coded UI

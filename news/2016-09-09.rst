@@ -1,0 +1,18 @@
+Quamotion Sprint 48 Updates – September 9, 2016
+===============================================
+
+We’re happy to announce the release of the Sprint 48 edition of Quamotion for Visual Studio. 
+The version number is 0.1.5507.
+
+This release adds improved documentation and stability and usability enhancements.
+
+In this release, we've worked to update the Quamotion documentation and improved stability and memory
+consumption of Quamotion on Windows, OS X and Linux.
+
+Stability and usability enhancements
+------------------------------------
+
+This release:
+- Adds support for accepting alerts on iOS devices, even if the buttons on the alert are not only _OK_ or _Cancel_ .
+- Adds a better error message when an Android device could not be found (possibly because it disconnected from adb).
+- Adds a more descriptive error message when an element could not be found

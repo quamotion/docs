@@ -1,0 +1,57 @@
+Quamotion Sprint 33 Updates – February 22, 2016
+===============================================
+
+We’re happy to announce the release of the Sprint 33 edition of Quamotion for Visual Studio. 
+The version number is 0.1.3637.
+
+This version adds support for clearing settings on iOS and Android devices,
+handling alerts and swiping by coordinates on iOS devices, a command line
+module to automatically install the drivers for all connected Android devices, and stability and usability
+enhancements accross the board.
+
+Clearing settings on iOS and Android devices
+--------------------------------------------
+
+When writing mobile tests, you usually want to make sure that your tests start from a stable, known
+state of your application. For example, some applications may require you to log in and cache that
+login information; but you want your tests to always include the login step.
+
+To solve this issue, we allow you to reset the application settings when launching a test on iOS
+and Android devices.
+
+Alert handling and swipe by coordinates for iOS devices
+-------------------------------------------------------
+
+We've improved our support for test automation on iOS devices. You can now accept or dismiss
+alerts on iOS devices (even if these are system-generated alerts), and you can also swip by
+coordinates on iOS devices.
+
+Command line module to install the drivers for all connected Android devices
+----------------------------------------------------------------------------
+
+When you connect an Android device to your PC, you will first need to install the drivers for your
+Android device. Finding and installing the correct drivers for you Android device can be a difficult
+challenge.
+
+We've included a new command-line option which allows you to install drivers for all Android devices
+which are currently connected to your PC.
+
+To install the USB drivers, follow these steps:
+
+1. Start the *Quamotion Command Prompt*  with administrator priviliges
+2. Type the following command:
+
+   .. code-block:: shell
+
+    Quamotion.CommandLine -m UsbDriver
+
+Stability and usuability enhancements
+-------------------------------------
+
+We've made various improvements in the stability and usability of our product:
+
+* We've fixed a deadlock issue in Visual Studio when Quamotion was loaded
+* You can now run tests on both Windows browsers and mobile browsers when Quamotion is loaded
+* We've improved our support for Samsung S3 mini devices
+* You can now identify which version of the test server is deployed to an application running on a mobile device,
+  allowing you to identify scenarios where the test server is out of sync with Quamotion installed on the device.

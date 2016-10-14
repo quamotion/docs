@@ -1,0 +1,21 @@
+Quamotion Sprint 50 Updates – October 7, 2016
+=============================================
+
+We’re happy to announce the release of the Sprint 50 edition of Quamotion for Visual Studio. 
+The version number is 0.1.5692.
+
+This release includes stability and usability enhancements across the board.
+
+Stability and usability enhancements
+------------------------------------
+
+This release:
+
+- Improves support for hybrid applications on Android devices
+- Fixes an issue where a certain Android applications would not be opened correctly
+- Contains a performance improvement for starting applications on Android. In some scenarios, the application was forcefully re-installed on the device, even if the application was previously installed on the device,
+- Adds some progress status notifications when copying applications to the device
+- Adds a more descriptive error message when switching to a WebView on iOS fails because the Web Inspector is not enabled
+- Fixes an issue where stopping sessions on Android devices would taken about 1 minute and could time-out from time to time
+- Fixes an issue where the display name of an application would not be retrieved correctly
+- Adds support for the new versions of Xcode, which are deployed as ``.xip`` files. 

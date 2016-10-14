@@ -1,0 +1,14 @@
+Quamotion Sprint 34 Updates – February 26, 2016
+===============================================
+
+We’re happy to announce the release of the Sprint 34 edition of Quamotion for Visual Studio. 
+The version number is 0.1.3708.
+
+This version includes stability and usability enhancements accross the board.
+
+Stability and usuability enhancements
+-------------------------------------
+
+* We've fixed an issue where swiping on iOS devices would not work correctly if you 
+  swipe at a high speed.
+* We've added preliminary support for running Quamotion software on Mono.

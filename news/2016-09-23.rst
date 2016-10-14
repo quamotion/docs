@@ -1,0 +1,26 @@
+Quamotion Sprint 49 Updates – September 23, 2016
+===============================================
+
+We’re happy to announce the release of the Sprint 49 edition of Quamotion for Visual Studio. 
+The version number is 0.1.5582.
+
+This release adds support for Android 7 and iOS 10, support for retrieving device vitals, andstability
+and usability enhancements accross the board.
+
+Android 7 and iOS 10 Support
+----------------------------
+
+This release adds support for Android 7 and iOS 10.
+
+Device Vitals
+-------------
+
+This release adds support for retrieving disk statistics and battery status information.
+
+Stability and usability enhancements
+------------------------------------
+
+This release:
+
+* Adds better handling of iOS application icons
+* Fixes launching of applications on iOS 7 and 8

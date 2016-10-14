@@ -1,0 +1,14 @@
+Quamotion Sprint 35 Updates – March 11, 2016
+============================================
+
+We’re happy to announce the release of the Sprint 35 edition of Quamotion for Visual Studio. 
+The version number is 0.1.3885.
+
+This version includes stability and usability enhancements accross the board.
+
+Stability and usuability enhancements
+-------------------------------------
+
+* We've fixed an issue where launching Android applications would time out.
+* You can now determine the orientation of iOS and Android devices
+* We've fixed an issue where the pixel density of Android devices would be determined incorrectly.

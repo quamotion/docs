@@ -1,0 +1,15 @@
+Quamotion Sprint 40 Updates – May 20, 2016
+==========================================
+
+We’re happy to announce the release of the Sprint 40 edition of Quamotion for Visual Studio. 
+The version number is 0.1.4297.
+
+This release includes better support for extracing the Developer Disk Images and stability and usuability
+enhancements accross the board.
+
+Better support for extracing the Developer Disk Images
+------------------------------------------------------
+
+With this release, you can now:
+- Use the Quamotion Command Line to download the Xcode installer from the Apple Developer Website
+- Extract the Developer Disk Image from the Xcode installer

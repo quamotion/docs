@@ -1,0 +1,19 @@
+Quamotion Sprint 36 Updates – March 25, 2016
+============================================
+
+We’re happy to announce the release of the Sprint 36 edition of Quamotion for Visual Studio. 
+The version number is 0.1.3973.
+
+This version includes stability and usability enhancements accross the board.
+
+Stability and usuability enhancements
+-------------------------------------
+
+We've made various improvements in the stability and usability of our product. This release:
+
+* Fixes an issue where interacting with the Apple Developer Center would fail
+* Fixes an issue where adding a device to a developer profile would fail
+* Improves the startup performance of the device display.
+* Fixes an issue where starting an application could fail if Unix sockets are open on the device.
+* Adds support for launching tests on devices which do not include the `md5` command line utility.
+* Fixes an issue recording would fail to incorporate actions on certain views.

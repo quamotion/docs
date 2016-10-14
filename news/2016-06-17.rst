@@ -1,0 +1,32 @@
+Quamotion Sprint 42 Updates – June 17, 2016
+==========================================
+
+We’re happy to announce the release of the Sprint 42 edition of Quamotion for Visual Studio. 
+The version number is 0.1.4635.
+
+This release includes experimental support for removing the dependency on iTunes on Windows PCs,
+and adds stability and usability enhancements accross the board.
+
+Remove dependency on iTunes
+---------------------------
+
+This release adds experimental support for ``usbmuxd``, the USB multiplexor daemon for iOS devices, on Windows,
+removing the requirement to install iTunes on your Windows PC if you want to test iOS devices.
+
+This version includes:
+
+* The `usbmuxd.exe` daemon
+* A command-line utility which you can use to install the `usbmuxd` drivers for iOS devices
+
+You need to use either  ``usbmuxd`` or iTunes, your device will not support both at the same time.
+
+Stability and usability enhancements
+------------------------------------
+
+This release:
+
+* Fixes an issue where duplicate port forwards were being created.
+* Adds automatic restarts of the adb daemon if the adb daemon is unavailable or refuses connections.
+* Fixes an issue with retrieving alert buttons on iOS.
+* Includes a better error message when invoking a UI Automation script on an iOS device would fail.
+* Adds support for clearing browser settings when starting a web test on mobile devices 

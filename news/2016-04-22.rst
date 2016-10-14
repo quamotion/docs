@@ -1,0 +1,18 @@
+Quamotion Sprint 38 Updates – April 22, 2016
+============================================
+
+We’re happy to announce the release of the Sprint 38 edition of Quamotion for Visual Studio. 
+The version number is 0.1.4208.
+
+This release contains stability and usability enhancements accross the board.
+
+Stability and usuability enhancements
+-------------------------------------
+
+We've made various improvements in the stability and usability of our product. This release:
+
+* Adds support for checking for revoked certificates using the OCSP protocol.
+* Adds support for Android applications which include file names which are longer than 72 characters
+* Fixes an issue where port forwarding would be enabled multiple times for the same port
+* Adds safety checks which help ensure the iOS and Android application packages are valid
+* Fixes a crash related due to a multithreading but in the plist module
