@@ -1,0 +1,33 @@
+{
+  "fontsAlias": {
+    "stdFont": "Aller Light",
+    "stdBold":  "Ubuntu Titling"
+  },
+  "styles": [
+    [
+      "base",
+      {
+        "fontSize": 11
+      }
+    ],
+    [
+      "heading",
+      {
+        "textColor": "#ef4035"
+      }
+    ],
+    [
+      "title",
+      {
+        "fontSize": 16,
+        "alignment": TA_LEFT
+      }
+    ],
+    [
+      "heading1",
+      {
+        "fontSize": 13
+      }
+    ]
+  ]
+}
