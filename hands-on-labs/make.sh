@@ -1,2 +1,2 @@
-rst2pdf test.txt -o test.pdf -s style.json --font-path ~/.fonts/
+rst2pdf acquaint.rst -o acquaint.pdf -s style.json --font-path ~/.fonts/
 

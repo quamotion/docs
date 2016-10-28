@@ -1,9 +1,34 @@
 {
   "fontsAlias": {
-    "stdFont": "Aller Light",
-    "stdBold":  "Ubuntu Titling"
+    "stdFont": "Ubuntu Light",
+    "stdBold": "Ubuntu Titling"
+  },
+  "pageTemplates": {
+    "oneColumn": {
+      "defaultHeader": "Version 1.0 | Page ###Page###",
+      "defaultFooter": "Copyright (c) Quamotion bvba. All rights reserved."
+    }
   },
   "styles": [
+    [
+       "definition",
+       {
+         "fontName": "stdBold"
+       }
+    ],
+    [
+      "header",
+      {
+        "textColor": "#ef4035",
+        "alignment": "TA_RIGHT"
+      }
+    ],
+    [
+       "literal",
+       {
+         "fontName": "Consolas"
+       }
+    ],
     [
       "base",
       {
@@ -19,14 +44,13 @@
     [
       "title",
       {
-        "fontSize": 16,
-        "alignment": TA_LEFT
+        "alignment": "TA_LEFT"
       }
     ],
     [
-      "heading1",
+      "heading2",
       {
-        "fontSize": 13
+        "textColor": "black"
       }
     ]
   ]
