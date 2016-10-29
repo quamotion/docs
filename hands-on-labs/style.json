@@ -5,11 +5,67 @@
   },
   "pageTemplates": {
     "oneColumn": {
-      "defaultHeader": "Version 1.0 | Page ###Page###",
-      "defaultFooter": "Copyright (c) Quamotion bvba. All rights reserved."
+      "defaultHeader": " Version 1.0 | Page ###Page###",
+      "defaultFooter": " Copyright © Quamotion bvba. All rights reserved."
     }
   },
+  "linkColor": "black",
+  "pageSetup" : {
+    "firstTemplate": "coverPage"
+  },
   "styles": [
+    [
+      "headertable",
+      {
+        "parent" : "table",
+        "colWidths": ["20%","60%","20%"],
+        "commands": [],
+        "borderColor": "#ffffff"
+      }
+    ],
+    [
+       "item-list",
+       {
+         "colWidths": ["25pt",null]
+       }
+    ],
+    [
+       "base",
+       {
+         "kerning": true
+       }
+    ],
+    [
+       "code",
+       {
+         "backColor": "#d9d9d9",
+         "borderColor": "#d9d9d9"
+       }
+    ],
+    [
+       "admonition",
+       {
+         "backColor": "#ffffff",
+         "borderColor": "#ef4035",
+         "textColor": "#000000"
+       }
+    ],
+    [
+       "admonition-title",
+       {
+         "fontName": "Ubuntu Titling",
+         "fontSize": 13,
+         "textColor": "#ef4035"
+       }
+    ],
+    [
+       "admonition-heading",
+       {
+         "fontName": "Ubuntu Titling",
+         "fontSize": 13,
+         "textColor": "#ef4035"
+       }
+    ],
     [
        "definition",
        {
@@ -52,6 +108,21 @@
       {
         "textColor": "black"
       }
-    ]
+    ],
+    [
+      "document-title",
+      {
+         "parent": "title",
+         "fontSize": 30
+      }
+     ],
+    [
+      "document-subtitle",
+      {
+         "parent": "title",
+         "textColor": "black",
+         "fontSize": 30
+      }
+     ]
   ]
 }

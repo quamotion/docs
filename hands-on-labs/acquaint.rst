@@ -2,13 +2,44 @@
 
 .. default-role:: definition
 
-Quamotion Hands-On Lab
-======================
+.. header::
+
+   .. oddeven::
+
+      .. class:: headertable
+
+      +---+---+----------------+
+      |   |   |.. class:: right|
+      |   |   |                |
+      |   |   |Page ###Page### |
+      +---+---+----------------+
+
+      Page ###Page###
+
+      .. class:: headertable
+      
+      +---+---+----------------+
+      |   |   |.. class:: right|
+      |   |   |                |
+      |   |   |Page ###Page### |
+      +---+---+----------------+
+
+Mobile Test Automation with Quamotion
+=====================================
+
+.. contents::
+
+.. raw:: pdf
+
+   PageBreak
+
+About This Lab
+--------------
 
 Estimated time to complete this lab: **60 minutes**
 
 Lab Objectives
---------------
+~~~~~~~~~~~~~~
 
 This lab provides an end-to-end tour of the Quamotion Webdriver. You will start with a brief
 exploration of the Quamotion UI, and then move on to an introduction on mobile test automation.
@@ -29,7 +60,7 @@ After completing this lab, you will be better able to:
 * Assess the quality of your mobile app
 
 Technologies
-------------
+~~~~~~~~~~~~
 
 In this hands on lab, you'll use the following technologies:
 
@@ -37,14 +68,14 @@ In this hands on lab, you'll use the following technologies:
 * Windows PowerShell
 
 Audience
---------
+~~~~~~~~
 
 This hands on lab targets the following audience:
 
 * Test automation engineers
 
 Scenario
---------
+~~~~~~~~
 
 This lab takes you through a tour of Quamotion for Windows using PowerShell, with emphasis
 on automating a mobile app and analyzing the quality of that mobile app.
@@ -61,8 +92,15 @@ Open the Lab Environment
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 1. Make sure you have the latest version of the demo application available. In this lab, we'll
-   use the Acquaint app. Download the Acquaint app at http://cdn.quamotion.mobi/apps/acquaint-android-151.apk
-   and http://cdn.quamotion.mobi/apps/acquaint-ios-151.ipa, and save the files on the lab machine.
+   use the Acquaint app. The table below lists the download links for the Acquaint app.
+   Download the Acquaint app and save the files on the lab machine.
+
+   +-------------------+----------------------------------------------------------+
+   + Android           + http://cdn.quamotion.mobi/apps/acquaint-android-151.apk  +
+   +-------------------+----------------------------------------------------------+
+   + iOS               + http://cdn.quamotion.mobi/apps/acquaint-ios-151.ipa      +
+   +-------------------+----------------------------------------------------------+
+
 2. Make sure at least an iOS device (such as an iPhone) and an Android device (such as a Google Nexus device)
    are connected to the lab machine. Verify the devices are connected to the lab machine using an USB cable.
 3. If the Quamotion software is not already running, start it by launching ``Quamotion.WebDriver.exe``. Leave
