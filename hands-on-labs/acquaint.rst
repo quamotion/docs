@@ -38,6 +38,7 @@ About This Lab
 --------------
 
 Estimated time to complete this lab: **60 minutes**
+Complete this lab on-line at http://docs.quamotion.mobi/en/latest/hands-on-lab/acquaint
 
 Lab Objectives
 ~~~~~~~~~~~~~~
@@ -82,6 +83,16 @@ Scenario
 
 This lab takes you through a tour of Quamotion for Windows using PowerShell, with emphasis
 on automating a mobile app and analyzing the quality of that mobile app.
+
+Feedback
+~~~~~~~~
+
+We welcome your feedback on this lab! If you've found an issue, have questions or just got stuck
+while executing this lab, you can leave your feedback:
+
+* With the Quamotion team at the Quamotion booth
+* In the Disqus section at the on-line version of this lab
+* On the GitHub site at http://github.com/quamotion/docs
 
 Getting Started
 ---------------
@@ -566,6 +577,55 @@ with the ``-marked`` parameter like we've done previously. Instead, you'll need 
      PS> Click-Element -marked "Details"
      PS> Click-Element -marked "List"
 
+Review
+~~~~~~
+
+In this task, you've used PowerShell and the `Spy` to automate a scenario in the Acquaint app.
+
+You've written the following PowerShell script which sets up Acquaint and edits the contact details
+of an acquaintance:
+
+.. code-block:: powershell
+
+  Import-Module C:\Quamotion\wdclient.psm1
+  
+  # Kill any sessions which are still running
+  Get-Sessions | Remove-Session 
+
+  # Launch the application on the device
+  New-Session
+    -deviceId 221373bf136e8e8962fe978e74f4c92af330c6ba
+    -appId demo.quamotion.Acquaint
+    -appVersion 1.51
+    -reinstallApp $true
+
+  # Set up Acquaint: provide a passphrase and tap Continue
+  Click-Element -marked "Enter a unique phrase"
+  Enter-Text "UseLocalDataSource"
+  Click-Element -marked "Continue"
+
+  # Open the details for Vanessa Thornton
+  $scrollView = Find-Element -class "UITableView" 
+  Scroll-To -elementId $scrollView -marked "Thornton, Vanessa"
+  Click-Element -marked "Thornton, Vanessa"
+
+  # Click the edit button
+  Click-Element -marked "edit"
+
+  # Scroll to the ZIP field
+  $scrollView = Find-Element -class "UITableView"
+  Scroll-To -elementId $scrollView -marked "ZIP"
+
+  # Change the Zip code
+  Click-Element -marked "94070"
+  Clear-Text
+  Enter-Text "100 44"
+  Dismiss-Keyboard
+
+  # Go back to the main acquaintances list
+  Click-Element -marked "Details"
+  Click-Element -marked "List"
+
 Excercise 2 - Automate the Android Acquaint app
 -----------------------------------------------
 
@@ -842,6 +902,56 @@ need to open the `Spy`.
     PS> Click-Element -xpath "ImageButton[1]"
     PS> Click-Element -xpath "ImageButton[1]"
 
+Review
+~~~~~~
+
+In this task, you've used PowerShell and the `Spy` to automate a scenario in the Acquaint app.
+
+You've written the following PowerShell script which sets up Acquaint and edits the contact details
+of an acquaintance:
+
+.. code-block:: powershell
+
+  Import-Module C:\Quamotion\wdclient.psm1
+  
+  # Kill any sessions which are still running
+  Get-Sessions | Remove-Session 
+
+  # Launch the application on the device
+  New-Session
+    -deviceId EAOKCY112414
+    -appId demo.quamotion.acquaint
+    -appVersion 151
+    -reinstallApp $true
+
+  # Set up Acquaint: provide a passphrase and tap Continue
+  Click-Element -marked "Enter a unique phrase"
+  Enter-Text "UseLocalDataSource"
+  Click-Element -marked "Continue"
+
+  # Open the details for Vanessa Thornton
+  $scrollView = Find-Element -class "UITableView" 
+  Scroll-To -elementId $scrollView -marked "Thornton, Vanessa"
+  Click-Element -marked "Thornton, Vanessa"
+
+  # Click the edit button
+  Click-Element -marked "acquaintanceEditButton"
+
+  # Scroll to the ZIP field
+  $scrollView = Find-Element
+    -xpath LinearLayout[@marked='acquaintanceEditContentLayout']
+  Scroll-To -elementId $scrollView -marked "ZIP"
+
+  # Change the Zip code
+  Click-Element -marked "94070"
+  Clear-Text
+  Enter-Text "100 44"
+  Dismiss-Keyboard
+
+  # Go back to the main acquaintances list
+  Click-Element -xpath "ImageButton[1]" 
+  Click-Element -xpath "ImageButton[1]" 
+
 Excercise 3 - Create a Java JUnit test for Acquaint
 ---------------------------------------------------
  
@@ -967,11 +1077,234 @@ in the previous excercises.
 Task 1 - Create a new NUnit project
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+To create a new NUnit project, follow these steps:
+
+1. Open Visual Studio by clicking `Start`,  typing `Visual Studio` and hitting ENTER.
+2. When Visual Studio has opened, click `File`, `New`, `Project`
+3. Under `Templates`, `Visual C#`, `Windows`, select `Class Library`.
+4. Select `.NET Framework 4.6.1` as the target framework.
+5. Provide a name for your project, such as `AcquaintanceTest` and click `OK` to create your project.
+
+   .. image:: vs-new-project.png
+     :width: 75%
+
+You've now created your first test project!
+
 Task 2 - Add the required dependencies to your project
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Before you can write mobile tests, you need to add some required dependencies to your project.
+In Visual Studio, dependencies are imported as NuGet packages.
+
+To create a mobile test with Quamotion and NUnit, you need to add the `quamotion-webdriver-client`,
+`NUnit` and `NUnit3TestAdapter` packages.
+
+To add the Quamotion and NUnit NuGet packages:
+
+1. In the `Solution Explorer`, right-click the `AcquaintanceTest` project and select
+   `Manage NuGet packages`.
+
+   .. image:: vs-add-nuget.png
+     :width: 75%
+
+2. In the `NuGet: Acquaintance Test` window, Click `Browse`, select `Include prerelease`
+   and search for `quamotion-webdriver-client`.
+
+   .. image:: vs-select-nuget.png
+     :width: 75%
+
+3. Click the `quamotion-webdriver-client` NuGet package and click `Install`.
+
+   .. image:: vs-nuget-install.png
+     :width: 75%
+
+4. In the `Review Changes` screen, review the changes and click `OK`.
+
+   .. image:: vs-nuget-review.png
+     :width: 50%
+
+5. In the `NuGet: Acquaintance Test` window, Click `Browse` and search for `NUnit`.
+
+6. Click the `NUnit` NuGet package and click `Install`.
+
+7. In the `Review Changes` window, review the changes and click `OK`. 
+
+8. In the `NuGet: Acquaintance Test` window, Click `Browse` and search for `NUnit3TestAdapter`.
+
+9. Click the `NUnit3TestAdapter` NuGet package and click `Install`.
+
+10. In the `Review Changes` window, review the changes and click `OK`. 
+
+11. You can now  close the `NuGet: AcquaintanceTest` window.
 
 Task 3 - Add a test which launches the iOS Acquaint app
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+You are now ready to write your first test. You'll nuse NUnit to write your test.
+
+NUnit tests allow you to write ``[SetUp]`` methods, which are executed before your tests launch.
+You'll use the ``[SetUp]`` method to create a new session, which will start the Acquaint app
+on your device.
+
+To create a new session, you create a new instance of the ``AppDriver`` class. To create a new instance
+of this class, you need to provide an ``AppCapabilities`` object which specifies which application
+you want to start, and on which device you want to start the application.
+
+Once you've created a ``[SetUp]`` method, you also need to make sure your session is closed
+when your test completes. You can do this by adding an ``[TearDown]`` method, which runs ater
+your test has completed. In this ``[TearDown]`` method, you'll stop the application on the device
+by removing the session you've created in the ``[SetUp]`` method. You can do so by calling the
+``Quit()`` method on the ``AppDriver`` class.
+
+1. Rename the `Class1` class to `AcquaintTest`.
+   
+   .. code-block:: csharp
+
+     public class AcquintantTest
+     {
+     }
+
+2. To indicate the test is a NUnit test, add the ``[TestFixture]`` attribute to the test.
+
+   .. code-block:: csharp
+
+     [TestFixture]
+     public class AcquintantTest
+     {
+     }
+
+3. Add the code which will initialize your session. You'll also add a variable which stores the
+   current session:
+
+   .. code-block:: csharp
+
+      [TestFixture]
+      public class AcquintantTest
+      {
+          private AppDriver driver;
+
+          [SetUp]
+          public void SetUp()
+          {
+              AppCapabilities capabilities = new AppCapabilities(
+                  deviceId: "221373bf136e8e8962fe978e74f4c92af330c6ba",
+                  appId: "demo.quamotion.Acquaint",
+                  appVersion: "1.51",
+                  clearApplicationSettings: false);
+
+              this.driver = new AppDriver(capabilities);
+              this.driver.WaitUntilReady();
+          }
+      }
+
+4. Add the code which removes your session.
+
+   .. code-block:: csharp
+
+      [TestFixture]
+      public class AcquintantTest
+      {
+          private AppDriver driver;
+
+          [..]
+
+          [TearDown]
+          public void TearDown()
+          {
+              this.driver.Close();
+          }
+      }
+
+5. Add a placeholder for the test you'll write in the next task
+
+   .. code-block:: csharp
+
+      [TestFixture]
+      public class AcquintantTest
+      {
+          [..]
+
+          [Test]
+          public void EditAcquaintanceTest()
+          {
+          }
+      }
+
+You can test the test script you've just written by executing it.
+
+1. In the `Solution Explorer`, right click the `AcquaintanceTest` project and select `Build`.
+2. Click `Test`, `Windows`, `Test Explorer`. The `Test Explorer` pane will appear
+
+   .. image:: vs-nuget-review.png
+     :width: 50%
+
+3. Right click the `EditAcquaintanceTest` test and click `Run`.
+   It may take a few seconds, the but Acquaint application will launch on your device
+   and will then close.
+
 Task 4 - Automate the iOS Acquaint scenario in C#
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+It is very easy to create a C# NUnit test based on the PowerShell code that you've written
+in a previous task.
+
+The table below gives you a quick summary of the different PowerShell functions and how
+they map to C# functions:
+
++------------------------------+-----------------------------------------+------------------------------------------------------------------------+
++ What?                        + PowerShell                              + C#                                                                     +
++------------------------------+-----------------------------------------+------------------------------------------------------------------------+
++ Tap on an element by text    + ``Click-Element -marked {text}``        + ``this.driver.FindElementByMarked("{text}").Click();``                 +
++------------------------------+-----------------------------------------+------------------------------------------------------------------------+
++ Enter text                   + ``Enter-Text {text}``                   + ``this.driver.Keyboard.SendKeys("{text}")``                            +
++------------------------------+-----------------------------------------+------------------------------------------------------------------------+
++ Scroll in a scoll view       + ``Scroll-To {element} -marked {text}``  + ``this.driver.FindElementByClassName("{class}").ScrollTo("{text}");``  +
++------------------------------+-----------------------------------------+------------------------------------------------------------------------+
++ Clear an element             + Clear-Text                              + ``this.driver.FindElementByMarked("{text"}).Clear();``                 +
++------------------------------+-----------------------------------------+------------------------------------------------------------------------+
+
+Armed with this knowledge, you can now conver the PowerShell scenario to C#:
+
+.. code-block:: csharp
+
+[Test]
+public void EditAcquaintanceTest()
+{
+    // Set up Acquaint: provide a passphrase and tap Continue
+    this.driver.FindElementByMarked("Enter a unique phrase").Click();
+    this.driver.Keyboard.SendKeys("UseLocalDataSource);
+    this.driver.FindElementByMarked("Continue").Click();
+
+    // Open the details for Vanessa Thornton
+    this.driver.FindElementByClassName("UITableView").ScrollTo("Thornton, Vanessa");
+
+    // Click the edit button
+    this.driver.FindElementByMarked("edit").Click();
+
+    // Scroll to the ZIP field
+    this.driver.FindElementByClassName("UITableView").ScrollTo("ZIP");
+
+    // Change the zip code
+    this.driver.FindElementByMarked("94070").Clear();
+    this.driver.FindElementByMarked("94070").Click();
+    this.driver.Keyboard.SendKeys("100 44");
+    this.driver.Keyboard.Dismiss();
+
+    // Go back to the main acquaintances list
+    this.driver.FindElementByMarked("Details").Click();
+    this.driver.FindElementByMarked("List").Click();
+}
+
+Summary
+=======
+
+In this hands-on lab, you were introduced to Quamotion, with emphasis on how to write an
+automated mobile test. Specifically, you learned to:
+
+* Manage applications and devices
+* Inspect the user interface of a mobile application
+* Use the Mobile App Quality dashboard
+* Automate an iOS application using PowerShell
+* Automate an Android application using PowerShell
+* Create a Java JUnit test which automates a mobile app
+* Create a C# NUnit test which automates a mobile app
