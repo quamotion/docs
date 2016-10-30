@@ -31,7 +31,8 @@ Mobile Test Automation with Quamotion
 
 .. raw:: pdf
 
-   PageBreak
+   PageBreak oneColumn
+   SetPageCounter 1
 
 About This Lab
 --------------
@@ -66,6 +67,8 @@ In this hands on lab, you'll use the following technologies:
 
 * Quamotion for Windows
 * Windows PowerShell
+* Java, JUnit and IntelliJ
+* C#, NUnit and Visual Studio
 
 Audience
 ~~~~~~~~
@@ -265,15 +268,15 @@ In this task, you'll use the `Dashboard` app to view the results of the test scr
    .. image:: test-report.png
       :width: 100%
 
-Excercise 2 - Automate the Acquaint application on iOS
-------------------------------------------------------
+Excercise 2 - Automate the iOS Acquaint app
+-------------------------------------------
 
 Estimated time to complete this excercise: **30 minutes**
 
 Scenario
 ~~~~~~~~
 
-In this scenario, you'll automate the iOS version of the Acquaint application. The acquaint app is a simple
+In this scenario, you'll automate the iOS version of the Acquaint application. The Acquaint app is a simple
 list of contacts, each of which can be viewed in a detail screen and modified in an edit screen. It runs on iOS 9
 and above.
 
@@ -471,11 +474,11 @@ function to instruct the ``Click-Element`` function to click on that control.
 
   The application will now launch the `Acquaintances` screen.
 
-Task 3 - Open an acquaintants details
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Task 4 - Open acquaintance details
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this task, you'll open the details page for an acquaintance.
-You'll use an acquaintce with a last name which starts with 'T' requiring you write a script
+You'll use an acquaince with a last name which starts with 'T' requiring you write a script
 which scrolls down to that acquaintance in the contact list.
 
 To scroll down to an element, use the ``Scroll-To`` method. However, you need to specify
@@ -501,8 +504,8 @@ class, you can search by class.
 
    Vanessa's contact details will appear.
 
-Task 4 - Edit an acquaintants details
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Task 5 - Edit acquaintance details
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Once you've opened the contact card for Vanessa, you'll want to automate a tap on the edit icon,
 represented by the pencil, in the upper right of the screen.
@@ -562,3 +565,413 @@ with the ``-marked`` parameter like we've done previously. Instead, you'll need 
 
      PS> Click-Element -marked "Details"
      PS> Click-Element -marked "List"
+
+Excercise 2 - Automate the Android Acquaint app
+-----------------------------------------------
+
+Estimated time to complete this excercise: **30 minutes**
+
+Scenario
+~~~~~~~~
+
+In this scenario, you'll automate the Android version of the Acquaint application. The Acquaint app is a simple
+list of contacts, each of which can be viewed in a detail screen and modified in an edit screen. It runs on Android 4
+and above.
+
+You will learn how to:
+
+* Create a mobile test automation script
+* Automatically launch an application on a mobile device
+* Automate user interactions, such as scrolling, tapping and typing text
+* Analyze the test results
+
+Task 1 - Install the Acquaint application on your device
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Connect your Android device to your PC. In the previous excercise, the Acquaint application
+was installed on your device the first time you launched the `Spy`.
+
+In this excercise, you'll upload and install the Acquaint app on the Android device using PowerShell.
+To upload an application to Quamotion, you can use the ``Add-App`` function. It takes one parameter,
+the full path to the application.
+To install an application, you can use the ``Install-App`` function. This function takes three
+parameters, the ID of the device on which you want to install the app, the app ID and app version.
+
+1. Open PowerShell. Click `Start`, type `PowerShell` and hit ENTER. THe PowerShell console will
+   now open.
+
+2. Import the Quamotion module in your PowerShell session. Assuming you've installed Quamotion
+   to ``C:\Quamotion``, type the following command and hit ENTER:
+
+  .. code-block:: powershell
+
+     PS> Import-Module C:\Quamotion\wdclient.psm1
+
+3. To add the Acquaint app, type the following command and hit ENTER. If you have downloaded the Acquaint
+   application to a different location than ``C:\Quamotion``, make sure to specify the correct path.
+
+  .. code-block:: powershell
+
+     PS> Add-App C:\Quamotion\demo.quamotion.acquaint.apk                                                                                                                                                     
+
+     AppId                   : demo.quamotion.acquaint
+     DisplayName             : Acquaint N (1.51)
+     Version                 : 151
+     VersionDisplayName      : 1.51
+     SupportedConfigurations : @{[..]}
+     TestServerVersion       :
+
+  The ``Add-App`` command provides you with information about the app you've just uploaded. For example,
+  we now know that the app ID is ``demo.quamotion.acquaint``, and the Version is ``151``.
+
+4. To install the Acquaint app on your device, you'll first need to get the unique ID of your Android
+   device. You can use the ``Get-Device`` command to do that:
+
+  .. code-block:: powershell
+
+     PS> Get-Device                                                                                                                                                     
+
+    configuration  : @{[..]}
+    deviceRotation : None
+    manufacturer   : asus
+    model          : K013
+    name           : K013
+    providerId     : ef64b429-9c24-4d4d-a926-5ed446028c05
+    resolution     : @{x=0; y=0; width=800; height=1280}
+    serialNumber   : EAOKCY112414
+    state          : Started
+    type           : Physical
+    uniqueId       : EAOKCY112414
+    viewPort       : @{x=0; y=0; width=800; height=1280}
+    deviceModel    : @{[..]}
+
+5. You are now ready to install the Acquaint app on your device. Use the ``Install-App`` command and
+   specify the App ID, App Version and Device Unique ID values you've obtained in the previous steps:
+
+   .. code-block:: powershell
+
+    PS> Install-App -deviceId EAOKCY112414 -appId demo.quamotion.acquaint -appVersion 151
+
+    StatusCode        : 200
+    [..]
+
+6. The `Acquaint N` app is now installed on your Android device. You can manually launch the Android N
+   application by clicking its application icon.
+
+Task 2 - Explore the Android Acquaint application
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In the previous task, you've launched the Acquaint application on your Android device.
+In this task, you'll manually explore the Acquaint application. 
+Once you've completed this task, you are ready to automate the Acquaint application
+in the next task.
+
+1. If you are requested to connect to a data source, enter the value ```UseLocalDataSource`` as the data source
+   and continue to the next page.
+
+2. In the list of acquaintances, scroll down until you find `Green, Monica`. Tap `Green, Monica`.
+
+3. The details page for Monica Green will now open, including a mapp which visualizes her address. Tap the pencil
+   icon in the upper right corner of the device to edit her details.
+
+4. Scroll down until you find the `ZIP` field in the contact details.
+
+5. Tap the zip code. The on screen keyboard of your device will now appear. Enter a new zip code, for example,
+   `100 44`, which is the zip code for Stockholm.
+
+6. Tap the save icon in the upper right corner of the app to save your changes. Make sure the zip code is displayed
+   correctly.
+
+7. Tap `List` to go back to the main screen.
+
+Task 3 - Create a script which launches the application
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In this task, you'll use PowerShell to create a script which launches the Acquaint application, just like
+you've done in the previous excercise. You'll learn how to implement the same scenario in Java and C# in
+the following excercises.
+
+1. To start a new session on the device, run the `New-Session` command. Specify the
+   unique ID of your device, the ID of your app and the version of your App using the
+   `-deviceId`,  `-appId` and `-appVersion` parameters. You've obtained these values in the
+   first task of this excercise.
+
+   .. code-block:: powershell
+
+    PS> Get-Sessions | Remove-Session
+    PS> New-Session
+          -deviceId EAOKCY112414
+          -appId demo.quamotion.acquaint
+          -appVersion 151
+          -reinstallApp $true
+    
+    The session 030cbe05-c2e5-49be-aaa0-a3a3f12b0436 is Deploying: [..]
+
+Task 4 - Automate the Acquaint setup
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The first time you launch Acquaint, you'll be asked to provide a unique passphrase.
+In this task, you'll write a a script which types in the unique passphrase and then
+taps `Continue`.
+
+Just like iOS, you can use the `Click-Element` and `Enter-Text` functions to automate
+these actions.
+
+1. To simulate a tap on the text box which displays the `Enter a unique phrase`, execute the
+   following PowerShell command:
+
+  .. code-block:: powershell
+
+    PS> Click-Element -marked "Enter a unique phrase"
+
+2. The on-screen keyboard will now appear, indicating your application is ready to receive
+   keyboard input.
+
+   Enter the following command to simulate the user typing the `UseLocalDataSource` text.
+
+   .. code-block:: powershell
+
+     PS> Enter-Text "UseLocalDataSource"
+
+
+  .. image:: acquaint-android-setup-entering-text.png
+    :width: 33%
+
+3. Finally, you can simulate the user tapping the `Continue` button:
+
+  .. code-block:: powershell
+
+    PS> Click-Element -marked "Continue"
+
+  The `Acquaintances` screen will now load:
+
+  .. image:: acquaint-android-acquaintances.png
+    :width: 33%
+
+Task 5 - Open acquaintance details
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+In this task, you'll open the details page for an acquaintance. You'll use an acquaintance with
+a last name which starts with 'T' requiring you to write a script which scrolls down to that
+acquaintance in the contact list.
+
+Like on iOS, you can use the `Scroll-To` method to scroll down to an element. You
+need to specify a reference to the scroll view you want to scroll in. To obtain a reference
+to the scroll view, you can use the `Get-Element` function. On Android, scroll views inherit
+from the `SwipeRefreshLayout` class.
+
+1. To scroll down to the `Thornton, Vanessa` contact, run the following code:
+
+  .. code-block:: powershell
+
+    PS> $scrollView = Find-Element -class "SwipeRefreshLayout"
+    PS> Scroll-To -elementId $scrollView -marked "Thornton, Vanessa"
+
+2. To open the details for Vanessa, use the ``Click-Element`` function:
+
+  .. code-block:: powershell
+
+    PS> Click-Element -marked "Thornton, Vanessa"
+
+  Vanessa's contact details will appear
+
+Task 6 - Edit acquaintance details
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Once you've opened the contact card for Vanessa, you'll want to automate a tap on
+the edit icon, represented by the pencil in the upper right corner of the screen.
+
+Because this icon does not contain any visual text, you cannot use the ``Click-Element``
+function with the ``-marked`` parameter like we've done previously. Instead, you'll
+need to open the `Spy`.
+
+1. In your browser, navigate to the `Spy` page.
+2. Select the `Android` platform, the `Acquaint N` app and your device. Because you've
+   already opened a session for the Acquaint app on your device, you'll also need to check
+   the `Reuse an existing session if available` check box.
+3. Click `Start` to start the spy.
+4. In the mirror of your device screen in your browser, click the pencil icon.
+
+  .. image:: acquaint-android-details-spy.png
+    :width: 100%
+
+5. Note how the details section also displays the unique ID of the edit icon.
+
+  .. image:: acquaint-android-details-properties.png
+    :width: 100%
+
+6. Now you know the unique ID of edit icon is ``acquaintanceEditButton``, you can
+   use the ``Click-Element`` method to automate a click:
+
+  .. code-block:: powershell
+
+    PS> Click-Element -marked "acquaintanceEditButton"
+
+
+  The edit screen will appear.
+
+7. To update the zip code, you'll first need to scroll down to the `ZIP` entry. You
+   can use the same technique you've learned in a previous step; but not that this time,
+   you'll have to use the ``LinearLayout[@marked='acquaintanceEditContentLayout']`` XPath
+   expression to find the scroll container:
+
+  .. code-block:: powershell
+
+    PS> $scrollView = Find-Element -xpath LinearLayout[@marked='acquaintanceEditContentLayout']
+    PS> Scroll-To -elementId $scrollView -marked "ZIP"
+
+8. To edit the zip code, simulate a tap on the current zip code (``94070``):
+
+  .. code-block:: powershell
+
+    PS> Click-Element -marked "94070"
+
+9. To clear the text, enter a new zip value and dismiss the keyboard to stop editing:
+
+  .. code-block:: powershell
+  
+    PS> Clear-Text
+    PS> Enter-Text "100 44"
+    PS> Dismiss-Keyboard
+
+10. Finally, navigate back to the main list of acquaintances by tapping the back
+    arrow. Use the Spy to obtain the ID of the back button, which is ``ImageButton[1]``:
+
+  .. code-block:: powershell
+
+    PS> Click-Element -xpath "ImageButton[1]"
+    PS> Click-Element -xpath "ImageButton[1]"
+
+Excercise 3 - Create a Java JUnit test for Acquaint
+---------------------------------------------------
+ 
+In this excercise, you will create a JUnit test in Java which uses Java to automate the tests you've created
+in the previous excercises.
+
+Task 1 - Create a new JUnit project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To create a new JUnit project in IntelliJ:
+
+1. Start IntelliJ
+2. Click `File`, `New` and `Project`
+3. Select `Maven`, and set the `Project SDK` to at least 1.8
+4. Complete the `GroupId`, `ArtificatId` and `Version` fields.
+5. Complete the `Project Name` and `Location` fields
+
+Task 2 - Add the required dependencies to your project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+As a next step, you'll add the required dependencies to your project.
+
+1. In the `Dependencies`, add the following code between the ``<project>`` and ``</project>`` tags:
+ 
+   .. code-block:: xml
+
+     <dependencies>
+         <dependency>
+             <groupId>junit</groupId>
+             <artifactId>junit</artifactId>
+             <version>4.12</version>
+         </dependency>
+         <dependency>
+             <groupId>org.seleniumhq.selenium</groupId>
+             <artifactId>selenium-java</artifactId>
+             <version>2.53.0</version>
+         </dependency>
+     </dependencies>
+
+2. IntelliJ will ask you to import the changes in the Maven project. Click `Import Changes`.
+
+  .. image:: intellij-import-changes.png
+    :width: 50%
+
+Task 3 - Add the Quamotion library to your project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Next, you'll add the ``QuamotionDriver.Java`` library to your project. This
+library will allow you to automate iOS and Android applications from within your Maven project.
+
+1. Right-click your project and select `Open Module Settings`
+
+  .. image:: intellij-open-module-settings.png
+    :width: 50%
+
+2. Click `Libraries`
+3. Click the plus (+) icon to add a library
+4. Select `Java`
+5. Add the ``QuamotionDriver.Java.jar`` file, which is available for download at http://qmcdn.blob.core.windows.net/download/QuamotionDriver-Java.jar
+6. Click `OK`
+7. Click `OK`.
+
+Task 4 - Add a test which launches the iOS Acquaint app
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+You are now ready to write your first test. You'll use JUnit to write your test. 
+
+JUnit tests allow you to write ``@Before`` methods, which are executed before your test launch. You'll use the
+``@Before`` method to create a new session, which will start the Acquaint app on your device.
+
+To create a new session, you create a new instance of the ``AppDriver`` class. To create a new instance of this
+class, you need to provide an ``AppCapabilities`` object which specifies which application you want to start,
+and on which device you want to start the application.
+
+Once you've created a ``@Before`` method, you also need to make sure your session is closed when your
+test completes. You can do this by adding an ``@After`` method, which runs after your test has completed.
+In this ``@After`` method, you'll stop the application on the device by removing the session you've created
+in the ``@Before`` method. You can do so by calling the ``quit()`` method on the ``AppDriver`` class.
+
+1. Right-click a package and select `New` and `Java Class`
+2. Provide a name for your test, such as `AcquaintTest`
+3. Add the code which will initialize your session:
+
+   .. code-block:: java
+
+     @Before
+     public void setUp2() throws Exception
+     {
+         AppCapabilities capabilities =
+            new AppCapabilities("deviceId", "AppId", "AppVersion");
+         capabilities.reuseSession(true);
+         driver = new AppDriver(capabilities);
+         driver.waitUntilReady();
+     }
+
+4. Add the code which will clean up your session:
+
+   .. code-block:: java
+ 
+     @After
+     public void tearDown() {
+       driver.quit();
+     }
+
+Task 5 - Automate the iOS Acquaint scenario in Java
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+1. Finally, you can add the test code which will execute your test:
+
+   .. code-block:: java
+ 
+     @Test
+     public void FirstTest() throws IOException {
+     
+     }
+
+Excercise 4 - Create a C# NUnit test for Acquaint
+-------------------------------------------------
+
+In this excercise, you will create a NUnit test in C# which uses C# to automate the tests you've created
+in the previous excercises.
+
+Task 1 - Create a new NUnit project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Task 2 - Add the required dependencies to your project
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Task 3 - Add a test which launches the iOS Acquaint app
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Task 4 - Automate the iOS Acquaint scenario in C#
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
