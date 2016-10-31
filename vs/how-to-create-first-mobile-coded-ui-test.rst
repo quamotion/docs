@@ -5,8 +5,8 @@ Before you get started
 ----------------------
 
 Before you can create your first Mobile Coded UI Test, make sure you have
-`created your Mobile Coded UI Test Project <how-to-create-mobile-coded-ui-test-project>`_ and you have
-`configured your Mobile Coded UI Test Project <how-to-configure-mobile-coded-ui-test-project>`_.
+:doc:`created your Mobile Coded UI Test Project <how-to-create-mobile-coded-ui-test-project>` and you have
+:doc:`configured your Mobile Coded UI Test Project <how-to-configure-mobile-coded-ui-test-project>`.
 
 Create your first Mobile Coded UI Test
 --------------------------------------

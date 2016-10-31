@@ -39,7 +39,7 @@ Specify the code signing certificates
 -------------------------------------
 
 If you are testing an iOS application, you must specify the code signing certificates.
-For more information on how to specify the code signing certificates, see `How To: Configure iOS Certificates <how-to-configure-ios-certificates>`_.
+For more information on how to specify the code signing certificates, see :doc:`how-to-configure-ios-certificates`.
 
 If you are testing an Android application, you do not need to specify code signing certificates.
 
@@ -81,4 +81,4 @@ Where to go from here?
 You're all set! You have create a Mobile Coded UI Test Project, and you have specified which app you want to test and on
 which device you want to test your app.
 
-You can continue with the `How To: Create Your First Test <how-to-create-first-mobile-coded-ui-test>`_ guide.
+You can continue with the :doc:`how-to-create-first-mobile-coded-ui-test` guide.

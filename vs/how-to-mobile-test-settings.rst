@@ -125,4 +125,4 @@ Passing properties to the tests
 You can pass properties to the tests using the ``properties`` element. Each property is represented by a ``property`` element, where the 
 ``name`` attribute contains the name of the property and the ``value`` property the value of the property.
 
-For more information on to use properties, see `How To: Pass Properties to Mobile Coded UI Tests <how-to-pass-properties-to-mobile-coded-ui-tests>`_.
+For more information on to use properties, see :doc:`how-to-pass-properties-to-mobile-coded-ui-tests`.

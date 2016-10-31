@@ -8,14 +8,14 @@ functions correctly.
 The Mobile Coded UI Test performs actions, such as tapping on a control or typing text, and verifies that the correct controls are displayed
 with the correct values.
 
-For more information about which platforms are supported by Mobile Coded UI Tests, see `Supported Platforms <mobile-coded-ui-supported-platforms>`_.
+For more information about which platforms are supported by Mobile Coded UI Tests, see :doc:`Supported Platforms <mobile-coded-ui-supported-platforms>`.
 
 A Mobile Coded UI Test Project contains a set of Mobile Coded UI tests.
 
 Before you get started
 ----------------------
 
-Before you can create a Mobile Coded UI Test Project, please make sure you have `installed Quamotion <install-quamotion>`_.
+Before you can create a Mobile Coded UI Test Project, please make sure you have :doc:`installed Quamotion <install-quamotion>`.
 
 Create a Mobile Coded UI Test Project
 -------------------------------------
@@ -31,4 +31,4 @@ Where to go from here?
 
 Now that you've created your Mobile Coded UI Test Project, you're ready to configure it.
 
-Go to `How To: Configure a Mobile Coded UI Test Project <how-to-configure-mobile-coded-ui-test-project>`_ for more information.
+Go to :doc:`how-to-configure-mobile-coded-ui-test-project` for more information.

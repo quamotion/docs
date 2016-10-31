@@ -6,7 +6,7 @@ Run tests in a Test Lab
 Requirements
 ------------
 
-Before you can run tests on a test server, you must first `prepare a test server <testlab-installation>`_.
+Before you can run tests on a test server, you must first :doc:`prepare a test server <testlab-installation>`.
 
 Prepare your test files
 
