@@ -1,3 +1,5 @@
+.. _vs-testlab-run-tests:
+
 Run tests in a Test Lab
 =======================
 

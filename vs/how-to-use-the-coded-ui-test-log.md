@@ -1,3 +1,5 @@
+.. _vs-how-to-use-the-coded-ui-test-log:
+
 How To: Use the Coded UI Test Log
 =================================
 
