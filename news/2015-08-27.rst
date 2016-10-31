@@ -29,7 +29,7 @@ Detailed test reports using the Coded UI Test Log
 The mobile Coded UI Test Log contains information about a test run, such as the gestures that
 were performed and screenshots of your application during the test execution.
 
-For more information on the Coded UI Test Log, see :ref:vs-how-to-use-the-coded-ui-test-log.
+For more information on the Coded UI Test Log, see :ref:`vs-how-to-use-the-coded-ui-test-log`.
 
 Specifying on which a device a test runs using a rich query syntax
 ------------------------------------------------------------------
@@ -38,7 +38,7 @@ You can now specify on which device a test runs using a rich query syntax. For e
 you can specify that the test should run on 'an Android 5.0 device' or 'a device with a screen 
 width of at least 800 pixels'.
 
-For more information on how to use the rich query syntax, see :ref:`how-to-mobile-test-settings`.
+For more information on how to use the rich query syntax, see :ref:`vs-how-to-mobile-test-settings`.
 
 Media controls in Web-based tests
 ---------------------------------
