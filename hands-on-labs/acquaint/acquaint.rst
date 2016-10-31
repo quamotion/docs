@@ -38,7 +38,9 @@ About This Lab
 --------------
 
 Estimated time to complete this lab: **60 minutes**
-Complete this lab on-line at http://docs.quamotion.mobi/en/latest/hands-on-lab/acquaint
+
+You can review the latest version of this lab on-line at
+http://docs.quamotion.mobi/en/latest/hands-on-lab/acquaint
 
 Lab Objectives
 ~~~~~~~~~~~~~~
@@ -67,7 +69,7 @@ Technologies
 In this hands on lab, you'll use the following technologies:
 
 * Quamotion for Windows
-* Windows PowerShell
+* PowerShell
 * Java, JUnit and IntelliJ
 * C#, NUnit and Visual Studio
 
@@ -77,12 +79,6 @@ Audience
 This hands on lab targets the following audience:
 
 * Test automation engineers
-
-Scenario
-~~~~~~~~
-
-This lab takes you through a tour of Quamotion for Windows using PowerShell, with emphasis
-on automating a mobile app and analyzing the quality of that mobile app.
 
 Feedback
 ~~~~~~~~
@@ -110,9 +106,9 @@ Open the Lab Environment
    Download the Acquaint app and save the files on the lab machine.
 
    +-------------------+----------------------------------------------------------+
-   + Android           + http://cdn.quamotion.mobi/apps/acquaint-android-151.apk  +
+   | Android           | http://cdn.quamotion.mobi/apps/acquaint-android-151.apk  |
    +-------------------+----------------------------------------------------------+
-   + iOS               + http://cdn.quamotion.mobi/apps/acquaint-ios-151.ipa      +
+   | iOS               | http://cdn.quamotion.mobi/apps/acquaint-ios-151.ipa      |
    +-------------------+----------------------------------------------------------+
 
 2. Make sure at least an iOS device (such as an iPhone) and an Android device (such as a Google Nexus device)
@@ -125,7 +121,7 @@ Open the Lab Environment
 Excercise 1 - Explore the Quamotion User interface
 --------------------------------------------------
 
-Estimated time to complete this excercise: **10 minutes**
+Estimated time to complete this excercise: **15 minutes**
 
 Scenario
 ~~~~~~~~
@@ -222,7 +218,7 @@ You'll see how to write automation scripts in a next excercise.
       :width: 100%
 
 6. Review the contents in the lower right of your browser window. You'll see a tree view, which represents
-   all user interface elements of your application, which are related to the element you've just selected.
+   all user interface elements of your application which are related to the element you've just selected.
    The tree view contains the XPath expression which you can use to identify the element and, where available,
    the ID, text or accessibility label of the element.
 
@@ -237,7 +233,7 @@ You'll see how to write automation scripts in a next excercise.
       :width: 75%
 
 8. Click on the `Play` icon. Additional properties of the element which you've selected are now displayed.
-   You can use the text box to filter the properties which are being displayd. Enter the text ``access```
+   You can use the text box to filter the properties which are being displayd. Type `access`
    in the text box. Now only properties related to accessibility are being displayed.
 
    .. image:: spy-xpath-properties.png
@@ -357,53 +353,53 @@ or you can use the ``Get-App`` and ``Get-Device`` commands in PowerShell.
 2. Next, you'll need to import the Quamotion module into your PowerShell session. Assuming you've installed
    the Quamotion software to ``C:\Quamotion``, type the following command and hit ENTER:
 
-  .. code-block:: powershell
+   .. code-block:: powershell
 
-     PS> Import-Module C:\Quamotion\wdclient.psm1
+      PS> Import-Module C:\Quamotion\wdclient.psm1
 
 3. To get the application ID and version number of the Acquaint app, run the `Get-App` command:
 
-  .. code-block:: powershell
+   .. code-block:: powershell
 
-     PS> Get-App
+      PS> Get-App
 
-     AppId                   : demo.quamotion.Acquaint
-     DisplayName             : Acquaint N (1.51)
-     Version                 : 1.51
-     VersionDisplayName      : 1.51
-     SupportedConfigurations : @{OperatingSystem=iOS; [..]}
-     TestServerVersion       :
+      AppId                   : demo.quamotion.Acquaint
+      DisplayName             : Acquaint N (1.51)
+      Version                 : 1.51
+      VersionDisplayName      : 1.51
+      SupportedConfigurations : @{OperatingSystem=iOS; [..]}
+      TestServerVersion       :
 
 4. Note that the application ID is ``demo.quamotion.Acquaint`` and the version number is
    ``1.51``.
 
 5. To get the unique ID of your device, run the `Get-Device` command:
 
-  .. code-block:: powershell
+   .. code-block:: powershell
 
-     PS> Get-Device
+      PS> Get-Device
 
-     configuration  : @{OperatingSystem=iOS; [..]}
-     deviceRotation : None
-     manufacturer   : Apple
-     model          : iPhone6,2
-     name           : iPhone
-     providerId     : 61fee998-7171-4b09-9d8a-511136d30ec9
-     resolution     : @{x=0; y=0; width=640; height=1136}
-     serialNumber   : 221373bf136e8e8962fe978e74f4c92af330c6ba
-     state          : Started
-     type           : Physical
-     uniqueId       : 221373bf136e8e8962fe978e74f4c92af330c6ba
-     viewPort       : @{x=0; y=0; width=640; height=1136}
-     deviceModel    : @{[..]}
+      configuration  : @{OperatingSystem=iOS; [..]}
+      deviceRotation : None
+      manufacturer   : Apple
+      model          : iPhone6,2
+      name           : iPhone
+      providerId     : 61fee998-7171-4b09-9d8a-511136d30ec9
+      resolution     : @{x=0; y=0; width=640; height=1136}
+      serialNumber   : 221373bf136e8e8962fe978e74f4c92af330c6ba
+      state          : Started
+      type           : Physical
+      uniqueId       : 221373bf136e8e8962fe978e74f4c92af330c6ba
+      viewPort       : @{x=0; y=0; width=640; height=1136}
+      deviceModel    : @{[..]}
 
 6. A lot of information about your device is provided to you. Write down the unique ID,
    ``221373bf136e8e8962fe978e74f4c92af330c6ba`` in this case.
 
-  .. note::
+   .. note::
 
-    Because the unique ID uniquely identifies the device, you may obtain a different unique ID
-    with your iOS device.
+     Because the unique ID uniquely identifies the device, you may obtain a different unique ID
+     with your iOS device.
 
 7. To start a new session on the device, run ``New-Session`` command. Specify the unique ID of your
    device using the ``-deviceId`` parameter and the ID and version of your app using the
@@ -416,18 +412,18 @@ or you can use the ``Get-App`` and ``Get-Device`` commands in PowerShell.
    Finally, because only one app can run on a device at the same time, you may want to remove any
    previous session. You can do so using the ``Get-Sessions | Remove-Session`` command
 
-  .. code-block:: powershell
+   .. code-block:: powershell
 
-    PS> Get-Sessions | Remove-Session
-    PS> New-Session 
-          -deviceId 221373bf136e8e8962fe978e74f4c92af330c6ba
-          -appId demo.quamotion.Acquaint
-          -appVersion 1.51
-          -reinstallApp $true
+     PS> Get-Sessions | Remove-Session
+     PS> New-Session 
+           -deviceId 221373bf136e8e8962fe978e74f4c92af330c6ba
+           -appId demo.quamotion.Acquaint
+           -appVersion 1.51
+           -reinstallApp $true 
 
-    The session b59649cb-6324-400b-923c-8384b4fcd6f3 is Deploying: [..]
-    The session b59649cb-6324-400b-923c-8384b4fcd6f3 is Deploying: [..]
-    The session b59649cb-6324-400b-923c-8384b4fcd6f3 is Deploying: [..]
+     The session b59649cb-6324-400b-923c-8384b4fcd6f3 is Deploying: [..]
+     The session b59649cb-6324-400b-923c-8384b4fcd6f3 is Deploying: [..]
+     The session b59649cb-6324-400b-923c-8384b4fcd6f3 is Deploying: [..]
 
 
 Task 3 - Automate the Acquaint setup
@@ -439,6 +435,7 @@ In this task, you'll write a script which enters the unique passphrase and then 
 
 .. image:: acquaint-setup.png
   :width: 33%
+  :align: left
 
 To automate gestures on controls, such as tapping, you can use PowerShell functions
 like `Click-Element`. When automating a gesture, you need to instruct Quamotion on
@@ -460,30 +457,30 @@ function to instruct the ``Click-Element`` function to click on that control.
 1. To simulate a tap on the text box which displays the text `Enter a unique phrase`,
    enter the following command in PowerShell:
 
-  .. code-block:: powershell
+   .. code-block:: powershell
 
-    PS> Click-Element -marked "Enter a unique phrase"
+     PS> Click-Element -marked "Enter a unique phrase"
     
 2. The on-screen keyboard will now appear 
 
-  .. image:: acquaint-setup-entering-text.png
-    :width: 33%
+   .. image:: acquaint-setup-entering-text.png
+     :width: 33%
 
-  Type ``Enter-Text "UseLocalDataSource"`` to simulate the user typing the 
-  `UseLocalDataSource` text
+   Type ``Enter-Text "UseLocalDataSource"`` to simulate the user typing the 
+   `UseLocalDataSource` text
 
-  .. code-block:: powershell
+   .. code-block:: powershell
 
-    PS> Enter-Text "UseLocalDataSource"
+     PS> Enter-Text "UseLocalDataSource"
 
 3. Finally, you can simulate a tap on the `Continue` button by using the ``Click-Element``
    method.
 
-  .. code-block:: powershell
+   .. code-block:: powershell
 
-    PS> Click-Element -marked "Continue"
+     PS> Click-Element -marked "Continue"
 
-  The application will now launch the `Acquaintances` screen.
+   The application will now launch the `Acquaintances` screen.
 
 Task 4 - Open acquaintance details
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -531,13 +528,13 @@ with the ``-marked`` parameter like we've done previously. Instead, you'll need 
 3. Click `Start` to start the spy.
 4. In the mirror of your devices screen in your browser, click the pencil icon.
 
-  .. image:: acquaint-details-spy.png
-    :width: 100%
+   .. image:: acquaint-details-spy.png
+     :width: 100%
 
 5. Note how the details section also displays the unique ID of the edit icon.
 
-  .. image:: acquaint-details-properties.png
-    :width: 100%
+   .. image:: acquaint-details-properties.png
+     :width: 100%
 
 6. Now you know the unique ID of the edit icon is ``edit``, you can use the ``Click-Element``
    method to automate a click:
@@ -572,10 +569,10 @@ with the ``-marked`` parameter like we've done previously. Instead, you'll need 
 
 10. Finally, navigate back to the main list of acquaintances by tapping `Details` and `List`:
 
-   .. code-block:: powershell
+    .. code-block:: powershell
 
-     PS> Click-Element -marked "Details"
-     PS> Click-Element -marked "List"
+      PS> Click-Element -marked "Details"
+      PS> Click-Element -marked "List"
 
 Review
 ~~~~~~
@@ -663,54 +660,57 @@ parameters, the ID of the device on which you want to install the app, the app I
 2. Import the Quamotion module in your PowerShell session. Assuming you've installed Quamotion
    to ``C:\Quamotion``, type the following command and hit ENTER:
 
-  .. code-block:: powershell
+   .. code-block:: powershell
 
-     PS> Import-Module C:\Quamotion\wdclient.psm1
+      PS> Import-Module C:\Quamotion\wdclient.psm1
 
 3. To add the Acquaint app, type the following command and hit ENTER. If you have downloaded the Acquaint
    application to a different location than ``C:\Quamotion``, make sure to specify the correct path.
 
-  .. code-block:: powershell
+   .. code-block:: powershell
 
-     PS> Add-App C:\Quamotion\demo.quamotion.acquaint.apk                                                                                                                                                     
+      PS> Add-App C:\Quamotion\demo.quamotion.acquaint.apk                                                                                                                                                     
 
-     AppId                   : demo.quamotion.acquaint
-     DisplayName             : Acquaint N (1.51)
-     Version                 : 151
-     VersionDisplayName      : 1.51
-     SupportedConfigurations : @{[..]}
-     TestServerVersion       :
+      AppId                   : demo.quamotion.acquaint
+      DisplayName             : Acquaint N (1.51)
+      Version                 : 151
+      VersionDisplayName      : 1.51
+      SupportedConfigurations : @{[..]}
+      TestServerVersion       :
 
-  The ``Add-App`` command provides you with information about the app you've just uploaded. For example,
-  we now know that the app ID is ``demo.quamotion.acquaint``, and the Version is ``151``.
+   The ``Add-App`` command provides you with information about the app you've just uploaded. For example,
+   we now know that the app ID is ``demo.quamotion.acquaint``, and the Version is ``151``.
 
 4. To install the Acquaint app on your device, you'll first need to get the unique ID of your Android
    device. You can use the ``Get-Device`` command to do that:
 
-  .. code-block:: powershell
+   .. code-block:: powershell
 
-     PS> Get-Device                                                                                                                                                     
+      PS> Get-Device                                                                                                                                                     
 
-    configuration  : @{[..]}
-    deviceRotation : None
-    manufacturer   : asus
-    model          : K013
-    name           : K013
-    providerId     : ef64b429-9c24-4d4d-a926-5ed446028c05
-    resolution     : @{x=0; y=0; width=800; height=1280}
-    serialNumber   : EAOKCY112414
-    state          : Started
-    type           : Physical
-    uniqueId       : EAOKCY112414
-    viewPort       : @{x=0; y=0; width=800; height=1280}
-    deviceModel    : @{[..]}
+     configuration  : @{[..]}
+     deviceRotation : None
+     manufacturer   : asus
+     model          : K013
+     name           : K013
+     providerId     : ef64b429-9c24-4d4d-a926-5ed446028c05
+     resolution     : @{x=0; y=0; width=800; height=1280}
+     serialNumber   : EAOKCY112414
+     state          : Started
+     type           : Physical
+     uniqueId       : EAOKCY112414
+     viewPort       : @{x=0; y=0; width=800; height=1280}
+     deviceModel    : @{[..]}
 
 5. You are now ready to install the Acquaint app on your device. Use the ``Install-App`` command and
    specify the App ID, App Version and Device Unique ID values you've obtained in the previous steps:
 
    .. code-block:: powershell
 
-    PS> Install-App -deviceId EAOKCY112414 -appId demo.quamotion.acquaint -appVersion 151
+    PS> Install-App 
+            -deviceId EAOKCY112414
+            -appId demo.quamotion.acquaint
+            -appVersion 151
 
     StatusCode        : 200
     [..]
@@ -780,9 +780,9 @@ these actions.
 1. To simulate a tap on the text box which displays the `Enter a unique phrase`, execute the
    following PowerShell command:
 
-  .. code-block:: powershell
+   .. code-block:: powershell
 
-    PS> Click-Element -marked "Enter a unique phrase"
+     PS> Click-Element -marked "Enter a unique phrase"
 
 2. The on-screen keyboard will now appear, indicating your application is ready to receive
    keyboard input.
@@ -794,19 +794,19 @@ these actions.
      PS> Enter-Text "UseLocalDataSource"
 
 
-  .. image:: acquaint-android-setup-entering-text.png
-    :width: 33%
+   .. image:: acquaint-android-setup-entering-text.png
+     :width: 33%
 
 3. Finally, you can simulate the user tapping the `Continue` button:
 
-  .. code-block:: powershell
+   .. code-block:: powershell
 
-    PS> Click-Element -marked "Continue"
+     PS> Click-Element -marked "Continue"
 
-  The `Acquaintances` screen will now load:
+   The `Acquaintances` screen will now load:
 
-  .. image:: acquaint-android-acquaintances.png
-    :width: 33%
+   .. image:: acquaint-android-acquaintances.png
+     :width: 33%
 
 Task 5 - Open acquaintance details
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -822,18 +822,18 @@ from the `SwipeRefreshLayout` class.
 
 1. To scroll down to the `Thornton, Vanessa` contact, run the following code:
 
-  .. code-block:: powershell
+   .. code-block:: powershell
 
-    PS> $scrollView = Find-Element -class "SwipeRefreshLayout"
-    PS> Scroll-To -elementId $scrollView -marked "Thornton, Vanessa"
+     PS> $scrollView = Find-Element -class "SwipeRefreshLayout"
+     PS> Scroll-To -elementId $scrollView -marked "Thornton, Vanessa"
 
 2. To open the details for Vanessa, use the ``Click-Element`` function:
 
-  .. code-block:: powershell
+   .. code-block:: powershell
 
-    PS> Click-Element -marked "Thornton, Vanessa"
+     PS> Click-Element -marked "Thornton, Vanessa"
 
-  Vanessa's contact details will appear
+   Vanessa's contact details will appear
 
 Task 6 - Edit acquaintance details
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -852,55 +852,55 @@ need to open the `Spy`.
 3. Click `Start` to start the spy.
 4. In the mirror of your device screen in your browser, click the pencil icon.
 
-  .. image:: acquaint-android-details-spy.png
-    :width: 100%
+   .. image:: acquaint-android-details-spy.png
+     :width: 100%
 
 5. Note how the details section also displays the unique ID of the edit icon.
 
-  .. image:: acquaint-android-details-properties.png
-    :width: 100%
+   .. image:: acquaint-android-details-properties.png
+     :width: 100%
 
 6. Now you know the unique ID of edit icon is ``acquaintanceEditButton``, you can
    use the ``Click-Element`` method to automate a click:
 
-  .. code-block:: powershell
+   .. code-block:: powershell
 
-    PS> Click-Element -marked "acquaintanceEditButton"
+     PS> Click-Element -marked "acquaintanceEditButton"
 
-
-  The edit screen will appear.
+   The edit screen will appear.
 
 7. To update the zip code, you'll first need to scroll down to the `ZIP` entry. You
    can use the same technique you've learned in a previous step; but not that this time,
    you'll have to use the ``LinearLayout[@marked='acquaintanceEditContentLayout']`` XPath
    expression to find the scroll container:
 
-  .. code-block:: powershell
+   .. code-block:: powershell
 
-    PS> $scrollView = Find-Element -xpath LinearLayout[@marked='acquaintanceEditContentLayout']
-    PS> Scroll-To -elementId $scrollView -marked "ZIP"
+     PS> $scrollView = Find-Element
+           -xpath LinearLayout[@marked='acquaintanceEditContentLayout']
+     PS> Scroll-To -elementId $scrollView -marked "ZIP"
 
 8. To edit the zip code, simulate a tap on the current zip code (``94070``):
 
-  .. code-block:: powershell
+   .. code-block:: powershell
 
-    PS> Click-Element -marked "94070"
+     PS> Click-Element -marked "94070"
 
 9. To clear the text, enter a new zip value and dismiss the keyboard to stop editing:
 
-  .. code-block:: powershell
+   .. code-block:: powershell
   
-    PS> Clear-Text
-    PS> Enter-Text "100 44"
-    PS> Dismiss-Keyboard
+     PS> Clear-Text
+     PS> Enter-Text "100 44"
+     PS> Dismiss-Keyboard
 
 10. Finally, navigate back to the main list of acquaintances by tapping the back
     arrow. Use the Spy to obtain the ID of the back button, which is ``ImageButton[1]``:
 
-  .. code-block:: powershell
+    .. code-block:: powershell
 
-    PS> Click-Element -xpath "ImageButton[1]"
-    PS> Click-Element -xpath "ImageButton[1]"
+      PS> Click-Element -xpath "ImageButton[1]"
+      PS> Click-Element -xpath "ImageButton[1]"
 
 Review
 ~~~~~~
@@ -993,8 +993,8 @@ As a next step, you'll add the required dependencies to your project.
 
 2. IntelliJ will ask you to import the changes in the Maven project. Click `Import Changes`.
 
-  .. image:: intellij-import-changes.png
-    :width: 50%
+   .. image:: intellij-import-changes.png
+     :width: 50%
 
 Task 3 - Add the Quamotion library to your project
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1004,8 +1004,8 @@ library will allow you to automate iOS and Android applications from within your
 
 1. Right-click your project and select `Open Module Settings`
 
-  .. image:: intellij-open-module-settings.png
-    :width: 50%
+   .. image:: intellij-open-module-settings.png
+     :width: 50%
 
 2. Click `Libraries`
 3. Click the plus (+) icon to add a library
@@ -1248,28 +1248,48 @@ Task 4 - Automate the iOS Acquaint scenario in C#
 It is very easy to create a C# NUnit test based on the PowerShell code that you've written
 in a previous task.
 
-The table below gives you a quick summary of the different PowerShell functions and how
+The list below gives you a quick summary of the different PowerShell functions and how
 they map to C# functions:
 
-+------------------------------+-----------------------------------------+------------------------------------------------------------------------+
-+ What?                        + PowerShell                              + C#                                                                     +
-+------------------------------+-----------------------------------------+------------------------------------------------------------------------+
-+ Tap on an element by text    + ``Click-Element -marked {text}``        + ``this.driver.FindElementByMarked("{text}").Click();``                 +
-+------------------------------+-----------------------------------------+------------------------------------------------------------------------+
-+ Enter text                   + ``Enter-Text {text}``                   + ``this.driver.Keyboard.SendKeys("{text}")``                            +
-+------------------------------+-----------------------------------------+------------------------------------------------------------------------+
-+ Scroll in a scoll view       + ``Scroll-To {element} -marked {text}``  + ``this.driver.FindElementByClassName("{class}").ScrollTo("{text}");``  +
-+------------------------------+-----------------------------------------+------------------------------------------------------------------------+
-+ Clear an element             + Clear-Text                              + ``this.driver.FindElementByMarked("{text"}).Clear();``                 +
-+------------------------------+-----------------------------------------+------------------------------------------------------------------------+
+* Tap on an element by text
+  
+  +---------------+-------------------------------------------------------------------------+
+  | PowerShell    | ``Click-Element -marked {text}``                                        |
+  +---------------+-------------------------------------------------------------------------+
+  | C#            | ``this.driver.FindElementByMarked("{text}").Click();``                  |
+  +---------------+-------------------------------------------------------------------------+
+
+* Enter Text 
+
+  +---------------+-------------------------------------------------------------------------+
+  | PowerShell    | ``Enter-Text {text}``                                                   |
+  +---------------+-------------------------------------------------------------------------+
+  | C#            | ``this.driver.Keyboard.SendKeys("{text}");``                            |
+  +---------------+-------------------------------------------------------------------------+
+
+* Scroll to an element in a scroll view
+
+  +---------------+-------------------------------------------------------------------------+
+  | PowerShell    | ``Scroll-To {element} -marked {text}``                                  |
+  +---------------+-------------------------------------------------------------------------+
+  | C#            | ``this.driver.FindElementByClassName("{class}").ScrollTo("{text}");``   |
+  +---------------+-------------------------------------------------------------------------+
+
+* Clear the text in a text box
+
+  +---------------+-------------------------------------------------------------------------+
+  | PowerShell    | ``Clear-Text``                                                          |
+  +---------------+-------------------------------------------------------------------------+
+  | C#            | ``this.driver.FindElementByMarked("{text"}).Clear();``                  |
+  +---------------+-------------------------------------------------------------------------+
 
 Armed with this knowledge, you can now conver the PowerShell scenario to C#:
 
 .. code-block:: csharp
 
-[Test]
-public void EditAcquaintanceTest()
-{
+  [Test]
+  public void EditAcquaintanceTest()
+  {
     // Set up Acquaint: provide a passphrase and tap Continue
     this.driver.FindElementByMarked("Enter a unique phrase").Click();
     this.driver.Keyboard.SendKeys("UseLocalDataSource);
@@ -1293,10 +1313,11 @@ public void EditAcquaintanceTest()
     // Go back to the main acquaintances list
     this.driver.FindElementByMarked("Details").Click();
     this.driver.FindElementByMarked("List").Click();
-}
+  }
+
 
 Summary
-=======
+-------
 
 In this hands-on lab, you were introduced to Quamotion, with emphasis on how to write an
 automated mobile test. Specifically, you learned to:
