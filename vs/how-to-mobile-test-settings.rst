@@ -1,4 +1,4 @@
-:: _vs-how-to-mobile-test-settings:
+.. _vs-how-to-mobile-test-settings:
 
 How To: Change the Mobile Test Settings
 =======================================
