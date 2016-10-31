@@ -1292,11 +1292,12 @@ Armed with this knowledge, you can now conver the PowerShell scenario to C#:
   {
     // Set up Acquaint: provide a passphrase and tap Continue
     this.driver.FindElementByMarked("Enter a unique phrase").Click();
-    this.driver.Keyboard.SendKeys("UseLocalDataSource);
+    this.driver.Keyboard.SendKeys("UseLocalDataSource");
     this.driver.FindElementByMarked("Continue").Click();
 
     // Open the details for Vanessa Thornton
     this.driver.FindElementByClassName("UITableView").ScrollTo("Thornton, Vanessa");
+    this.driver.FindElementByMarked("Thornton, Vanessa").Click();
 
     // Click the edit button
     this.driver.FindElementByMarked("edit").Click();
