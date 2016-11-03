@@ -498,7 +498,7 @@ class, you can search by class.
 
    .. code-block:: powershell
 
-     PS> $scrollView = Find-Element -class "UITableView"
+     PS> $scrollView = Find-ElementFlex -class "UITableView"
      PS> Scroll-To -elementId $scrollView -marked "Thornton, Vanessa"
 
    The application will now scroll down the main scroll view, until the `Thornton, Vanessa`
@@ -550,7 +550,7 @@ with the ``-marked`` parameter like we've done previously. Instead, you'll need 
 
    .. code-block:: powershell
 
-     PS> $scrollView = Find-Element -class "UITableView"
+     PS> $scrollView = Find-ElementFlex -class "UITableView"
      PS> Scroll-To -elementId $scrollView -marked "ZIP"
 
 8. To edit the zip code, similate a tap on the current zip code (`94070`):
@@ -602,7 +602,7 @@ of an acquaintance:
   Click-Element -marked "Continue"
 
   # Open the details for Vanessa Thornton
-  $scrollView = Find-Element -class "UITableView" 
+  $scrollView = Find-ElementFlex -class "UITableView" 
   Scroll-To -elementId $scrollView -marked "Thornton, Vanessa"
   Click-Element -marked "Thornton, Vanessa"
 
@@ -610,7 +610,7 @@ of an acquaintance:
   Click-Element -marked "edit"
 
   # Scroll to the ZIP field
-  $scrollView = Find-Element -class "UITableView"
+  $scrollView = Find-ElementFlex -class "UITableView"
   Scroll-To -elementId $scrollView -marked "ZIP"
 
   # Change the Zip code
@@ -824,8 +824,8 @@ from the `SwipeRefreshLayout` class.
 
    .. code-block:: powershell
 
-     PS> $scrollView = Find-Element -class "SwipeRefreshLayout"
-     PS> Scroll-To -elementId $scrollView -marked "Thornton, Vanessa"
+     PS> $scrollView = Find-ElementFlex -class "SwipeRefreshLayout"
+     PS> ScrollDown-To -elementId $scrollView -xpath "//*[@marked='Thornton, Vanessa']"
 
 2. To open the details for Vanessa, use the ``Click-Element`` function:
 
@@ -877,7 +877,7 @@ need to open the `Spy`.
    .. code-block:: powershell
 
      PS> $scrollView = Find-Element
-           -xpath LinearLayout[@marked='acquaintanceEditContentLayout']
+           -xpath "LinearLayout[@marked='acquaintanceEditContentLayout']"
      PS> Scroll-To -elementId $scrollView -marked "ZIP"
 
 8. To edit the zip code, simulate a tap on the current zip code (``94070``):
@@ -930,8 +930,8 @@ of an acquaintance:
   Click-Element -marked "Continue"
 
   # Open the details for Vanessa Thornton
-  $scrollView = Find-Element -class "UITableView" 
-  Scroll-To -elementId $scrollView -marked "Thornton, Vanessa"
+  $scrollView = Find-ElementFlex -class "SwipeRefreshLayout" 
+  ScrollDown-To -elementId $scrollView -xpath "//*[@marked='Thornton, Vanessa']"
   Click-Element -marked "Thornton, Vanessa"
 
   # Click the edit button
@@ -1036,6 +1036,7 @@ in the ``@Before`` method. You can do so by calling the ``quit()`` method on the
 3. Add the code which will initialize your session:
 
    .. code-block:: java
+    AppDriver driver = null;
 
      @Before
      public void setUp2() throws Exception
@@ -1065,7 +1066,26 @@ Task 5 - Automate the iOS Acquaint scenario in Java
  
      @Test
      public void FirstTest() throws IOException {
-     
+        driver.findElementByMarked("Enter a unique phrase").click();
+        driver.getKeyboard().sendKeys("UseLocalDataSource");
+        driver.findElementByMarked("Continue").click();
+
+        Thread.sleep(3000);
+
+        WebElement scrollElement = driver.findElementByClassName("SwipeRefreshLayout");
+        driver.scrollDownTo(scrollElement, "//*[@marked='Thornton, Vanessa']");
+        driver.findElementByMarked("Thornton, Vanessa").click();
+        // Click the edit button
+        driver.findElementByMarked("acquaintanceEditButton").click();
+        // Scroll to the ZIP field
+        scrollElement = driver.findElementByClassName("ContentFrameLayout");
+        driver.scrollToMarked(scrollElement, "ZIP");
+        // Change the zip code
+        driver.findElementByMarked("94070").clear();
+        //this.driver.ClearText();
+        driver.getKeyboard().sendKeys("100 44");
+        driver.getKeyboard().dismiss();
+
      }
 
 Excercise 4 - Create a C# NUnit test for Acquaint
