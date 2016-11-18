@@ -1,0 +1,49 @@
+Quamotion Sprint 51 Updates – October 21, 2016
+=============================================
+
+We’re happy to announce the release of the Sprint 51 edition of Quamotion for Visual Studio. 
+The version number is 0.1.5692.
+
+This release adds better support for hybrid applications, new routes for inspecting iOS apps, support for killing processes which are running on
+mobile device, and includes stability and usability enhancements across the board.
+
+Hybrid applications
+-------------------
+
+We've improved support for hybrid applications in various areas:
+
+- We've improved support for hybrid applications on iOS 10
+- We've added support for custom tabs for Chrome
+- We've imporved support for CrossWalk
+
+Inspecting iOS apps
+-------------------
+
+This release adds routes to retrieve the embedded entitlements, requirements and embedded provisioning profile
+of iOS applications.
+
+You can use the following routes to inspect iOS applications:
+
+* View embedded entitlements: ``GET wd/hub/quamotion/app/{appId}/{version}/entitlements``
+* View requirements: ``GET wd/hub/quamotion/app/{appId}/{version}/requirements`` 
+* View embedded provisioning profile: ``GET wd/hub/quamotion/app/{appId}/{version}/provisioningProfile`
+
+Killing processes
+-----------------
+
+This release adds support for, where possible, killing processes which are running on an iOS or Android device.
+
+To kill a process, use the following route:
+
+* ``DELETE wd/hub/quamotion/device/{deviceId}/process/{processId}``
+
+Stability and usability enhancements
+------------------------------------
+
+This release includes the following stability and usability enhacements:
+
+- We've made fixes to how iOS applications are resigned. macOS-specific entitlements are now removed when resigning an iOS application,
+  and the remove associated domains requirement is also removed.
+- We've made the front-end more interactive, providing you with a real-time view of devices which are connected and active sessions.
+- We've fixed a memory leak on iOS.
+- We've added support for downloading & removing apps from the front-end

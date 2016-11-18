@@ -1,0 +1,29 @@
+Quamotion Sprint 52 Updates – November 4, 2016
+==============================================
+
+We’re happy to announce the release of the Sprint 52 edition of Quamotion for Visual Studio. 
+The version number is 0.1.5692.
+
+This release adds better support for various iOS applications, new gestures, and support for
+applications which use Google Maps
+
+Improved support for iOS applications
+-------------------------------------
+
+- Resigning of iOS applications now consumes less memory
+- iOS applications which contain symbolic links are now supported
+
+Support for new gestures
+------------------------
+
+In this release, we've added support for the following gestures:
+
+- Dismissing the keyboard
+- Scrolling to an item in a view (list)
+- Fixes for tapping by (x,y) coordinate.
+
+Support for Google Maps
+-----------------------
+
+Android applications which use Google Maps are now supported. Typically, these applications use a Google API key which may need to be updated
+when you resign your application. In this release, we've added support for automatically using an updated Google API key.
