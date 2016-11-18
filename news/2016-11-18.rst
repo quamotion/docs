@@ -2,4 +2,9 @@ Quamotion Sprint 53 Updates – November 18, 2016
 ================================================
 
 We’re happy to announce the release of the Sprint 53 edition of Quamotion for Visual Studio. 
-The version number is 0.1.5956.0.
+The version number is 0.1.5957.0.
+
+This release contains the following stability enhancements:
+
+- Fixes an issue where an iOS device would loose trust with the PC after taking 1024 screenshots
+- Adds support for the ``POST /element/:elementId/submit`` and ``GET /url`` routes
