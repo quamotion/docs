@@ -39,6 +39,7 @@ PC, even if you don't have a Mac.
 
    getting-started
    Hands-on Labs <hands-on-lab/index>
+   How To <how-to/index>
    News <news/index>
    iMobileDevice for Windows <imobiledevice/about>
    Quamotion for Visual Studio <vs/install-quamotion>
