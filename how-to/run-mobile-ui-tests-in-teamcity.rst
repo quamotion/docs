@@ -12,8 +12,8 @@ Overview
 
 You'll create a new TeamCity project which will execute mobile UI tests and reports the results to
 TeamCity. You'll configure a build phase which executs the mobile tests and save the results to an
- ``.xml`` file. Then, you'll configure the build features so that TeamCity is able to read the test
- results in that file.
+``.xml`` file. Then, you'll configure the build features so that TeamCity is able to read the test
+results in that file.
 
 You'll need the following components to get started with Quamotion and TeamCity:
 
@@ -83,8 +83,8 @@ wait while your build is executing.
 Once your test has completed, you'll find an overview of the tests which have passed and failed, integrated in
 TeamCity. You can click on the test results link to get more information about the test results.
 
-   .. image:: teamcity-summary.png
-      :width: 100%
+.. image:: teamcity-summary.png
+  :width: 100%
 
-   .. image:: teamcity-summary-details.png
-      :width: 100%
+.. image:: teamcity-summary-details.png
+  :width: 100%
