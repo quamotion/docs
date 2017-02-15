@@ -8,6 +8,7 @@ Curious to see how the media is covering Quamotion?
 
 We've added a short summary of media articles covering Quamotion:
 
+* `De Bubbel: Quamotion & BAN Vlaanderen <https://vimeo.com/179477471>`_
 * `Quamotion obtains 500.000 euro in seed capital <https://www.dvo.be/artikel/52477-quamotion-krijgt-ruim-500-000-euro-groeikapitaal-toegestopt/>`_
 * `Apps are the face of a company <http://trends.knack.be/economie/ondernemen/apps-zijn-het-gezicht-van-een-bedrijf/article-normal-543809.html>`_
 * `Quamotion headed for an international breakthrough thanks to BAN Vlaanderen and PMV <http://www.ban.be/quamotion-op-pad-naar-internationale-doorbraak-dankzij-ban-vlaanderen-en-de-vlaamse-investeringsmaatschappij-pmv>`_
@@ -25,6 +26,7 @@ Come and talk to us at conferences!
 * `Mobile World Congress 2017 (February 27-March 2) <https://www.mobileworldcongress.com/exhibitor/quamotion/>`_
 * `Selenium Conf UK (November 15-16, 2016) <http://2016.seleniumconf.co.uk/sponsors>`_
 * EuroSTAR software testing conference 2016 (October 31-November 3, Stockholm)
+* `iMinds Conference (April 28, Brussels) <https://www.iminds.be/nl/the-conference-2016>`_
 * `CEBIT 2016 (March 14-18, Hannover) <http://brusselscebit.be/exhibitor-4.php>`_
 * `Mobile World Congress 2016 (February 29-March 3, Barcelona, Spain) <https://www.mobileworldcongress.com/exhibitor/quamotion/>`_
 * EuroSTAR software testing conference 2015 (November 2-5, Maastricht)
@@ -35,7 +37,7 @@ About Quamotion
 ---------------
 
 * `Quamotion Datasheet <https://qmcdn.blob.core.windows.net/docs/Quamotion%20Datasheet%20v3.pdf>`_
+* `Quamotion Partner Sheet <https://qmcdn.blob.core.windows.net/docs/Quamotion%20Partner%20Sheet%20v2.pdf>`_
 * `Quamotion License Agreement <https://qmcdn.blob.core.windows.net/docs/Quamotion%20License%20Agreement.pdf>`_
 * `Quamotion Service Level Agreement <https://qmcdn.blob.core.windows.net/docs/Quamotion%20Service%20Level%20Agreement.pdf>`_
 * `Quamotion Terms and Conditions <https://qmcdn.blob.core.windows.net/docs/Quamotion%20Terms%20and%20Conditions.pdf>`_
-* `Quamotion Partner Sheet <https://qmcdn.blob.core.windows.net/docs/Quamotion%20Partner%20Sheet%20v2.pdf>`_
