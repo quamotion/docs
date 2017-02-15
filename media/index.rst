@@ -8,15 +8,15 @@ Curious to see how the media is covering Quamotion?
 
 We've added a short summary of media articles covering Quamotion:
 
-* `De Bubbel: Quamotion & BAN Vlaanderen <https://vimeo.com/179477471>`_
-* `Quamotion obtains 500.000 euro in seed capital <https://www.dvo.be/artikel/52477-quamotion-krijgt-ruim-500-000-euro-groeikapitaal-toegestopt/>`_
-* `Apps are the face of a company <http://trends.knack.be/economie/ondernemen/apps-zijn-het-gezicht-van-een-bedrijf/article-normal-543809.html>`_
-* `Quamotion headed for an international breakthrough thanks to BAN Vlaanderen and PMV <http://www.ban.be/quamotion-op-pad-naar-internationale-doorbraak-dankzij-ban-vlaanderen-en-de-vlaamse-investeringsmaatschappij-pmv>`_
-* `Quamotion removes bugs from applications, with Flemish seed capital <http://kanaalz.knack.be/nieuws/quamotion-haalt-fouten-uit-apps-met-vlaams-startkapitaal/video-normal-687519.html>`_
-* `Quamotion: A New Generation of Mobile Testing Applications <https://www.iminds.be/en/news/20160414_startup-in-the-picture_quamotion>`_
-* `iMinds selects seven new start-ups voor iStart <https://www.iminds.be/nl/News/20150806_pr_istart>`_
-* `Belgian companies at Mobile World Congress <http://datanews.knack.be/ict/nieuws/deze-belgen-zijn-vertegenwoordigd-op-het-mobile-world-congress/article-normal-537717.html>`_
-* `Belgian start-ups picking up new trends at Mobile World Congress <http://datanews.knack.be/ict/nieuws/belgische-start-ups-pikken-in-op-nieuwe-trends-in-barcelona/article-normal-538089.html>`_
+* `De Bubbel: Quamotion & BAN Vlaanderen (August 2016) <https://vimeo.com/179477471>`_
+* `Quamotion obtains 500.000 euro in seed capital (April 14, 2016) <https://www.dvo.be/artikel/52477-quamotion-krijgt-ruim-500-000-euro-groeikapitaal-toegestopt/>`_
+* `Quamotion: A New Generation of Mobile Testing Applications (April 16, 2016) <https://www.iminds.be/en/news/20160414_startup-in-the-picture_quamotion>`_
+* `Quamotion removes bugs from applications, with Flemish seed capital (April 4, 2016) <http://kanaalz.knack.be/nieuws/quamotion-haalt-fouten-uit-apps-met-vlaams-startkapitaal/video-normal-687519.html>`_
+* `Quamotion headed for an international breakthrough thanks to BAN Vlaanderen and PMV (March 2016) <http://www.ban.be/quamotion-op-pad-naar-internationale-doorbraak-dankzij-ban-vlaanderen-en-de-vlaamse-investeringsmaatschappij-pmv>`_
+* `iMinds selects seven new start-ups voor iStart (August 6, 2015) <https://www.iminds.be/nl/News/20150806_pr_istart>`_
+* `Apps are the face of a company (March 24, 2015) <http://trends.knack.be/economie/ondernemen/apps-zijn-het-gezicht-van-een-bedrijf/article-normal-543809.html>`_
+* `Belgian start-ups picking up new trends at Mobile World Congress (March 2, 2015) <http://datanews.knack.be/ict/nieuws/belgische-start-ups-pikken-in-op-nieuwe-trends-in-barcelona/article-normal-538089.html>`_
+* `Belgian companies at Mobile World Congress (March 1, 2015) <http://datanews.knack.be/ict/nieuws/deze-belgen-zijn-vertegenwoordigd-op-het-mobile-world-congress/article-normal-537717.html>`_
 
 Conferences
 -----------
