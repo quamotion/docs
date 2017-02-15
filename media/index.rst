@@ -28,4 +28,14 @@ Come and talk to us at conferences!
 * `CEBIT 2016 (March 14-18, Hannover) <http://brusselscebit.be/exhibitor-4.php>`_
 * `Mobile World Congress 2016 (February 29-March 3, Barcelona, Spain) <https://www.mobileworldcongress.com/exhibitor/quamotion/>`_
 * EuroSTAR software testing conference 2015 (November 2-5, Maastricht)
+* `E-day Brussels (May 7, 2015) <https://www.youtube.com/watch?v=8BRoTiE5rQU>`_
 * `Mobile World Congress 2015 (March 2-5, Barcelona, Spain) <https://www.mobileworldcongress.com/exhibitor/quamotion/>`_
+
+About Quamotion
+---------------
+
+* `Quamotion Datasheet <https://qmcdn.blob.core.windows.net/docs/Quamotion%20Datasheet%20v3.pdf>`_
+* `Quamotion License Agreement <https://qmcdn.blob.core.windows.net/docs/Quamotion%20License%20Agreement.pdf>`_
+* `Quamotion Service Level Agreement <https://qmcdn.blob.core.windows.net/docs/Quamotion%20Service%20Level%20Agreement.pdf>`_
+* `Quamotion Terms and Conditions <https://qmcdn.blob.core.windows.net/docs/Quamotion%20Terms%20and%20Conditions.pdf>`_
+* `Quamotion Partner Sheet <https://qmcdn.blob.core.windows.net/docs/Quamotion%20Partner%20Sheet%20v2.pdf>`_
