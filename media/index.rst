@@ -8,7 +8,7 @@ Curious to see how the media is covering Quamotion?
 
 We've added a short summary of media articles covering Quamotion:
 
-* `De Bubbel: Quamotion & BAN Vlaanderen (August 2016) <https://vimeo.com/179477471>`_
+* `De Dubbel: Quamotion & BAN Vlaanderen (August 2016) <https://vimeo.com/179477471>`_
 * `Quamotion obtains 500.000 euro in seed capital (April 14, 2016) <https://www.dvo.be/artikel/52477-quamotion-krijgt-ruim-500-000-euro-groeikapitaal-toegestopt/>`_
 * `Quamotion: A New Generation of Mobile Testing Applications (April 16, 2016) <https://www.iminds.be/en/news/20160414_startup-in-the-picture_quamotion>`_
 * `Quamotion removes bugs from applications, with Flemish seed capital (April 4, 2016) <http://kanaalz.knack.be/nieuws/quamotion-haalt-fouten-uit-apps-met-vlaams-startkapitaal/video-normal-687519.html>`_
