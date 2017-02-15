@@ -9,3 +9,4 @@ We've prepared how-to documents which will help you be up and running instantly!
    :maxdepth: 1
 
   run-mobile-ui-tests-in-teamcity
+  monitoring
