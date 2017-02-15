@@ -29,6 +29,9 @@ You'll need the following components to get started with Quamotion and TeamCity:
    In this walkthrough, we'll use a dedicated repository, hosted on GitHub.
 4. A TeamCity installation with at least one agent.
 
+.. image:: teamcity-drawing.png
+  :width: 100%
+
 Creating the TeamCity project
 -----------------------------
 
