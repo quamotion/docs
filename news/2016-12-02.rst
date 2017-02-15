@@ -1,0 +1,30 @@
+Quamotion Sprint 54 Updates – December 2, 2016
+===============================================
+
+We’re happy to announce the release of the Sprint 54 edition of Quamotion. 
+The version number is 0.1.5889.0.
+
+This release fixes the following issues:
+
+Improved support for Android devices
+------------------------------------
+
+In this release, we've focussed on improving the experience when working with Android devices. We've fixed issues and added
+new features:
+
+* You can now configure Location Services on Android devices
+* We've fixed a memory leak which would occur when taking screenshots of Android devices
+* We've improved support for clicking on the Back button on Android
+
+Improved device diagnostics
+---------------------------
+
+We've made it easier to fetch device diagnostics.
+
+* We've added PowerShell functions to access the batery and disk information
+* Test log reports now include the device logs (syslog or adb log)
+
+Usability enhancements
+----------------------
+
+We've implemented various fixes which improve the Spy functionality, especially when a session is already running

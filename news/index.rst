@@ -7,9 +7,15 @@ This page contains an overview of the latest Quamotion releases, and what's comi
 .. toctree::
    :maxdepth: 1
 
+   Sprint 59 - February 10, 2016 <2017-02-10>
+   Sprint 58 - January 27, 2016 <2017-01-27>
+   Sprint 57 - January 13, 2016 <2017-01-13>
+   Sprint 56 - December 30, 2016 <2016-12-30>
+   Sprint 55 - December 16, 2016 <2016-12-16>
+   Sprint 54 - December 2, 2016 <2016-12-02>
    Sprint 53 - November 18, 2016 <2016-11-18>
    Sprint 52 - November 4, 2016 <2016-11-04>
-   Sprint 51 - October 14, 2016 <2016-10-14>
+   Sprint 51 - October 21, 2016 <2016-10-21>
    Sprint 50 - October 7, 2016 <2016-10-07>
    Sprint 49 - September 23, 2016 <2016-09-23>
    Sprint 48 - September 9, 2016 <2016-09-09>

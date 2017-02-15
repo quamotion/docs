@@ -1,7 +1,7 @@
 Quamotion Sprint 50 Updates – October 7, 2016
 =============================================
 
-We’re happy to announce the release of the Sprint 50 edition of Quamotion for Visual Studio. 
+We’re happy to announce the release of the Sprint 50 edition of Quamotion. 
 The version number is 0.1.5692.
 
 This release includes stability and usability enhancements across the board.

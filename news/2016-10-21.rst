@@ -1,7 +1,7 @@
 Quamotion Sprint 51 Updates – October 21, 2016
 =============================================
 
-We’re happy to announce the release of the Sprint 51 edition of Quamotion for Visual Studio. 
+We’re happy to announce the release of the Sprint 51 edition of Quamotion. 
 The version number is 0.1.5692.
 
 This release adds better support for hybrid applications, new routes for inspecting iOS apps, support for killing processes which are running on

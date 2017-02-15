@@ -1,0 +1,31 @@
+Quamotion Sprint 59 Updates – February 10, 2017
+===============================================
+
+We’re happy to announce the release of the Sprint 59 edition of Quamotion. 
+The version number is 0.1.6216.0.
+
+In this sprint, we've made it easier to work with iOS developer profiles and added various usability
+and stability enhancements.
+
+Working with iOS developer profiles and developer disks
+-------------------------------------------------------
+
+We've added an UI which allows you to view, import and edit the iOS developer profile you use when signing iOS
+applications. You can now add, view and remove certificates and provisioning profiles from the web interface:
+
+* We've added a Settings page which makes it easier to manage iOS developer profiles
+* We support copying additional entitlements from the provisioning profile to the application
+* On macOS, Quamotion now uses the developer disks installed with Xcode on macOS
+
+Usability and stability enhancements
+------------------------------------
+
+We've made various enhancements in the UI which make it easier to work with Quamotion:
+
+* Add the ability to delete test logs
+* Support ScrollTo on Web
+* Fixes an issue where starting a session would time out
+* Fixes an issue with device logs being visible by default in the test log
+* Adds the ability to find a test log by session ID
+* Adds a link to the device log from the Device page
+* Adds a link to the screenshot feed from the Sessions page.

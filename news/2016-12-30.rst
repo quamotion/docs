@@ -1,0 +1,7 @@
+Quamotion Sprint 56 Updates – December 30, 2016
+===============================================
+
+We’re happy to announce the release of the Sprint 56 edition of Quamotion. 
+The version number is 0.1.6068.0.
+
+In this sprint, we've updated the Linux and macOS versions to run on the latest version of .NET Core.

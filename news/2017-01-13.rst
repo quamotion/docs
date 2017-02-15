@@ -1,0 +1,10 @@
+Quamotion Sprint 57 Updates – January 13, 2017
+==============================================
+
+We’re happy to announce the release of the Sprint 57 edition of Quamotion. 
+The version number is 0.1.6107.0.
+
+In this sprint, we've made the following enhancements:
+
+* Support scrolling in scroll container which is partially outside the device screen
+* Show warnings when no license or developer disk images are available

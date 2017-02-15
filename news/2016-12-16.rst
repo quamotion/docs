@@ -1,0 +1,28 @@
+Quamotion Sprint 55 Updates – December 16, 2016
+===============================================
+
+We’re happy to announce the release of the Sprint 55 edition of Quamotion. 
+The version number is 0.1.6064.0.
+
+Dismissing iOS System alerts
+----------------------------
+
+This release adds support for dimissing system alerts on iOS devices running iOS 10.1 and above.
+
+Google Maps
+-----------
+
+This release add support for interacting with Google Maps
+
+Usability and stability enhancements
+------------------------------------
+
+We've also included various usability and stability enhancements:
+
+* Fixes an issue with the Stop Session command failing on Android devices
+* Better error messages when an application package with an unsupported extension is opened
+* Fixes an issue where the screen of an Android device would freeze
+* Add test log entries when finding an element fails
+* Supports signing of iOS applications which contain application extensions (``.appex`` files).
+
+

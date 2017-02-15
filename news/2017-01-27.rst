@@ -1,0 +1,10 @@
+Quamotion Sprint 58 Updates – January 27, 2017
+==============================================
+
+We’re happy to announce the release of the Sprint 58 edition of Quamotion. 
+The version number is 0.1.6140.0.
+
+In this sprint, we've made the following enhacments:
+
+* Add timeout for searching for elements in ScrollDownTo and ScrollUpTo
+* Fix an issue where error messages were returned in an incorrect JSON format
