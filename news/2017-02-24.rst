@@ -1,0 +1,23 @@
+Quamotion Sprint 60 Updates – February 24, 2017
+===============================================
+
+We’re happy to announce the release of the Sprint 60 edition of Quamotion. 
+The version number is 0.1.6291.0.
+
+We've improved our support for iOS and Android application packages (`.ipa` and `.apk` files).
+We've also made usability and stability enhancements.
+
+iOS and Android application packages
+------------------------------------
+
+* The Quamotion WebDriver now supports Android applications which have been obfuscated using DexGuard and similar tools.
+* The Quamotion WebDriver now supports iOS applications which contain two code directories and which use SHA256 hashes.
+
+Usability and stability enhancements
+------------------------------------
+
+We've made stability enhancements which make it easier to work with Quamotion:
+
+* We've fixed an issue where starting two iOS sessions in parallel would fail.
+* The Linux and macOS builds now include the `wdclient.psm1` PowerShell module by default.
+* The Linux and macOS builds are smaller in size.
