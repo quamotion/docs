@@ -33,6 +33,16 @@ You'll need either a Mac, Linux or Windows PC:
 * RedHat Enterprise Linux 7 or higher (64-bit), or compatible distribution such as CentOS.
 * Windows 7 or higher (64-bit)
 
+From a hardware point of view, the minimum requirements to develop mobile test automation scripts are:
+
+* An dual-core Intel i5 (Sandy Bridge or newer) or better processor
+* 4 GB RAM
+* 100 GB of free disk space on a SSD disk
+* A display resolution of 1600 x 900 or better
+* 1 available USB 2.0 port per device, providing at least 750 mA of power to the device 
+
+Contact us for hardware specifications for servers running continuous tests.
+
 That's it! You don't need to install any other tool for you to get started.
 
 Installing Quamotion
