@@ -26,10 +26,10 @@ Stability and reliability enhancements
 --------------------------------------
 
 In this release, we've
+
 - Fixed an issue where accepting alerts on iOS 9 and 10 devices would not work correctly
 - Fixed a memory leak in the `/wd/hub/quamotion/device/:deviceId/screenshotFeed` route
 - Fixed a connectivity issue between the WebDriver and the Chrome browser on Android
 - Fixed the version number which is displayed in the Settings page
 - Fixed an issue where a crash may occur if the front-end is disabled
-- Fixed an issue where switching to a web view in a native application would fail if there are multiple
-    web views in the same activity
+- Fixed an issue where switching to a web view in a native application would fail if there are multiple web views in the same activity

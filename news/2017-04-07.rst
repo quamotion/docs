@@ -20,7 +20,7 @@ Stability and reliability enhancements
 
 We've fixed:
 
--An issue where creating a new session on iOS devices would fail if a system level alert is visible
+- An issue where creating a new session on iOS devices would fail if a system level alert is visible
 - An issue with iOS automation on Linux and macOS
 - An issue where the screenshots may be oriented incorrectly on Android 6 and 7 devices
 - An issue where the computer ID would change on macOS and Linux computers
