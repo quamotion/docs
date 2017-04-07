@@ -1,0 +1,35 @@
+Quamotion Sprint 62 Updates – March 24, 2017
+============================================
+
+We’re happy to announce the release of the Sprint 62 edition of Quamotion. 
+The version number is 0.1.6472.0.
+
+In this release, we've added support for generating iOS developer profiles, improved performance,
+and added stability and reliability enhancements.
+
+
+Better support for iOS developer profiles
+-----------------------------------------
+
+In this release, we've added support for creating iOS developer profiles using the Quamotion WebDriver.
+When provided with the username and password for your Apple Developer account, the WebDriver can generate
+a developer profile for you.
+
+Performance enhancements
+------------------------
+
+We've drastically improved the performance of the Quamotion WebDriver in some key scenarios for both
+iOS and Android. Creating a session when the application is already installed on the device should
+now not take more than 5 seconds, down from up to 1 minute previously.
+
+Stability and reliability enhancements
+--------------------------------------
+
+In this release, we've
+- Fixed an issue where accepting alerts on iOS 9 and 10 devices would not work correctly
+- Fixed a memory leak in the `/wd/hub/quamotion/device/:deviceId/screenshotFeed` route
+- Fixed a connectivity issue between the WebDriver and the Chrome browser on Android
+- Fixed the version number which is displayed in the Settings page
+- Fixed an issue where a crash may occur if the front-end is disabled
+- Fixed an issue where switching to a web view in a native application would fail if there are multiple
+    web views in the same activity

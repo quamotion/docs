@@ -1,0 +1,27 @@
+Quamotion Sprint 63 Updates – April 7, 2017
+===========================================
+
+We’re happy to announce the release of the Sprint 63 edition of Quamotion. 
+The version number is 0.1.6523.0.
+
+In this release, we've added new features and improved stability and reliability.
+
+New features
+------------
+
+In this release, we've:
+- Add support for iOS 10.3 and 10.3.1
+- Added support for mocking location (GPS) data on iOS and Android
+- Added routes to launch, stop and uninstall applications by bundle ID
+
+Stability and reliability enhancements
+--------------------------------------
+
+We've fixed:
+-An issue where creating a new session on iOS devices would fail if a system level
+    alert is visible
+- An issue with iOS automation on Linux and macOS
+- An issue where the screenshots may be oriented incorrectly on Android 6 and 7 devices
+- An issue where the computer ID would change on macOS and Linux computers
+- An issue where the screenshot feed would not work correctly on Android 7 devices
+- An issue where reading information of obfuscated applications would not work correctly
