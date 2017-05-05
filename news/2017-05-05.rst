@@ -1,0 +1,30 @@
+Quamotion Sprint 65 Updates – May 5, 2017
+=========================================
+
+We’re happy to announce the release of the Sprint 65 edition of Quamotion. 
+The version number is 0.1.6674.0.
+
+In this release, we've added new recording support and improved stability and reliability.
+
+Recording Support
+-----------------
+
+We've improved support for recording on the Quamotion WebDriver. You can now generate
+PowerShell, Java or C# scripts by interaction with the mobile application running on your
+mobile device as you normally would - the script is generated automatically for you.
+
+To try out the new Recording functionality, simply click the Record tab in the WebDriver
+UI.
+
+Stability and reliability enhancements
+--------------------------------------
+
+We've fixed:
+
+- An issue where opening and closing the device log could potentially cause the WebDriver to exit.
+- An issue which would prevent you from uploading an iOS and Android application with the same
+  application ID and version number.
+- Improved support for running the WebDriver over HTTPS connections.
+- Various issues which occur when launching multiple sessions concurrently.
+- An issue where the screenshot feed would not work for iOS applications running on an iPhone 7 or above,
+  when running the WebDriver on Linux or macOS

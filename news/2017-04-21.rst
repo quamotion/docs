@@ -1,0 +1,26 @@
+Quamotion Sprint 64 Updates – April 21, 2017
+============================================
+
+We’re happy to announce the release of the Sprint 64 edition of Quamotion. 
+The version number is 0.1.6573.0.
+
+In this release, we've added new features and improved stability and reliability.
+
+New features
+------------
+
+In this release, we've:
+
+- Added a route which allows you to fetch the rotation of a device, even when no session is currently
+  active on that device.
+- Added the ability to disable screenshot captures when a session is running. This can improve the
+  performance of sessions, especially on Android devices.
+
+Stability and reliability enhancements
+--------------------------------------
+
+We've made the following stability and reliability enhancements:
+
+- Improved the performance of starting apps on iOS and Android devices. In most scenarios,
+  session creation should not take more than 10 seconds.
+- Improved the support for CentOS.
