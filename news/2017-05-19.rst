@@ -1,0 +1,20 @@
+Quamotion Sprint 66 Updates – May 19, 2017
+==========================================
+
+We’re happy to announce the release of the Sprint 65 edition of Quamotion. 
+The version number is 0.1.6746.0.
+
+In this release, we've improved stability and reliability.
+
+Stability and reliability enhancements
+--------------------------------------
+
+We've fixed:
+
+- Added support for fetching the appId of the currently running application.
+- Added support for testing iOS applications using production certificates.
+- An issue where automation of iOS devices on macOS would not work correctly.
+- A memory leak in the screenshotFeed route.
+- Improved the stability of the screenshotFeed on Android devices.
+- An issue with code signing iOS applications with contain specific code requirements.
+- An issue in handling developer profiles which contain files with names which include special characters.
