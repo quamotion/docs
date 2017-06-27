@@ -43,6 +43,6 @@ PC, even if you don't have a Mac.
    PowerShell Reference <powershell/index>
    News <news/index>
    iMobileDevice for Windows <imobiledevice/about>
-   Quamotion for Visual Studio <vs/install-quamotion>
+   Quamotion commandline reference<command-line/reference-commandline>
    Blog <blog/index>
    Media <media/index>

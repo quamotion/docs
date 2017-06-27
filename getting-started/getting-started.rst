@@ -45,6 +45,27 @@ Contact us for hardware specifications for servers running continuous tests.
 
 That's it! You don't need to install any other tool for you to get started.
 
+USB Configuration
+~~~~~~~~~~~~~~~~~
+
+We recommend you connect your mobile devices to your test server using a USB connection.
+In this case, we recommend you use:
+
+* A dedicated PCIe USB 3.0 controller
+* A powered USB 3.0 hub, where each port is capable of providing at least 900mA to each device simultaneously
+* High quality USB cables
+
+WiFi configuration
+~~~~~~~~~~~~~~~~~~
+
+You can also connect to your mobile devices over WiFi. If you want to connect to mobile devices over WiFi,
+we recommend:
+
+* You set up a dedicated WiFi network and access point for your mobile devices
+* Your server connects to the WiFi access point over Ethernet
+* Your server and devices are in the same subnet
+* There is a ping latency of less than 5ms between the server and the devices
+
 Installing Quamotion
 """"""""""""""""""""
 
