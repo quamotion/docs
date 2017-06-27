@@ -1,10 +1,10 @@
 ﻿Invoke-WebDriverRestMethod Commands
-=========================
+===================================
 
 This page contains details on **Invoke-WebDriverRestMethod** commands.
 
 Invoke-WebDriverRestMethod
--------------------------
+--------------------------
 
 
 NAME

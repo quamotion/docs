@@ -45,7 +45,7 @@ PARAMETERS
     
     -------------------------- EXAMPLE 1 --------------------------
     
-    PS C:\>Find-Elements -xpath "*[@marked='login']"
+    PS C:\>Find-Elements -xpath \"\*[@marked=\'login\']\"
     
     
     

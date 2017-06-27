@@ -43,7 +43,7 @@ PARAMETERS
     
     -------------------------- EXAMPLE 1 --------------------------
     
-    PS C:\>ScrollUp-To -elementId $scrollView -xpath "*[@marked='John']"
+    PS C:\>ScrollUp-To -elementId $scrollView -xpath \"\*[@marked=\'John\']\"
     
     
     

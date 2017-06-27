@@ -1036,8 +1036,8 @@ in the ``@Before`` method. You can do so by calling the ``quit()`` method on the
 3. Add the code which will initialize your session:
 
    .. code-block:: java
-    AppDriver driver = null;
 
+     AppDriver driver = null;
      @Before
      public void setUp2() throws Exception
      {

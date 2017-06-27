@@ -1,5 +1,5 @@
 Quamotion Sprint 45 Updates – July 29, 2016
-==========================================
+============================================
 
 We’re happy to announce the release of the Sprint 45 edition of Quamotion for Visual Studio. 
 The version number is 0.1.5161.

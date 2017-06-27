@@ -1,5 +1,5 @@
 ﻿``idevice_id`` - Prints device name or a list of attached devices.
-==============================================================
+==================================================================
 
 Prints device name or a list of attached devices.
 The UDID is a 40-digit hexadecimal number of the device

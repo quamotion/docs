@@ -1,5 +1,5 @@
 ﻿``ideviceimagemounter`` - Mount disk images on the device.
-=======================================================
+==========================================================
 
 Mounts the specified disk image on the device.
 

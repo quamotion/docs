@@ -36,8 +36,6 @@ To specify a developer profile:
 *	``-y`` or ``--developerProfilePassword``: Password to use when opening the developer profile
 
 These values are always optional:
-*	``-r`` or ``--rootcert``: The root certificate (``.cer``) to use when signing. If you do not specify this value,
-	a default value is used.
-*	``-d`` or ``--dylib``: If you want to inject a dynamic library (dylib) into an IPA package, specify
-	the path to the dylib you want to inject.
+*	``-r`` or ``--rootcert``: The root certificate (``.cer``) to use when signing. If you do not specify this value, a default value is used.
+*	``-d`` or ``--dylib``: If you want to inject a dynamic library (dylib) into an IPA package, specify the path to the dylib you want to inject.
 *	``-n`` or ``--nosign``: Don't code sign the package.

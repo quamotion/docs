@@ -1,5 +1,5 @@
 ﻿Get-ElementProperty Commands
-=========================
+============================
 
 This page contains details on **Get-ElementProperty** commands.
 

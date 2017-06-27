@@ -1,5 +1,5 @@
 ﻿Find-ElementByCoordinate Commands
-=========================
+=================================
 
 This page contains details on **Find-ElementByCoordinate** commands.
 

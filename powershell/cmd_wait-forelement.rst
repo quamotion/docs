@@ -47,7 +47,7 @@ PARAMETERS
     
     -------------------------- EXAMPLE 1 --------------------------
     
-    PS C:\>Wait-ForElement -xpath "*[@marked='login']"
+    PS C:\>Wait-ForElement -xpath \"\*[@marked=\'login\']\"
     
     Wait-ForElement -marked "login"
     Wait-ForElement -class "UIView"

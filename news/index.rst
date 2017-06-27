@@ -9,7 +9,7 @@ This page contains an overview of the latest Quamotion releases, and what's comi
 
    Sprint 66 - May 19, 2017 <2017-05-19>
    Sprint 65 - May 5, 2017 <2017-05-05>
-   Sprint 64 - April 14, 2017 <2017-04-14>
+   Sprint 64 - April 14, 2017 <2017-04-21>
    Sprint 63 - April 7, 2017 <2017-04-07>
    Sprint 62 - March 24, 2017 <2017-03-24>
    Sprint 61 - March 10, 2017 <2017-03-10>

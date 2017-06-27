@@ -1,5 +1,5 @@
 ﻿``idevicecrashreport`` - Retrieve crash reports from a device.
-==========================================================
+==============================================================
 
 Simple utility to move crash reports from a device to a local directory.
 
@@ -17,15 +17,15 @@ the device to the target ``DIRECTORY``.
 Options
 """""""
 
-===========  ==================  =======================================================
+===========  ==================  =============================================================
 Short Name	 Long Name			 Value 
-===========  ==================  =======================================================
+===========  ==================  =============================================================
 -e           --extract           extract raw crash report into separate ``.crash`` files.
 -k           --keep              copy but do not remove crash reports from device.
 -d           --debug             enable communication debugging.
 -u           --udid              ``UDID```target specific device by its 40-digit device UDID.
 -h           --help              prints usage information.
-===========  ==================  =======================================================
+===========  ==================  =============================================================
 
 Authors
 """""""

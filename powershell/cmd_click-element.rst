@@ -46,7 +46,7 @@ PARAMETERS
     
     -------------------------- EXAMPLE 1 --------------------------
     
-    PS C:\>Click-Element -xpath "*[@marked='login']"
+    PS C:\>Click-Element -xpath \"\*[@marked=\'login\']\"
     
     Click-Element -marked "login"
     Click-Element -class "UIView"

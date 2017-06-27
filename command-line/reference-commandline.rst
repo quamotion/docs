@@ -13,7 +13,7 @@ The Quamotion Command Line Utility is composed of multiple modules. Each module 
 functionality. Select one of the modules in the list below for more information.
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
     IpaDump <reference-commandline-ipadump>
     Harvest <reference-commandline-harvest>

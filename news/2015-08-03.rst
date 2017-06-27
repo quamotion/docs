@@ -13,7 +13,7 @@ With this release we’ve:
 Run tests on Manymo cloud-based emulators
 -----------------------------------------
 
-`Manymo <https://www.manymo.com/>`_ offers cloud-based Android emulators. We now support running tests on Manymo emulators. For Quamotion tests to run on Manymo emulators, you must follow the steps described in the 
+Manymo offers cloud-based Android emulators. We now support running tests on Manymo emulators. For Quamotion tests to run on Manymo emulators, you must follow the steps described in the 
 `Making your in-browser emulator as a local emulator on your system <https://www.manymo.com/pages/documentation/manymo-command-line-tool>`_ document. 
 
 Run Coded UI tests using the ``Xamarin.UITest`` Framework

@@ -1,5 +1,5 @@
 ﻿Get-ElementRectangle Commands
-=========================
+=============================
 
 This page contains details on **Get-ElementRectangle** commands.
 
