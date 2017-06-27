@@ -37,7 +37,7 @@ PC, even if you don't have a Mac.
 .. toctree::
    :hidden:
 
-   getting-started
+   Getting started <getting-started/getting-started> 
    Hands-on Labs <hands-on-lab/index>
    How To <how-to/index>
    PowerShell Reference <powershell/index>

@@ -54,6 +54,7 @@ Installing Quamotion
    getting-started-osx
    getting-started-linux
    getting-started-windows
+   request-trial-license
 
 If you want to test on iOS devices, you also need to configure a developer profile.
 
