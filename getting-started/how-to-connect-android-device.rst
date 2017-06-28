@@ -1,5 +1,5 @@
-﻿Connecting local Android Devices
-================================
+﻿Connect Android devices
+=======================
 
 Quamotion can work with physical Android devices, such as tablets or phones, that
 you connect to your PC.
@@ -14,7 +14,7 @@ Configuring USB Debugging the Device
 ------------------------------------
 
 For Quamotion to be able to communicate with your device, you need to configure USB Debugging
-on the device. To configure USB Debugging, follow these steps:
+on the device. To configure USB Debugging, follow these steps on the device:
 
 1. On the Home screen, tap the `Apps` button
 2. In the `Apps` screen, open the Settings app
@@ -29,14 +29,37 @@ Connect the device to your PC
 
 To connect your device to your PC, follow these steps:
 
-1. From the Start menu or Start Screen, open the Quamotion Command Prompt.
-2. Type ``adb devices`` and hit ENTER. This will list all Android devices connected to your PC. 
-   This should return an empty list of devices.
-3. Connect your device to your PC using a USB cable. 
-4. If a window, `Allow USB Debugging`, appears on your device, tap `Always allow from this computer`
+1. Connect your device to your PC using a USB cable. 
+2. If a window, `Allow USB Debugging`, appears on your device, tap `Always allow from this computer`
    and tap `OK`
-5. In the Quamotion Command Prompt, type ``adb devices`` and hit ENTER once more.
-   Your device should now appear in the list of connected devices.
+3. Verify if the device appears in the devices page of the Quamotion frontend http://localhost:17894/Home/Devices.
+
+Prepare the device for automation
+---------------------------------
+
+It is advised enable the stay awake setting. This prevents the screen to be locked during a test run.
+
+1. On the Home screen, tap the `Apps` button
+2. In the `Apps` screen, open the Settings app
+3. In the `Settings` screen, in the `System` section, tap `Developer Options`
+4. Toggle the 'Stay awake' setting (the screen will never sleep while charging)
+
+Lowering the the screen brightness optimises the battery life.
+
+1. On the Home screen, tap the `Apps` button
+2. In the `Apps` screen, open the Settings app
+3. Tap 'Display' in the 'Settings' screen
+4. Tap 'Brightness' in the 'Screen' section
+5. Disable the 'Automatic brightness'
+6. Move the brightness slider to the minimum
+
+If possible disable the pin code
+
+1. On the Home screen, tap the `Apps` button
+2. In the `Apps` screen, open the Settings app
+3. Tap on 'Screen lock' (or 'security' -> 'Screen lock' on some devices)
+4. Tap on Password and enter the pin code
+5. Select 'None' or 'Swipe' if possible.
 
 Installing the USB Driver
 -------------------------

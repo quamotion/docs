@@ -21,7 +21,7 @@ Creating a developer profile
 
 To create a developer profile, follow these steps:
 
-1. Click *Start*, and select the *Quamotion Command Prompt* application
+1. Launch the *Quamotion Command Prompt* application
 2. To create a new developer profile, run the `Quamotion.CommandLine -m CreateDeveloperProfile` command as such:
 
 ``Quamotion.Commandline -m CreateDeveloperProfile -f test.developerprofile --accountName me@example.com --accountPassword password -p password -d udid``

@@ -12,6 +12,21 @@ You need to use an iOS Code Signing Certificate that is valid, and that allows y
 not yet been submitted to the app store on your iOS device.
 Your developer profile must allow you to install apps your devices.
 
+Obtaining the iOS Code Signing Certificate using XCode
+------------------------------------------------------
+
+If you or a developer on your team already has an iOS Code Signing Certificate, the easiest
+way for you to obtain the iOS Code Signing Certificate is by exporting it from XCode.
+
+To do so, follow these steps:
+
+1. On your Mac machine, open Xcode and click *Xcode*, *Preferences...*
+2. In the *Preferences* window, choose *Accounts*
+3. At the bottom of the *Accounts* window, click the gear icon, and choose *Export Accounts*
+4. In the *Save* dialog, choose a file name and enter a password to protect the file.
+   You will need this password later.
+5. If a warning appears about Xcode exporting the private key, click *Allow*
+
 Obtaining the iOS Code Signing Certificate using the Quamotion Command Line Utility
 -----------------------------------------------------------------------------------
 
@@ -32,21 +47,7 @@ where :code:`{file}` is the name of the developer profile you want to create, fo
 `Apple Developer <https://developer.apple.com/>`_ site, and :code:`{password}` is the password you want to
 use to protect the developer profile.
 
-
-Obtaining the iOS Code Signing Certificate using XCode
-------------------------------------------------------
-
-If you or a developer on your team already has an iOS Code Signing Certificate, the easiest
-way for you to obtain the iOS Code Signing Certificate is by exporting it from XCode.
-
-To do so, follow these steps:
-
-1. On your Mac machine, open Xcode and click *Xcode*, *Preferences...*
-2. In the *Preferences* window, choose *Accounts*
-3. At the bottom of the *Accounts* window, click the gear icon, and choose *Export Accounts*
-4. In the *Save* dialog, choose a file name and enter a password to protect the file.
-   You will need this password later.
-5. If a warning appears about Xcode exporting the private key, click *Allow*
+More information on how to manage iOS Developer Profiles on Windows can be found on :doc:`manage-developer-profile`
 
 Installing the iOS Code Signing Certificate in Quamotion
 --------------------------------------------------------

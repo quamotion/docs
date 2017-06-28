@@ -45,8 +45,7 @@ Contact us for hardware specifications for servers running continuous tests.
 
 That's it! You don't need to install any other tool for you to get started.
 
-USB Configuration
-~~~~~~~~~~~~~~~~~
+.. rubric:: USB Configuration
 
 We recommend you connect your mobile devices to your test server using a USB connection.
 In this case, we recommend you use:
@@ -55,8 +54,7 @@ In this case, we recommend you use:
 * A powered USB 3.0 hub, where each port is capable of providing at least 900mA to each device simultaneously
 * High quality USB cables
 
-WiFi configuration
-~~~~~~~~~~~~~~~~~~
+.. rubric:: WiFi configuration
 
 You can also connect to your mobile devices over WiFi. If you want to connect to mobile devices over WiFi,
 we recommend:
@@ -66,8 +64,8 @@ we recommend:
 * Your server and devices are in the same subnet
 * There is a ping latency of less than 5ms between the server and the devices
 
-Installing Quamotion
-""""""""""""""""""""
+Instal Quamotion
+""""""""""""""""
 
 .. toctree::
    :maxdepth: 1
@@ -77,10 +75,20 @@ Installing Quamotion
    getting-started-windows
    request-trial-license
 
-If you want to test on iOS devices, you also need to configure a developer profile.
+Configure local devices
+"""""""""""""""""""""""
 
 .. toctree::
    :maxdepth: 1
 
+   how-to-connect-android-device
+   how-to-connect-ios-device
+
+If you want to test on iOS devices, you also need to install the iOS developer disks and configure a developer profile.
+
+.. toctree::
+   :maxdepth: 1
+
+   install-ios-developer-disk.rst
    getting-started-developer-profile.rst
 
