@@ -39,6 +39,7 @@ PC, even if you don't have a Mac.
    :hidden:
 
    Getting started <getting-started/getting-started> 
+   Quamotion Frontend Guide <frontend/frontend>
    PowerShell Reference <powershell/index>
    Hands-on Labs <hands-on-lab/index>
    How To <how-to/index>

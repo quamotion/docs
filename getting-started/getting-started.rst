@@ -45,6 +45,19 @@ Contact us for hardware specifications for servers running continuous tests.
 
 That's it! You don't need to install any other tool for you to get started.
 
+Install Quamotion
+"""""""""""""""""
+
+.. toctree::
+   :maxdepth: 1
+
+   getting-started-osx
+   getting-started-linux
+   getting-started-windows
+   request-trial-license
+
+Configure local devices
+"""""""""""""""""""""""
 .. rubric:: USB Configuration
 
 We recommend you connect your mobile devices to your test server using a USB connection.
@@ -64,19 +77,7 @@ we recommend:
 * Your server and devices are in the same subnet
 * There is a ping latency of less than 5ms between the server and the devices
 
-Instal Quamotion
-""""""""""""""""
-
-.. toctree::
-   :maxdepth: 1
-
-   getting-started-osx
-   getting-started-linux
-   getting-started-windows
-   request-trial-license
-
-Configure local devices
-"""""""""""""""""""""""
+Specific information on how to configure `Andoid` and `iOS` devices can found in:
 
 .. toctree::
    :maxdepth: 1
@@ -91,4 +92,3 @@ If you want to test on iOS devices, you also need to install the iOS developer d
 
    install-ios-developer-disk.rst
    getting-started-developer-profile.rst
-
