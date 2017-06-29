@@ -40,6 +40,7 @@ PC, even if you don't have a Mac.
 
    Getting started <getting-started/getting-started> 
    Quamotion Frontend Guide <frontend/frontend>
+   Quamotion WebDriver Clients <clients/clients>
    PowerShell Reference <powershell/index>
    Hands-on Labs <hands-on-lab/index>
    How To <how-to/index>

@@ -25,10 +25,3 @@ To start the Quamotion server, you can simply launch the Quamotion.WebDriver exe
    ./Quamotion.WebDriver
 
 The Quamotion server will now start. You can connect to the Quamotion server using any browser, by navigating to `<http://localhost:17894>`_.
-
-If you want to create scripts using PowerShell, now would be a good time to install that, too:
-
-.. code-block:: bash
-
-   wget https://github.com/PowerShell/PowerShell/releases/download/v6.0.0-alpha.9/powershell-6.0.0-alpha.9.pkg
-   sudo installer -pkg powershell-6.0.0-alpha.9.pkg -target /
