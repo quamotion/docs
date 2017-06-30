@@ -41,7 +41,7 @@ PARAMETERS
     
     -------------------------- EXAMPLE 1 --------------------------
     
-    PS C:\>Test-Element -xpath "*[@marked='login']"
+    PS C:\>Test-Element -xpath \"\*[@marked=\'login\']\"
     
     
     

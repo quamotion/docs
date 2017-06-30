@@ -1,5 +1,5 @@
 ﻿Click-AlertButton Commands
-=========================
+==========================
 
 This page contains details on **Click-AlertButton** commands.
 

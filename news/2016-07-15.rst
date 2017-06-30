@@ -1,5 +1,5 @@
 Quamotion Sprint 44 Updates – July 15, 2016
-==========================================
+============================================
 
 We’re happy to announce the release of the Sprint 44 edition of Quamotion for Visual Studio. 
 The version number is 0.1.4980.

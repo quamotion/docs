@@ -1,5 +1,5 @@
 ﻿Delete-AppSettings Commands
-=========================
+===========================
 
 This page contains details on **Delete-AppSettings** commands.
 

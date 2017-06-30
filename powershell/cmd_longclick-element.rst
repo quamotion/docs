@@ -1,5 +1,5 @@
 ﻿LongClick-Element Commands
-=========================
+==========================
 
 This page contains details on **LongClick-Element** commands.
 

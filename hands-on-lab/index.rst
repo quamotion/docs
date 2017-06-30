@@ -9,5 +9,5 @@ Practice makes perfect, so get ready to complete our Hands-on Labs!
 
 .. toctree::
    :maxdepth: 1
-
-  Automating the Acquaint app <acquaint/acquaint>
+   
+   Automating the Acquaint app <acquaint/acquaint.rst>

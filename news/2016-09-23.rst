@@ -1,5 +1,5 @@
 Quamotion Sprint 49 Updates – September 23, 2016
-===============================================
+=================================================
 
 We’re happy to announce the release of the Sprint 49 edition of Quamotion for Visual Studio. 
 The version number is 0.1.5582.

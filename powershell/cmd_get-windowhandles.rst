@@ -1,5 +1,5 @@
 ﻿Get-WindowHandles Commands
-=========================
+==========================
 
 This page contains details on **Get-WindowHandles** commands.
 

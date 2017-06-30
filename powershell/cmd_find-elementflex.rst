@@ -50,7 +50,7 @@ PARAMETERS
     
     PS C:\>Find-ElementFlex -marked "Login"
     
-    Find-ElementFlex -xpath "*[@marked='Login']"
+    Find-ElementFlex -xpath \"\*[@marked=\'Login\']\"
     Find-ElementFlex -class "UIView"
     
     

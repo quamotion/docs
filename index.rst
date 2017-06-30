@@ -35,14 +35,17 @@ You don't need to install any platform-specific tools such as Xcode or the Andro
 PC, even if you don't have a Mac.
 
 .. toctree::
+   :maxdepth: 1
    :hidden:
 
-   getting-started
+   Getting started <getting-started/getting-started> 
+   Quamotion Frontend Guide <frontend/frontend>
+   Quamotion WebDriver Clients <clients/clients>
+   PowerShell Reference <powershell/index>
    Hands-on Labs <hands-on-lab/index>
    How To <how-to/index>
-   PowerShell Reference <powershell/index>
    News <news/index>
    iMobileDevice for Windows <imobiledevice/about>
-   Quamotion for Visual Studio <vs/install-quamotion>
+   Quamotion commandline reference <command-line/reference-commandline>
    Blog <blog/index>
    Media <media/index>

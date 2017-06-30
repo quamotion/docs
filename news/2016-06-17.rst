@@ -1,5 +1,5 @@
 Quamotion Sprint 42 Updates – June 17, 2016
-==========================================
+============================================
 
 We’re happy to announce the release of the Sprint 42 edition of Quamotion for Visual Studio. 
 The version number is 0.1.4635.

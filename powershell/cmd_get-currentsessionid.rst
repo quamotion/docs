@@ -1,5 +1,5 @@
 ﻿Get-CurrentSessionId Commands
-=========================
+=============================
 
 This page contains details on **Get-CurrentSessionId** commands.
 
