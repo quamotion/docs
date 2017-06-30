@@ -65,11 +65,8 @@ To add the Quamotion and NUnit NuGet packages:
 
 11. You can now  close the `NuGet: AcquaintanceTest` window.
 
-Add a test which launches the iOS Acquaint app
-""""""""""""""""""""""""""""""""""""""""""""""
-
-You are now ready to write your first test. You'll use NUnit to write your test.
-
+Add a test which launches the iOS Acquaint app (using NUNIT)
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 NUnit tests allow you to write ``[SetUp]`` methods, which are executed before your tests launch.
 You'll use the ``[SetUp]`` method to create a new session, which will start the Acquaint app
 on your device.

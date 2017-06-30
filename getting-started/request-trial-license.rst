@@ -4,8 +4,7 @@ You can request and upload a trial license in the Quamotion Frontend.
 
 Prerequisites
 """"""""""""""
-Before you request a trial license you need to install and start the Quamotion WebDriver. 
-The :ref:`install-quamotion-label` section explains how to install the Quamotion WebDriver
+Before you request a trial license you need to install and start the Quamotion WebDriver.
 
 Retrieve a trial license
 """"""""""""""""""""""""
@@ -14,12 +13,12 @@ Retrieve a trial license
 2. Click on Request Trial License
 
     .. image:: TrialLicense.png
-        :width: 50%
+        :width: 100%
 
 3. Fill in the from. Your machine identifier is pre-filled.
 
     .. image:: TrialLicenseForm.png
-        :width: 50%
+        :width: 100%
 
 4. Press the "Send Request" button.
 5. A mail is send with your license file attached.
@@ -31,7 +30,7 @@ Upload the trial license
 2. Press the "Update License" button.
 
     .. image:: UpdateLicense.png
-        :width: 50%
+        :width: 100%
 
 3. Press the "Choose File" button and select the saved license file.
 4. Press the "Update" button.
