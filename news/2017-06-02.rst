@@ -2,11 +2,22 @@ Quamotion Sprint 67 Updates – June 2, 2017
 ==========================================
 
 We’re happy to announce the release of the Sprint 65 edition of Quamotion. 
-The version number is .
+The version number is 0.66.93.30303.
 
-In this release, we've improved stability and reliability.
+
+Full Device Automation enhancements
+-----------------------------------
+
+We've improved our full device automation capabilities for devices running
+iOS 10 and above.
+
+We've added the ability to fetch the label and native class name of the individual
+elements, and the overall improvement of the `/source` route.
 
 Stability and reliability enhancements
 --------------------------------------
 
 We've fixed:
+
+- An issue where class names of elements which include a `$` character would not be retrieved correctly.
+- Added preliminary support for Android O.

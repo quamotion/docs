@@ -25,7 +25,6 @@ Stability and reliability enhancements
 --------------------------------------
 
 We've fixed:
-* An issue where deploying an Android application which contains an application icon
-  file without a file extension would fail.
-* An issue where deploying an iOS application which contains two folders with the
-  `.app` extension would fail.
+
+* An issue where deploying an Android application which contains an application icon file without a file extension would fail.
+* An issue where deploying an iOS application which contains two folders with the `.app` extension would fail.
