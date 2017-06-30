@@ -1,0 +1,31 @@
+Quamotion Sprint 69 Updates – June 30, 2017
+===========================================
+
+We’re happy to announce the release of the Sprint 65 edition of Quamotion. 
+The version number is .
+
+In this release, we've added support for fetching network statistics on Android devices,
+improved the Spy experience, and improved the stability and reliability of the Quamotion WebDriver.
+
+Improved Spy experience
+-----------------------
+
+We've worked hard to improve our Spy experience!
+
+We now support generating test scripts in the browser using our recording capability. You can also
+manually add test automation steps and import and export your test scenarios.
+
+Fetching network statistics on Android devices
+----------------------------------------------
+
+You can now get a detailed network statistics of the network traffic on an Android device, per network
+interface.
+
+Stability and reliability enhancements
+--------------------------------------
+
+We've fixed:
+* An issue where deploying an Android application which contains an application icon
+  file without a file extension would fail.
+* An issue where deploying an iOS application which contains two folders with the
+  `.app` extension would fail.

@@ -1,0 +1,12 @@
+Quamotion Sprint 67 Updates – June 2, 2017
+==========================================
+
+We’re happy to announce the release of the Sprint 65 edition of Quamotion. 
+The version number is .
+
+In this release, we've improved stability and reliability.
+
+Stability and reliability enhancements
+--------------------------------------
+
+We've fixed:

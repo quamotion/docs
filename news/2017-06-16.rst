@@ -1,0 +1,17 @@
+Quamotion Sprint 68 Updates – June 16, 2017
+===========================================
+
+We’re happy to announce the release of the Sprint 65 edition of Quamotion. 
+The version number is 0.66.105.51953.
+
+In this release, we've improved support for deploying the Quamotion WebDriver on
+Linux environments.
+
+Deploying the Quamotion WebDriver on Linux
+------------------------------------------
+
+We now support:
+* Running the WebDriver as a SystemD daemon on Linux
+* Storing the settings in `/etc/quamotion`, the data in `/var/opt/quamotion`, the PID file 
+  in `/var/run/quamotion` and the log files in `/var/log/quamotion`.
+* Deploying the Quamotion WebDriver as a RPM package on CentOS and RedHat Enterprise Linux.

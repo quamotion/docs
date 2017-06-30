@@ -7,6 +7,9 @@ This page contains an overview of the latest Quamotion releases, and what's comi
 .. toctree::
    :maxdepth: 1
 
+   Sprint 69 - June 30, 2017 <2017-06-30>
+   Sprint 68 - June 16, 2017 <2017-06-16>
+   Sprint 67 - June 2, 2017 <2017-06-02>
    Sprint 66 - May 19, 2017 <2017-05-19>
    Sprint 65 - May 5, 2017 <2017-05-05>
    Sprint 64 - April 14, 2017 <2017-04-14>
