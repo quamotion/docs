@@ -55,7 +55,7 @@ library will allow you to automate iOS and Android applications from within your
 2. Click `Libraries`
 3. Click the plus (+) icon to add a library
 4. Select `Java`
-5. Add the ``QuamotionDriver.Java.jar`` file, which is available for download at http://qmcdn.blob.core.windows.net/download/QuamotionDriver-Java.jar
+5. Add the ``QuamotionDriver.Java.jar`` file, which is available for download at https://qmcdn.blob.core.windows.net/download/QuamotionDriver.Java-0.2.jar
 6. Click `OK`
 7. Click `OK`.
 
