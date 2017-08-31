@@ -1,0 +1,19 @@
+Quamotion Sprint 73 Updates – August 25, 2017
+=============================================
+
+We’re happy to announce the release of the Sprint 73 edition of Quamotion. 
+The version number is 0.73.65.39337.
+
+In this release, we've added support for Android 8 and improved the stability and reliability of the Quamotion WebDriver.
+
+Android 8
+---------
+
+We've added support for applications which are developed using the Android 8 SDK.
+
+Stability and reliability enhancements
+--------------------------------------
+
+We've fixed:
+
+* An issue where viewing the network statistics for an Android device which contains a lot of different network interfaces may fail.

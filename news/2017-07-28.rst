@@ -1,0 +1,15 @@
+Quamotion Sprint 71 Updates – July 28, 2017
+===========================================
+
+We’re happy to announce the release of the Sprint 65 edition of Quamotion. 
+The version number is 0.70.33.1083.
+
+In this release, we've  improved the stability and reliability of the Quamotion WebDriver.
+
+Stability and reliability enhancements
+--------------------------------------
+
+We've fixed:
+
+* An issue where `iproxy` would consume 100% of a single CPU core when starting a new session on Windows 7
+* Fix a bug which occurred when a device is added or removed at the same time a notification is sent to the front-end.

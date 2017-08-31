@@ -1,0 +1,30 @@
+Quamotion Sprint 72 Updates – August 11, 2017
+=============================================
+
+We’re happy to announce the release of the Sprint 72 edition of Quamotion. 
+The version number is 0.72.43.18706.
+
+In this release, we've added support for additional UI control properties, custom spy templates and improved the stability and reliability of the Quamotion WebDriver.
+
+Support for additional UI control properties
+--------------------------------------------
+
+The Quamotion WebDriver now:
+* Shows properties for custom classes
+* Shows Protocol properties
+* Shows the `AccessibilityIdentifier`
+
+Support for custom Spy templates
+--------------------------------
+
+The Quamotion Spy allows you to create scripts for pre-defined actions, such as tapping on a button or typing text.
+With this release, you can now add templates for custom actions.
+
+Stability and reliability enhancements
+--------------------------------------
+
+We've fixed:
+
+* An issue where the WebDriver would not show the source of very large applications.
+* An issue where starting a new session may fail, if you upload different versions of the same Android application which have the same application ID and the same version number.
+* An issue where a license warning was displayed even after uploading a valid license.

@@ -1,0 +1,16 @@
+Quamotion Sprint 70 Updates – July 14, 2017
+===========================================
+
+We’re happy to announce the release of the Sprint 70 edition of Quamotion. 
+The version number is 0.70.5.11552.
+
+In this release, we've improved the stability and reliability of the Quamotion WebDriver.
+
+Stability and reliability enhancements
+--------------------------------------
+
+We've fixed:
+
+* The WebDriver will now log a message when shutdown initiates.
+* You can now download the Quamotion PowerShell module from the PowerShell gallery.
+* The WebDriver will now write out a message when starting on macOS when a required version of OpenSSL is not installed.
