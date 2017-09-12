@@ -1,0 +1,35 @@
+Quamotion Sprint 74 Updates – September 8, 2017
+===============================================
+
+We’re happy to announce the release of the Sprint 74 edition of Quamotion. 
+The version number is 0.74.31.4152.
+
+In this release, we've added support for remotely controlling Android devices, as well as Android 8 devices and iOS 11.
+
+Remotely controlling Android devices
+------------------------------------
+
+In this release, we're announcing support for remote control of Android devices. Using the Quamotion WebDriver, you can now
+control any Android device that is connected to your PC using a browser, mouse and keyboard.
+
+This enables many scenarios, such as setting up a private cloud in which devices are connected to a secure server and which
+are accessed remotely. In addition to Quamotion's test automation capabilities, this also enables manual testing of Android
+devices.
+
+iOS 11
+------
+
+We've added support for running tests on devices which are running iOS 11.
+
+Android 8
+---------
+
+We've added support for running tests on devies which are running Android 8.
+
+Stability and reliability enhancements
+--------------------------------------
+
+We've fixed:
+
+* An issue with the PowerShell `Flick-Coordinate` command.
+* Minor fixes in the Spy user interface.
