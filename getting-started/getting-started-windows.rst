@@ -10,4 +10,4 @@ To install the Quamotion server:
 The Quamotion server will now start. You can connect to the Quamotion server using any browser, by navigating to `<http://localhost:17894>`_.
 
 
-.. _latest version: http://cdn.quamotion.mobi/download/quamotion-webdriver-netcore.0.74.31.4152.win7-x64.zip
+.. _latest version: http://cdn.quamotion.mobi/download/quamotion-webdriver-netcore.0.75.25.1049.win7-x64.zip
