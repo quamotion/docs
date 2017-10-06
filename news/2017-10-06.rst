@@ -1,0 +1,29 @@
+Quamotion Sprint 75 Updates – September 22, 2017
+=================================================
+
+We’re happy to announce the release of the Sprint 75 edition of Quamotion. 
+The version number is 0.75.25.1049.
+
+In this release, we've added support for remotely controlling iOS devices, as well as imporoved support for web applications.
+
+Remotely controlling iOS devices
+--------------------------------
+
+In this release, we're announcing support for remote control of iOS devices. Using the Quamotion WebDriver, you can now
+control any iOS device that is connected to your PC using a browser and mouse.
+
+This enables many scenarios, such as setting up a private cloud in which devices are connected to a secure server and which
+are accessed remotely. In addition to Quamotion's test automation capabilities, this also enables manual testing of Android
+devices.
+
+Improved support for Web Applications
+-------------------------------------
+
+We've improved our support for testing Web and Hybrid applications in this release.
+
+Stability and reliability enhancements
+--------------------------------------
+
+We've added:
+
+- A `Get-DeviceSessions` command to our PowerShell bindings, which list all sessions currently running on a device.
