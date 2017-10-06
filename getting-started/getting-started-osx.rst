@@ -15,6 +15,7 @@ Next, you can download and install the Quamotion server:
 .. parsed-literal::
 
    mkdir quamotion-webdriver
+   cd quamotion-webdriver
    wget |webdriver_osx_url|
    tar -xvzf |webdriver_osx_filename|
 
