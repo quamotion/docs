@@ -46,6 +46,5 @@ PC, even if you don't have a Mac.
    How To <how-to/index>
    News <news/index>
    iMobileDevice for Windows <imobiledevice/about>
-   Quamotion commandline reference <command-line/reference-commandline>
    Blog <blog/index>
    Media <media/index>
