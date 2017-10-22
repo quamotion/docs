@@ -1,29 +1,28 @@
-Quamotion Sprint 75 Updates – September 22, 2017
-=================================================
+Quamotion Sprint 76 Updates – October 6, 2017
+==============================================
 
-We’re happy to announce the release of the Sprint 75 edition of Quamotion. 
-The version number is 0.75.25.1049.
+We’re happy to announce the release of the Sprint 76 edition of Quamotion. 
+The version number is 0.76.23.14577.
 
-In this release, we've added support for remotely controlling iOS devices, as well as imporoved support for web applications.
+In this release, we've added spy and code generator support for full device automation on Android, as well
+as the ability to fetch TCP and UDP network statistics on all Android versions.
 
-Remotely controlling iOS devices
---------------------------------
+Add spy and code generator support for full device automation on Android
+------------------------------------------------------------------------
 
-In this release, we're announcing support for remote control of iOS devices. Using the Quamotion WebDriver, you can now
-control any iOS device that is connected to your PC using a browser and mouse.
+Starting with this release, you can now use the Spy and Code Generator features of the Quamotion WebDriver to
+generate scripts for full device automation on Android devices.
 
-This enables many scenarios, such as setting up a private cloud in which devices are connected to a secure server and which
-are accessed remotely. In addition to Quamotion's test automation capabilities, this also enables manual testing of Android
-devices.
+Support reading TCP and UDP network statistics on all Android version
+---------------------------------------------------------------------
 
-Improved support for Web Applications
--------------------------------------
-
-We've improved our support for testing Web and Hybrid applications in this release.
+Starting with this release, you can use the Quamotion WebDriver to capture TCP and UDP network statistics
+on Android devices.
 
 Stability and reliability enhancements
 --------------------------------------
 
-We've added:
-
-- A `Get-DeviceSessions` command to our PowerShell bindings, which list all sessions currently running on a device.
+We've fixed:
+- An issue where starting the Quamotion WebDriver on macOS would fail
+- An issue where the iOS Developer Disk Images would not be recognized on macOS
+- An issue where remote device control commands would be sent twice on newer versions of Chrome
