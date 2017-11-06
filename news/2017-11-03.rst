@@ -1,0 +1,23 @@
+Quamotion Sprint 78 Updates – November 3, 2017
+==============================================
+
+We’re happy to announce the release of the Sprint 78 edition of Quamotion. 
+The version number is 0.78.33.
+
+In this version, we've updated our support for automating web and hybrid applications on iOS and Android,
+and improvement our PowerShell clients.
+
+Automating web and hybrid applications on iOS and Android
+---------------------------------------------------------
+
+* We've added support for the flick gesture on web and hyrid applications.
+* We've added support for reloading (refreshing) the currently displayed web page.
+* We've added support for mocking the device rotation on Chrome browsers.
+* We've made various improvements to how we automate web and hybrid applications on iOS and Android. This should result
+ in better stability and reliability.
+
+PowerShell improvements
+-----------------------
+
+* We've added support for executing JavaScript in browser contexts via PowerShell.
+* We've added support for disabling auto screenshot capturing when creating a new WebDriver session
