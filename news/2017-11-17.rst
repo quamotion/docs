@@ -1,0 +1,46 @@
+Quamotion Sprint 79 Updates – November 14, 2017
+===============================================
+
+We’re happy to announce the release of the Sprint 79 edition of Quamotion. 
+The version number is 0.79.33.
+
+In this release, we've added support for React Native, Android 8.1 Preview, improved our
+PowerShell and Java clients, and improved the stability of the product.
+
+React Native support
+--------------------
+
+We're happy to announce to be first WebDriver-based framework to formally support test automation of
+React Native applications on Android.
+
+Android 8.1 Preview
+-------------------
+
+You can now use the Quamotion WebDriver on devices running Android 8.1 Preview
+
+PowerShell enhancements
+-----------------------
+
+You can now use PowerShell to upload developer disk images, developer profiles and licenses.
+This enables you to script the full installation of a new Quamotion WebDriver installation.
+
+Test Log Improvements
+---------------------
+
+You can now filter the entries in the test log.
+
+Java Client Improvements
+------------------------
+
+- The Java client for the Quamotion WebDriver is now available on Maven.
+- We've fixed an issue where the Java version of the Selenium client would throw a
+  `NullPointerException` on various calls.
+
+Stability and usability enhancements
+------------------------------------
+
+worked on the following stability enhancements:
+
+- We've fixed an issue where starting a device session on iOS would fail
+- We've fixed an issue where remotely controlling an iOS device would fail
+- We've added the possibility to retrieve performance data for Web pages
