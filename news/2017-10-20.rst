@@ -1,29 +1,21 @@
-Quamotion Sprint 75 Updates – September 22, 2017
-=================================================
+Quamotion Sprint 77 Updates – October 20, 2017
+==============================================
 
-We’re happy to announce the release of the Sprint 75 edition of Quamotion. 
-The version number is 0.75.25.1049.
+We’re happy to announce the release of the Sprint 77 edition of Quamotion. 
+The version number is 0.77.121.
 
-In this release, we've added support for remotely controlling iOS devices, as well as imporoved support for web applications.
-
-Remotely controlling iOS devices
---------------------------------
-
-In this release, we're announcing support for remote control of iOS devices. Using the Quamotion WebDriver, you can now
-control any iOS device that is connected to your PC using a browser and mouse.
-
-This enables many scenarios, such as setting up a private cloud in which devices are connected to a secure server and which
-are accessed remotely. In addition to Quamotion's test automation capabilities, this also enables manual testing of Android
-devices.
-
-Improved support for Web Applications
--------------------------------------
-
-We've improved our support for testing Web and Hybrid applications in this release.
+This sprint was a quality sprint, and only includes bugfixes.
 
 Stability and reliability enhancements
 --------------------------------------
 
-We've added:
+We've fixed:
 
-- A `Get-DeviceSessions` command to our PowerShell bindings, which list all sessions currently running on a device.
+- An issue where the Spy operation on an iOS application would fail
+- Improved the performance of the Spy operation for applications that include a large amount (> 1000) of controls
+- An issue where the screenshot feed would not load correctly on newer versions of Chrome
+- Added support for signing applications with enterprise profiles
+- Improved the mechanism which determins which certificates are used when signing applications
+- Added a new route which supports navigating to the the home screenshot
+- An issue where connecting to hybrid applications would fail on iOS 11
+- An issue where creating a new session with certain Android applications would fail
