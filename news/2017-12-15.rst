@@ -1,0 +1,8 @@
+Quamotion Sprint 81 Updates – December 15, 2017
+================================================
+
+We’re happy to announce the release of the Sprint 81 edition of Quamotion. 
+The version number is 0.80.97.
+
+In this release, we've added support for iOS devices which are connected over WiFi,
+support for Cordova applications and spying on web applications.

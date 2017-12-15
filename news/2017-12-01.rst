@@ -1,0 +1,24 @@
+Quamotion Sprint 80 Updates – December 1, 2017
+===============================================
+
+We’re happy to announce the release of the Sprint 80 edition of Quamotion. 
+The version number is 0.80.33.
+
+Usability improvements
+----------------------
+
+We've added the following usability features to the Quamotion WebDriver:
+
+* You can now upload Developer Disk Images using the web interface and scripts
+* You can now configure the WebDriver to connect to a remote adb and usbmuxd host
+* You can now override the Quamotion WebDriver configuration using environment variables
+
+Reliability and stability improvements
+--------------------------------------
+
+In this release, we've fixed the following issues:
+
+* We've fixed an issue where the reinstallApp capability was ignored on iOS
+* We've fixed an issue where stopping a session would fail when the device does not support screenshots
+* We've fixed an issue which prevented you from creating multiple Web sessions at the same time
+* We've fixed an issue where launching a web session using Chrome would fail
