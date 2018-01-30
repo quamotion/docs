@@ -1,0 +1,12 @@
+Quamotion Sprint 82 Updates – January 12, 2018
+==============================================
+
+We’re happy to announce the release of the Sprint 82 edition of Quamotion. 
+The version number is 0.82.97.
+
+
+In this release, we've:
+- Added support for newer versions of iOS 11
+- Added documentation and bugfixes to the PowerShell client
+- Implemented the SendKeys route for full device automation
+- The ability to keep or clear application settings when uninstalling an application
