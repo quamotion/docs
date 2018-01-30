@@ -18,13 +18,13 @@ Using the Quamotion `codesign` utility
 
 To use the Quamotion `codesign` utility, run the following command:
 
-```
-codesign
- --ipa <ipa>
- --developerProfile <path to your developer profile>
- --developerProfilePassword <password for your developer profile>
- --license <path your Quamotion license file>
-```
+.. code-block:: none
+
+    codesign
+    --ipa <ipa>
+    --developerProfile <path to your developer profile>
+    --developerProfilePassword <password for your developer profile>
+    --license <path your Quamotion license file>
 
 where `ipa` is iOS application bundle you want to sign, `developerProfile` is the path to the 
 Developer Profile you want to use to sign your application, `developerProfilePassword` is the password

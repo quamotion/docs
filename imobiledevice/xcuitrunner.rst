@@ -19,14 +19,14 @@ Using the Quamotion `xcuitrunner`
 
 To use the Quamotion `xcuitrunner`, run the following command:
 
-```
-xcuitrunner
- run 
- --udid <udid>
- --developerProfile <path to your developer profile>
- --developerProfilePassword <password for your developer profile>
- --license <path your Quamotion license file>
-```
+.. code-block:: none
+
+    xcuitrunner
+    run 
+    --udid <udid>
+    --developerProfile <path to your developer profile>
+    --developerProfilePassword <password for your developer profile>
+    --license <path your Quamotion license file>
 
 where `udid` is the UDID of the device on which you want to run the tests, `developerProfile` is the path to the 
 Developer Profile you want to use to resign your Xcode UI Test bundle, `developerProfilePassword` is the password
