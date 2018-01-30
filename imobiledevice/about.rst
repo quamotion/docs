@@ -31,3 +31,7 @@ information about the open source software that was used.
    howto
    tools
    Compiling <compiling>
+   Xcode UI Test Runner <xcuitrunner>
+   Code Signing <codesigning>
+   Instruments <instruments>
+   SDK <sdk>
