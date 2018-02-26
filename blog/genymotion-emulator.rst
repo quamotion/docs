@@ -30,7 +30,8 @@ Genymotion is a famous Android emulator used by millions of developers on Deskto
 through its Genymotion Cloud offer covering the full application lifecycle. This opens to many use cases including
 automated testing in a CI environment. 
 
-There are a couple of reasons why you’d want to use virtual devices in addition to physical devices :
+There are a couple of reasons why you’d want to use virtual devices in addition to physical devices:
+
 * Reduce your testing lifecycle by running your tests in parallel or splitting your tests and dispatching them on
   several devices at the same time. As virtual devices can be spawn instantly compared to physical devices
   (you often need to wait a bit for a device availability), you can scale your tests easily and increase coverage.
