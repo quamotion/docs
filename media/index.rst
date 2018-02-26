@@ -16,6 +16,7 @@ Curious to see how the media is covering Quamotion?
 
 We've added a short summary of media articles covering Quamotion:
 
+* `Quamotion nominated as a Deloitte Rising Star Finalist (November 2017) <https://www2.deloitte.com/be/en/pages/technology/articles/risingstar-winners-2017.html>`_
 * `De Dubbel: Quamotion & BAN Vlaanderen (August 2016) <https://vimeo.com/179477471>`_
 * `Quamotion obtains 500.000 euro in seed capital (April 14, 2016) <https://www.dvo.be/artikel/52477-quamotion-krijgt-ruim-500-000-euro-groeikapitaal-toegestopt/>`_
 * `Quamotion: A New Generation of Mobile Testing Applications (April 16, 2016) <https://www.iminds.be/en/news/20160414_startup-in-the-picture_quamotion>`_
@@ -31,6 +32,11 @@ Conferences
 
 Come and talk to us at conferences!
 
+* `imec Technology Forum 2018 (May 23-24) <https://www.imectechnologyforum.com/>`_
+* `Mobile World Congress 2018 (February 26-March 1) <https://www.mobileworldcongress.com/exhibitor/quamotion/>`_
+* `Deloitte Fast 50 Business Forum (November 14, 2017) <https://www2.deloitte.com/be/en/pages/technology/topics/fast50-business-forum-2017.html?icid=nav2_fast50-business-forum-2017>`_
+* `ABISS 2017 (October 4, 2017) <http://www.networkevent.be/abiss/nl>`_
+* `WebTomorrow 2017 (June 8-9, 2017) <https://webtomorrow.bloovi.be/>`_
 * `Mobile World Congress 2017 (February 27-March 2) <https://www.mobileworldcongress.com/exhibitor/quamotion/>`_
 * `Selenium Conf UK (November 15-16, 2016) <http://2016.seleniumconf.co.uk/sponsors>`_
 * EuroSTAR software testing conference 2016 (October 31-November 3, Stockholm)
