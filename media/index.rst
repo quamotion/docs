@@ -1,6 +1,14 @@
 Quamotion in the media
 ======================
 
+Press Releases
+--------------
+
+.. toctree::
+   :maxdepth: 1
+
+   genymotion-quamotion-partnership
+
 Media Coverage
 --------------
 
