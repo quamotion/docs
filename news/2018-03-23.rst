@@ -1,0 +1,49 @@
+Quamotion Sprint 84 Updates – March 23, 2018
+============================================
+
+We’re happy to announce the release of the Sprint 84 edition of Quamotion. 
+The version number is 0.84.115.
+
+In this release, we've improved support for Web and Full Device Automation, and added various reliability and stability
+improvements
+
+Improved support for Full Device Automation
+-------------------------------------------
+
+Full Device Automation allows you to automate an entire iOS or Android device, as opposed to a single application or
+browser running on that device.
+
+We've:
+
+- The ability to detect elements which are not visible on the screen
+- Support for checking the visibility of an element
+- Support for fetching the location and size of elements
+- Added support for flicking on th edevice screen
+
+Improved support for Web Automation on iOS & Android
+----------------------------------------------------
+
+We've improved support for running tests on browsers, including:
+
+- The ability to execute arbitrary JavaScript
+- The ability to click on arbitrary (x,y) coordinates
+- Getting the location and size of any element
+
+Other enhancements
+------------------
+
+We've:
+
+- Added support for installing Android test apps
+- Added support for Android applications which use WebP icons (PR 1011)
+- Added PowerShell commands which allow you to list all devices running on an iOS or Android device (PR1016)
+- Added support for Action Sheets on iOS 9 (PR1022)
+
+Reliability and stability improvements
+--------------------------------------
+
+We've:
+
+- Fixed an issue where an attempt would be made to uninstall an application which is currently not installed.
+- Fixed an issue where starting a session may fail in certain scenarios.
+- Fixed an issue where stopping a session may fail if the application under test doesn't have focus, for example when a pop up is visible on the device
