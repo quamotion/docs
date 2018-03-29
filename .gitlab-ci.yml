@@ -1,0 +1,10 @@
+image: pyton:2.7
+
+build:
+  script:
+  - pip install sphinx sphinx-bootstrap-theme robpol86-sphinxcontrib-googleanalytics
+  - sphinx-build . _build/html
+
+  artifacts:
+    paths:
+      - _build/html
