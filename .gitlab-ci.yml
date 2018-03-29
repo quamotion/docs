@@ -1,6 +1,5 @@
-image: python:2.7
-
 build:
+  image: python:2.7
   script:
   - pip install sphinx sphinx-bootstrap-theme robpol86-sphinxcontrib-googleanalytics
   - sphinx-build . _build/html
@@ -8,3 +7,15 @@ build:
   artifacts:
     paths:
       - _build/html
+
+deploy:
+  image: docker:latest
+
+  variables:
+    DOCKER_DRIVER: overlay2
+
+  services:
+  - docker:dind
+
+  script:
+  - docker info
