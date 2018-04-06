@@ -446,14 +446,14 @@ epub_exclude_files = ['search.html']
 
 # -- Variables ----------------------------------------------
 
-webdriver_version = "0.84.115"
+webdriver_version = "0.88.4"
 webdriver_osx_filename = "quamotion-webdriver." + webdriver_version + ".osx.10.10-x64.tar.gz"
 webdriver_osx_url = "http://cdn.quamotion.mobi/download/" + webdriver_osx_filename
 webdriver_ubuntu_filename = "quamotion-webdriver." + webdriver_version + ".ubuntu.16.04-x64.tar.gz"
 webdriver_ubuntu_url = "http://cdn.quamotion.mobi/download/" + webdriver_ubuntu_filename
 webdriver_rhel_filename = "quamotion-webdriver." + webdriver_version + ".rhel.7.0-x64.rpm"
 webdriver_rhel_url = "http://cdn.quamotion.mobi/download/" + webdriver_rhel_filename
-webdriver_win_filename = "quamotion-webdriver-netcore." + webdriver_version + ".win7-x64.zip"
+webdriver_win_filename = "quamotion-webdriver." + webdriver_version + ".win7-x64.zip"
 webdriver_win_url = "http://cdn.quamotion.mobi/download/" + webdriver_win_filename
 
 rst_epilog = """

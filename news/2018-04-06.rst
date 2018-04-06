@@ -1,0 +1,14 @@
+Quamotion Sprint 88 Updates – April 6, 2018
+============================================
+
+We’re happy to announce the release of the Sprint 88 edition of Quamotion. 
+The version number is 0.88.4.
+
+In this release, we've fixed an issue with the recording functionality.
+
+Reliability and stability improvements
+--------------------------------------
+
+We've:
+
+- Fixed an issue where recording native applications was not working correctly.
