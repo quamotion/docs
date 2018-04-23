@@ -7,6 +7,7 @@ This page contains an overview of the latest Quamotion releases, and what's comi
 .. toctree::
    :maxdepth: 1
 
+   Sprint 89 - April 20, 2018 <2018-04-20>
    Sprint 88 - April 6, 2018 <2018-04-06>
    Sprint 84 - March 23, 2018 <2018-03-23>
    Sprint 83 - January 26, 2018 <2018-01-26>
