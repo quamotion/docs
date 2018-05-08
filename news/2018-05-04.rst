@@ -1,0 +1,16 @@
+Quamotion Sprint 90 Updates – May 4, 2018
+=========================================
+
+We’re happy to announce the release of the Sprint 90 edition of Quamotion. 
+The version number is 0.90.19.
+
+In this release, we've fixed issues with starting applications and settings on iOS devices.
+
+Reliability and stability improvements
+--------------------------------------
+
+We've:
+
+- Fixed an issue where the `Install-App` command would fail on iOS devices
+- Made the timeout for starting a device session on iOS and rebooting a device configurable. You can set the values of the `xcuiTestPlanTimeout`, `deviceConnectTimeout` and `deviceDisconnectTimeout`
+  settings in the `appsettings.json` file. The timeout values are expressed in seconds.
