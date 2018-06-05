@@ -446,7 +446,7 @@ epub_exclude_files = ['search.html']
 
 # -- Variables ----------------------------------------------
 
-webdriver_version = "0.90.19"
+webdriver_version = "0.91.68"
 webdriver_osx_filename = "quamotion-webdriver." + webdriver_version + ".osx.10.10-x64.tar.gz"
 webdriver_osx_url = "http://cdn.quamotion.mobi/download/" + webdriver_osx_filename
 webdriver_ubuntu_filename = "quamotion-webdriver." + webdriver_version + ".ubuntu.16.04-x64.tar.gz"
