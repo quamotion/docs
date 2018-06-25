@@ -1,0 +1,14 @@
+Quamotion Sprint 91 Updates – May 18, 2018
+==========================================
+
+We’re happy to announce the release of the Sprint 93 edition of Quamotion. 
+The version number is 0.91.16.
+
+In this release, we've improved the stability of the WebDriver.
+
+Reliability and stability improvements
+--------------------------------------
+
+We've:
+
+- Fixed an issue where error messages sent by an iOS device would not be parsed correctly.

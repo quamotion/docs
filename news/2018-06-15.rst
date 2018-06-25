@@ -1,0 +1,18 @@
+Quamotion Sprint 93 Updates – June 15, 2018
+===========================================
+
+We’re happy to announce the release of the Sprint 93 edition of Quamotion. 
+The version number is 0.92.26.
+
+In this release, we've improved the stability of the WebDriver.
+
+Reliability and stability improvements
+--------------------------------------
+
+We've:
+
+- Upgraded the WebDriver to use .NET Core 2.1
+- Fixed an issue where you may not be able to start a new device automation session on iOS after a device reboot
+- Fixed an issue where the WebDriver would not send proper status codes when unknown commands are executed
+- Fixed an issue where the `Start-App` PowerShell command would not handle a missing argument correctly
+- Fixed issues where you may get intermittend 'Device not Found' error messages under high CPU load

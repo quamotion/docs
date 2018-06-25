@@ -1,0 +1,24 @@
+Quamotion Sprint 92 Updates – June 1, 2018
+==========================================
+
+We’re happy to announce the release of the Sprint 92 edition of Quamotion. 
+The version number is 0.91.65.
+
+In this release, we've fixed issues with starting applications and settings on iOS devices.
+
+PowerShell improvements
+-----------------------
+
+We've improved our PowerShell client. We've:
+- Fixed an issue where the PowerShell client would return duplicate status messages when starting a new session.
+- Fixed an issue where the PowerShell client would not return correctly when deploying a session has failed.
+- Fixed an issue where error messages would not be shown correctly in the PowerShell client.
+- Added a new command, `Get-Timeouts`, which allows you to list the timeouts applied to your current session.
+
+Reliability and stability improvements
+--------------------------------------
+
+We've:
+
+- Fixed a timeout when starting a device automation session on iOS.
+- The screenshot feed will now show a 'device booting' status message when you reboot a device, instead of disconnecting.
