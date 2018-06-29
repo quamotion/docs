@@ -1,0 +1,16 @@
+Quamotion Sprint 94 Updates – June 15, 2018
+===========================================
+
+We’re happy to announce the release of the Sprint 94 edition of Quamotion. 
+The version number is 0.94.18.
+
+In this release, we've improved the stability of the WebDriver.
+
+Reliability and stability improvements
+--------------------------------------
+
+We've:
+
+- Upgraded the agent for Full Device Automation on iOS, bringing additional stability and performance enhancements
+- Added a `Wait-Device` command in PowerShell, which allows you to block execution of a script until a device is available
+- Removed a couple of old dependencies from the WebDriver, reducing the overall package size
