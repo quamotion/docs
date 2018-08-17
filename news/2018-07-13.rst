@@ -1,0 +1,12 @@
+Quamotion Sprint 95 Updates – July 13, 2018
+===========================================
+
+We’re happy to announce the release of the Sprint 95 edition of Quamotion. 
+The version number is 0.95.15.
+
+In this release, we've added support for new locator strategies in iOS device automation.
+
+New locator strategies for iOS device automation
+------------------------------------------------
+
+You can now use the class chain and predicate string locator strategies in iOS device automation.

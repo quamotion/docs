@@ -1,4 +1,4 @@
-Quamotion Sprint 94 Updates – June 15, 2018
+Quamotion Sprint 94 Updates – June 29, 2018
 ===========================================
 
 We’re happy to announce the release of the Sprint 94 edition of Quamotion. 

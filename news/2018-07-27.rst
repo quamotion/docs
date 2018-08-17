@@ -1,0 +1,15 @@
+Quamotion Sprint 96 Updates – July 27, 2018
+===========================================
+
+We’re happy to announce the release of the Sprint 96 edition of Quamotion. 
+The version number is 0.96.18.
+
+In this release, we've improved the stability of the WebDriver.
+
+Reliability and stability improvements
+--------------------------------------
+
+We've:
+
+- Fixed an issue where some front-end dependencies were missing
+- Fixed an issue where the `Set-ImplicitTimeout` command would fail for Android device automation

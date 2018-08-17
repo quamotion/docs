@@ -1,0 +1,18 @@
+Quamotion Sprint 97 Updates – August 10, 2018
+=============================================
+
+We’re happy to announce the release of the Sprint 97 edition of Quamotion. 
+The version number is 0.97.62.
+
+In this release, we've improved the stability of the WebDriver.
+
+Android 9 Support
+-----------------
+
+We've added support for Android 9 (Pie), and the latest version of the Android
+Debug Bridge (adb).
+
+iOS 12 Support
+--------------
+
+We've added support for the Beta 6 and Beta 8 versions of iOS 12.
