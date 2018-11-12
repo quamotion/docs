@@ -446,13 +446,13 @@ epub_exclude_files = ['search.html']
 
 # -- Variables ----------------------------------------------
 
-webdriver_version = "0.97.62"
+webdriver_version = "0.104.64"
 webdriver_osx_filename = "quamotion-webdriver." + webdriver_version + ".osx.10.10-x64.tar.gz"
 webdriver_osx_url = "http://cdn.quamotion.mobi/download/" + webdriver_osx_filename
 webdriver_ubuntu_filename = "quamotion-webdriver." + webdriver_version + ".ubuntu.16.04-x64.tar.gz"
 webdriver_ubuntu_url = "http://cdn.quamotion.mobi/download/" + webdriver_ubuntu_filename
-webdriver_rhel_filename = "quamotion-webdriver." + webdriver_version + ".rhel.7.0-x64.rpm"
-webdriver_rhel_url = "http://cdn.quamotion.mobi/download/" + webdriver_rhel_filename
+webdriver_ubuntu_18_04_filename = "quamotion-webdriver." + webdriver_version + ".ubuntu.18.04-x64.tar.gz"
+webdriver_ubuntu_18_04_url = "http://cdn.quamotion.mobi/download/" + webdriver_ubuntu_18_04_filename
 webdriver_win_filename = "quamotion-webdriver." + webdriver_version + ".win7-x64.zip"
 webdriver_win_url = "http://cdn.quamotion.mobi/download/" + webdriver_win_filename
 
@@ -462,6 +462,8 @@ rst_epilog = """
 .. |webdriver_osx_url| replace:: {2}
 .. |webdriver_ubuntu_filename| replace:: {3}
 .. |webdriver_ubuntu_url| replace:: {4}
+.. |webdriver_ubuntu_18_04_filename| replace:: {3}
+.. |webdriver_ubuntu_18_04_url| replace:: {4}
 .. |webdriver_rhel_filename| replace:: {5}
 .. |webdriver_rhel_url| replace:: {6}
 .. |webdriver_win_filename| replace:: {7}
@@ -472,7 +474,7 @@ webdriver_osx_filename,
 webdriver_osx_url,
 webdriver_ubuntu_filename,
 webdriver_ubuntu_url,
-webdriver_rhel_filename,
-webdriver_rhel_url,
+webdriver_ubuntu_18_04_filename,
+webdriver_ubuntu_18_04_url,
 webdriver_win_filename,
 webdriver_win_url)

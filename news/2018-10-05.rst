@@ -1,0 +1,8 @@
+Quamotion Sprint 101 Updates – October 5, 2018
+==============================================
+
+We’re happy to announce the release of the Sprint 101 edition of Quamotion. 
+The version number is 0.101.15.
+
+In this release, we've improved the stability and reliability of Quamotion.
+

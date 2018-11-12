@@ -1,0 +1,29 @@
+Quamotion Sprint 104 Updates – November 23, 2018
+================================================
+
+We’re happy to announce the release of the Sprint 104 edition of Quamotion. 
+The version number is 0.104.64.
+
+In this release, we've improved the stability and reliability of the WebDriver.
+
+Stability and reliability improvements
+--------------------------------------
+
+We've:
+- Fixed an issue where the WebDriver would crash, when you stop the WebDriver
+  but a remote screen session is still active.
+- Fixed an issue where starting an application on Android may fail, if that
+  application has an embedded copy of a popular HTTP server.
+- Fixed an issue where certain requests may fail if your PC is using a proxy
+  server.
+- Fixed an issue where the last known screenshot of any device would be saved
+  to the trace folder.
+
+PowerShell improvements
+-----------------------
+
+We've:
+- Added a `DoubleClick-Element` function to our PowerShell client.
+- Added a `Get-AppVersion` function to our PowerShell client, which allows you
+  to identify which version of an application is installed on your device.
+- The `Start-App` command is now supported on Android.

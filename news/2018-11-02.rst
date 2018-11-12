@@ -1,0 +1,20 @@
+Quamotion Sprint 103 Updates – November 02, 2018
+================================================
+
+We’re happy to announce the release of the Sprint 103 edition of Quamotion. 
+The version number is 0.103.70.
+
+In this release, we've improved the performance of remotely controlling iOS
+devices over VNC.
+
+Remotely controlling iOS devices
+--------------------------------
+
+In this release, we've improved the performance of the 'remote screen' for
+iOS, which allows you to remotely control any iOS device connected to your
+PC using an browser.
+
+Notable changes include:
+- A boot screen is displayed when the session is initialized
+- The framerate of the remote screen has improved to ~ 10 frames per second
+- The performance of touch events has improved

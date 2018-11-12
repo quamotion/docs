@@ -1,0 +1,12 @@
+Quamotion Sprint 99 Updates – September 07, 2018
+================================================
+
+We’re happy to announce the release of the Sprint 99 edition of Quamotion. 
+The version number is 0.99.12.
+
+In this release, we've improved support for iOS 12.
+
+iOS 12 Support
+--------------
+
+We've added support for the Beta 12 version of iOS 12.

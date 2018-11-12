@@ -1,0 +1,28 @@
+Quamotion Sprint 98 Updates – August 24, 2018
+=============================================
+
+We’re happy to announce the release of the Sprint 97 edition of Quamotion. 
+The version number is 0.98.60.
+
+In this release, we've improved support for the most recent version of iOS 12,
+and added better support for recording device screens via FFmpeg.
+
+iOS 12 Support
+--------------
+
+We've added support for the Beta 8 version of iOS 12.
+
+Improved screen recording van FFmpeg
+------------------------------------
+
+You can use FFmpeg to record a video of the display of your iOS or Android device using the
+screenshotFeed endpoint at `/wd/hub/quamotion/device/{deviceId}/screenshotFeed`. This is a MJPEG-
+stream, which FFmpeg can record.
+
+The MJPEG stream uses JPEG encoding. In certain scenarios, this requires the WebDriver to re-encode
+a screenshot in JPEG, and FFmpeg to then decode that screenshot again.
+
+To work around this problem, we've added a new VNC endpoint which creates a VNC feed using the
+"VMware-encoding". This feed uses raw framebuffers and incremental updates, and may perform better.
+
+You can use this endpoint at `/wd/hub/vncVideo`.

@@ -1,0 +1,12 @@
+Quamotion Sprint 100 Updates – September 21, 2018
+=================================================
+
+We’re happy to announce the release of the Sprint 100 edition of Quamotion. 
+The version number is 0.100.21.
+
+In this release, we've improved support for iOS 12.
+
+iOS 12 Support
+--------------
+
+We've added support for the final version of iOS 12, and new iPhone X devices.

@@ -1,0 +1,17 @@
+Quamotion Sprint 102 Updates – October 19, 2018
+===============================================
+
+We’re happy to announce the release of the Sprint 102 edition of Quamotion. 
+The version number is 0.102.70.
+
+In this release, we've added support for Xcode UI Tests compiled using Xcode 10.
+
+Xcode 10 Xcode UI Tests
+-----------------------
+
+We've added support for running Xcode UI Tests which have been compiled using Xcode 10.
+
+Ubuntu 18.04 support
+--------------------
+
+You can now run the Quamotion WebDriver on Ubuntu 18.04.

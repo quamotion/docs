@@ -15,4 +15,4 @@ Debug Bridge (adb).
 iOS 12 Support
 --------------
 
-We've added support for the Beta 6 and Beta 8 versions of iOS 12.
+We've added support for the Beta 6 version of iOS 12.

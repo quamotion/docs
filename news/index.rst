@@ -7,6 +7,13 @@ This page contains an overview of the latest Quamotion releases, and what's comi
 .. toctree::
    :maxdepth: 1
 
+   Sprint 104 - November 16, 2018 <2018-11-16>
+   Sprint 103 - November 2, 2018 <2018-11-02>
+   Sprint 102 - October 19, 2018 <2018-10-19>
+   Sprint 101 - October 5, 2018 <2018-10-05>
+   Sprint 100 - September 21, 2018 <2018-09-21>
+   Sprint 99 - September 7, 2018 <2018-09-07>
+   Sprint 98 - August 24, 2018 <2018-08-24>
    Sprint 97 - August 10, 2018 <2018-08-10>
    Sprint 96 - July 27, 2018 <2018-07-27>
    Sprint 95 - July 13, 2018 <2018-07-13>
